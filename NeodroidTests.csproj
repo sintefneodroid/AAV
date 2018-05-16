@@ -9,10 +9,10 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{258B7383-B6F1-C952-97B1-CDC4EA1FC865}</ProjectGuid>
+    <ProjectGuid>{6B3B36E2-DC80-C193-F349-E532D686FC3F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <AssemblyName>NeodroidTests</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>.</BaseDirectory>
@@ -51,234 +51,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\AAV\DroneController.cs" />
-     <Compile Include="Assets\AAV\Lidar.cs" />
-     <Compile Include="Assets\AAV\PID\AttitudeControllerNode.cs" />
-     <Compile Include="Assets\AAV\PID\HoverControllerNode.cs" />
-     <Compile Include="Assets\AAV\PID\HoverTwiddleTunerNode.cs" />
-     <Compile Include="Assets\AAV\PID\PIDController.cs" />
-     <Compile Include="Assets\AAV\PID\PositionControllerNode.cs" />
-     <Compile Include="Assets\AAV\PID\Twiddle.cs" />
-     <Compile Include="Assets\droid\Neodroid\Environments\Experimental\ImitationEnvironment.cs" />
-     <Compile Include="Assets\droid\Neodroid\Environments\NeodroidEnvironment.cs" />
-     <Compile Include="Assets\droid\Neodroid\Environments\PrototypingEnvironment.cs" />
-     <Compile Include="Assets\droid\Neodroid\Environments\RandomisedEnvironment.cs" />
-     <Compile Include="Assets\droid\Neodroid\Environments\ScriptedEnviroment.cs" />
-     <Compile Include="Assets\droid\Neodroid\Environments\StatusUpdater.cs" />
-     <Compile Include="Assets\droid\Neodroid\Managers\Experimental\CurriculumManager.cs" />
-     <Compile Include="Assets\droid\Neodroid\Managers\Experimental\ThinManager.cs" />
-     <Compile Include="Assets\droid\Neodroid\Managers\NeodroidManager.cs" />
-     <Compile Include="Assets\droid\Neodroid\Managers\PausableManager.cs" />
-     <Compile Include="Assets\droid\Neodroid\NeodroidInfo.cs" />
-     <Compile Include="Assets\droid\Neodroid\PlayerControls\KeyEventEnabler.cs" />
-     <Compile Include="Assets\droid\Neodroid\PlayerControls\PlayerReactions.cs" />
-     <Compile Include="Assets\droid\Neodroid\Properties\AssemblyInfo.cs" />
-     <Compile Include="Assets\droid\Neodroid\Prototyping\Actors\Actor.cs" />
-     <Compile Include="Assets\droid\Neodroid\Prototyping\Actors\ActorComponentMenuPath.cs" />
-     <Compile Include="Assets\droid\Neodroid\Prototyping\Actors\KillableActor.cs" />
-     <Compile Include="Assets\droid\Neodroid\Prototyping\Configurables\ColorConfigurable.cs" />
-     <Compile Include="Assets\droid\Neodroid\Prototyping\Configurables\Configurable.cs" />
-     <Compile Include="Assets\droid\Neodroid\Prototyping\Configurables\ConfigurableComponentMenuPath.cs" />
-     <Compile Include="Assets\droid\Neodroid\Prototyping\Configurables\ConfigurableGameObject.cs" />
-     <Compile Include="Assets\droid\Neodroid\Prototyping\Configurables\DifficultyConfigurable.cs" />
-     <Compile Include="Assets\droid\Neodroid\Prototyping\Configurables\EulerTransformConfigurable.cs" />
-     <Compile Include="Assets\droid\Neodroid\Prototyping\Configurables\ObjectSpawnerConfigurable.cs" />
-     <Compile Include="Assets\droid\Neodroid\Prototyping\Configurables\PositionConfigurable.cs" />
-     <Compile Include="Assets\droid\Neodroid\Prototyping\Configurables\QuaternionTransformConfigurable.cs" />
-     <Compile Include="Assets\droid\Neodroid\Prototyping\Configurables\RigidbodyConfigurable.cs" />
-     <Compile Include="Assets\droid\Neodroid\Prototyping\Configurables\SimulationConfigurable.cs" />
-     <Compile Include="Assets\droid\Neodroid\Prototyping\Configurables\TransformConfigurable1Dof.cs" />
-     <Compile Include="Assets\droid\Neodroid\Prototyping\Displayers\Canvas\CanvasBarDisplayer.cs" />
-     <Compile Include="Assets\droid\Neodroid\Prototyping\Displayers\Canvas\CanvasTextDisplayer.cs" />
-     <Compile Include="Assets\droid\Neodroid\Prototyping\Displayers\Displayer.cs" />
-     <Compile Include="Assets\droid\Neodroid\Prototyping\Displayers\DisplayerComponentMenuPath.cs" />
-     <Compile Include="Assets\droid\Neodroid\Prototyping\Displayers\Experimental\ECS\ECSDisplayer.cs" />
-     <Compile Include="Assets\droid\Neodroid\Prototyping\Displayers\Experimental\ECS\ECSScatterPlotDisplayer.cs" />
-     <Compile Include="Assets\droid\Neodroid\Prototyping\Displayers\GameObjectScatterPlotDisplayer.cs" />
-     <Compile Include="Assets\droid\Neodroid\Prototyping\Displayers\ScatterPlotDisplayer.cs" />
-     <Compile Include="Assets\droid\Neodroid\Prototyping\Displayers\TextMeshDisplayer.cs" />
-     <Compile Include="Assets\droid\Neodroid\Prototyping\Evaluation\AngularVelocityEvaluation.cs" />
-     <Compile Include="Assets\droid\Neodroid\Prototyping\Evaluation\EuclideanDistance.cs" />
-     <Compile Include="Assets\droid\Neodroid\Prototyping\Evaluation\EvaluationComponentMenuPath.cs" />
-     <Compile Include="Assets\droid\Neodroid\Prototyping\Evaluation\ObjectiveFunction.cs" />
-     <Compile Include="Assets\droid\Neodroid\Prototyping\Evaluation\PoseDeviance.cs" />
-     <Compile Include="Assets\droid\Neodroid\Prototyping\Evaluation\PunishmentFunction.cs" />
-     <Compile Include="Assets\droid\Neodroid\Prototyping\Evaluation\ReachArea.cs" />
-     <Compile Include="Assets\droid\Neodroid\Prototyping\Evaluation\ReachGoal.cs" />
-     <Compile Include="Assets\droid\Neodroid\Prototyping\Evaluation\RestInArea.cs" />
-     <Compile Include="Assets\droid\Neodroid\Prototyping\Evaluation\Tasks\TaskSequence.cs" />
-     <Compile Include="Assets\droid\Neodroid\Prototyping\Evaluation\Terms\CollidersPunishmentTerm.cs" />
-     <Compile Include="Assets\droid\Neodroid\Prototyping\Evaluation\Terms\CollsionsPunishmentTerm.cs" />
-     <Compile Include="Assets\droid\Neodroid\Prototyping\Evaluation\Terms\RushTerm.cs" />
-     <Compile Include="Assets\droid\Neodroid\Prototyping\Evaluation\Terms\Term.cs" />
-     <Compile Include="Assets\droid\Neodroid\Prototyping\Evaluation\Terms\TermComponentMenuPath.cs" />
-     <Compile Include="Assets\droid\Neodroid\Prototyping\Evaluation\VelocityEvaluation.cs" />
-     <Compile Include="Assets\droid\Neodroid\Prototyping\Internals\EnvironmentListener.cs" />
-     <Compile Include="Assets\droid\Neodroid\Prototyping\Internals\Resetable.cs" />
-     <Compile Include="Assets\droid\Neodroid\Prototyping\Internals\ResetableComponentMenuPath.cs" />
-     <Compile Include="Assets\droid\Neodroid\Prototyping\Internals\TransformResetable.cs" />
-     <Compile Include="Assets\droid\Neodroid\Prototyping\Motors\EulerTransformMotor.cs" />
-     <Compile Include="Assets\droid\Neodroid\Prototyping\Motors\EulerTransformMotor1Dof.cs" />
-     <Compile Include="Assets\droid\Neodroid\Prototyping\Motors\EulerTransformMotor3Dof.cs" />
-     <Compile Include="Assets\droid\Neodroid\Prototyping\Motors\IndexedMotor.cs" />
-     <Compile Include="Assets\droid\Neodroid\Prototyping\Motors\Motor.cs" />
-     <Compile Include="Assets\droid\Neodroid\Prototyping\Motors\MotorComponentMenuPath.cs" />
-     <Compile Include="Assets\droid\Neodroid\Prototyping\Motors\Particles\RocketMotor.cs" />
-     <Compile Include="Assets\droid\Neodroid\Prototyping\Motors\RigidbodyMotor.cs" />
-     <Compile Include="Assets\droid\Neodroid\Prototyping\Motors\RigidbodyMotor1Dof.cs" />
-     <Compile Include="Assets\droid\Neodroid\Prototyping\Motors\RigidbodyMotor3Dof.cs" />
-     <Compile Include="Assets\droid\Neodroid\Prototyping\Motors\WheelColliderMotor\SteeringMotor.cs" />
-     <Compile Include="Assets\droid\Neodroid\Prototyping\Motors\WheelColliderMotor\TorqueMotor.cs" />
-     <Compile Include="Assets\droid\Neodroid\Prototyping\Observers\AdjacencyObserver.cs" />
-     <Compile Include="Assets\droid\Neodroid\Prototyping\Observers\CameraObserver.cs" />
-     <Compile Include="Assets\droid\Neodroid\Prototyping\Observers\CategoricalObserver.cs" />
-     <Compile Include="Assets\droid\Neodroid\Prototyping\Observers\CompassObserver.cs" />
-     <Compile Include="Assets\droid\Neodroid\Prototyping\Observers\EulerTransformObserver.cs" />
-     <Compile Include="Assets\droid\Neodroid\Prototyping\Observers\Experimental\BoundingBoxObserver.cs" />
-     <Compile Include="Assets\droid\Neodroid\Prototyping\Observers\FixedLidarObserver.cs" />
-     <Compile Include="Assets\droid\Neodroid\Prototyping\Observers\FloatArrayCameraObserver.cs" />
-     <Compile Include="Assets\droid\Neodroid\Prototyping\Observers\GoalCellObserver.cs" />
-     <Compile Include="Assets\droid\Neodroid\Prototyping\Observers\GridPositionObserver.cs" />
-     <Compile Include="Assets\droid\Neodroid\Prototyping\Observers\LineOfSightObserver.cs" />
-     <Compile Include="Assets\droid\Neodroid\Prototyping\Observers\NearestByTagObserver.cs" />
-     <Compile Include="Assets\droid\Neodroid\Prototyping\Observers\Observer.cs" />
-     <Compile Include="Assets\droid\Neodroid\Prototyping\Observers\ObserverComponentMenuPath.cs" />
-     <Compile Include="Assets\droid\Neodroid\Prototyping\Observers\PositionObserver.cs" />
-     <Compile Include="Assets\droid\Neodroid\Prototyping\Observers\PositionObserver2D.cs" />
-     <Compile Include="Assets\droid\Neodroid\Prototyping\Observers\QuaternionTransformObserver.cs" />
-     <Compile Include="Assets\droid\Neodroid\Prototyping\Observers\RaycastObserver.cs" />
-     <Compile Include="Assets\droid\Neodroid\Prototyping\Observers\RigidbodyObserver.cs" />
-     <Compile Include="Assets\droid\Neodroid\Prototyping\Observers\RotationObserver.cs" />
-     <Compile Include="Assets\droid\Neodroid\Prototyping\Observers\ValueObserver.cs" />
-     <Compile Include="Assets\droid\Neodroid\Prototyping\PrototypingComponentMenuPath.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\BoundingBoxes\BoundingBox.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\BoundingBoxes\Corners.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\BoundingBoxes\DrawBoundingBoxes.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\BoundingBoxes\DrawBoundingBoxOnCamera.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\BoundingBoxes\Experimental\BoundingBoxUtilities.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\Enums\Axis.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\Enums\CoordinateSystem.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\Enums\WaitOn.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\GameObjects\PrototypingGameObject.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\Interfaces\IHasArray.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\Interfaces\IHasByteArray.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\Interfaces\IHasDouble.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\Interfaces\IHasEulerTransform.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\Interfaces\IHasFloatEnumarable.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\Interfaces\IHasQuadruple.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\Interfaces\IHasQuaternionTransform.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\Interfaces\IHasRegister.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\Interfaces\IHasRigidbody.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\Interfaces\IHasSingle.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\Interfaces\IHasTriple.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\Messaging\FBS\CustomFlatBufferImplementation.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\Messaging\FBS\FBSReactionUtilities.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\Messaging\FBS\FBSStateUtilities.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\Messaging\FBS\NeodroidFBSObservation.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\Messaging\FBS\NeodroidFBSReaction.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\Messaging\FBS\NeodroidFBSReactions.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\Messaging\FBS\NeodroidFBSShared.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\Messaging\FBS\NeodroidFBSState.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\Messaging\FBS\NeodroidFBSStates.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\Messaging\FBS\NeodroidFBSTypes.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\Messaging\Messages\Body.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\Messaging\Messages\Configuration.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\Messaging\Messages\Displayables\Displayable.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\Messaging\Messages\Displayables\DisplayableFloat.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\Messaging\Messages\Displayables\DisplayableString.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\Messaging\Messages\Displayables\DisplayableValuedVector3s.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\Messaging\Messages\Displayables\DisplayableValues.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\Messaging\Messages\Displayables\DisplayableVector3s.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\Messaging\Messages\EnvironmentDescription.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\Messaging\Messages\EnvironmentState.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\Messaging\Messages\MotorMotion.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\Messaging\Messages\Reaction.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\Messaging\Messages\ReactionParameters.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\Messaging\Messages\Reactions.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\Messaging\Messages\SimulatorConfiguration.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\Messaging\Messages\Unobservables.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\Messaging\MessageServer.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\NeodroidCamera\DisparityCameraBehaviour.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\NeodroidCamera\FlowCameraBehaviour.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\NeodroidCamera\IgnoreLightSource.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\NeodroidCamera\InfraredLightSource.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\NeodroidCamera\ReplacementShaderEffect.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\NeodroidCamera\SynchroniseCameraProperties.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\Noise\ProjectileSpammer.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\Noise\SelfDestruct.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\Plotting\DrawSpaces.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\Plotting\Meshes.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\Plotting\PlotFunctions.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\Plotting\ValueRangePlotter.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\ScriptableObjects\Curriculum.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\ScriptableObjects\NeodroidTask.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\ScriptableObjects\PlayerMotions.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\ScriptableObjects\Segmentations.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\ScriptableObjects\SimulatorConfiguration.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\Segmentation\ChangeMaterialOnRenderByInstance.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\Segmentation\ChangeMaterialOnRenderByTag.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\Segmentation\SegmentationColor.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\Sensors\ChildSensor.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\SerialisableDictionary\Example.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\SerialisableDictionary\SerializableDictionary.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\SerialisableDictionary\SerializableDictionaryDrawer.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\SerialisableDictionary\SerializableDictionaryDrawerImplementations.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\SerialisableDictionary\SerializableDictionaryImplementations.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\SerialisableDictionary\SerializedPropertyExtension.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\Structs\DoubleVector3.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\Structs\IntVector3.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\Structs\Points.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\Structs\Space2.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\Structs\Space3.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\Structs\Space4.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\Structs\ValueSpace.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\Unsorted\DrawString.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\Unsorted\EnsureValidState.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\Unsorted\FollowTarget.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\Unsorted\GameObjectCloner.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\Unsorted\GraspingUtilities.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\Unsorted\GridCell.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\Unsorted\JointFix.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\Unsorted\MotionTracker.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\Unsorted\Note.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\Unsorted\Obstruction.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\Unsorted\OnCollision.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\Unsorted\ParticleController.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\Unsorted\PointInDirection.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\Unsorted\SnakeSpaceFilling.cs" />
-     <Compile Include="Assets\droid\Neodroid\Utilities\Unsorted\Utilities.cs" />
-     <None Include="Assets\droid\Neodroid\Shaders\Depth.shader" />
-     <None Include="Assets\AAV\Trash\Shaders\Lines.shader" />
-     <None Include="Assets\droid\Neodroid\Libaries\NetMQ.4.0.0.156-pre\lib\net40\NetMQ.xml" />
-     <None Include="Assets\droid\Neodroid\Utilities\Plotting\ValueRangePlotter.shader" />
-     <None Include="Assets\AAV\Trash\Shaders\Grid.shader" />
-     <None Include="Assets\droid\Neodroid\Libaries\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.xml" />
-     <None Include="Assets\droid\Neodroid\Shaders\FlatColor.shader" />
-     <None Include="Assets\droid\Neodroid\Shaders\Normal.shader" />
-     <None Include="Assets\AAV\Trash\Shaders\Transparent-Depth.shader" />
-     <None Include="Assets\droid\Neodroid\Gizmos\Icons\readme.txt" />
-     <None Include="Assets\droid\Neodroid\Shaders\Segmentation.shader" />
-     <None Include="Assets\droid\Neodroid\Libaries\OptimizedPriorityQueue.4.1.1\lib\net45\Priority Queue.xml" />
-     <None Include="Assets\AAV\Trash\Shaders\Depth.shader" />
-     <None Include="Assets\droid\Neodroid\Shaders\ScreenSpaceFlow.shader" />
- <Reference Include="Unity.ProBuilder.AddOns.Editor">
- <HintPath>/home/heider/Github/Neodroid/AAV/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.ProGrids">
- <HintPath>/home/heider/Github/Neodroid/AAV/Library/ScriptAssemblies/Unity.ProGrids.dll</HintPath>
- </Reference>
- <Reference Include="Unity.ProGrids.Editor">
- <HintPath>/home/heider/Github/Neodroid/AAV/Library/ScriptAssemblies/Unity.ProGrids.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>/home/heider/Github/Neodroid/AAV/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.PackageManagerUI.Editor">
- <HintPath>/home/heider/Github/Neodroid/AAV/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.TextMeshPro">
- <HintPath>/home/heider/Github/Neodroid/AAV/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
- </Reference>
+     <Compile Include="Assets\droid\NeodroidTests\SimulatorTests.cs" />
  <Reference Include="UnityEngine.AIModule">
  <HintPath>/opt/Unity-2018.2.0b2/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
  </Reference>
@@ -465,20 +238,59 @@
  <Reference Include="UnityEngine.UI">
  <HintPath>/opt/Unity-2018.2.0b2/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
+ <Reference Include="UnityEditor.UI">
+ <HintPath>/opt/Unity-2018.2.0b2/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>/opt/Unity-2018.2.0b2/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Networking">
+ <HintPath>/opt/Unity-2018.2.0b2/Editor/Data/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.TestRunner">
+ <HintPath>/opt/Unity-2018.2.0b2/Editor/Data/UnityExtensions/Unity/TestRunner/Editor/UnityEditor.TestRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TestRunner">
+ <HintPath>/opt/Unity-2018.2.0b2/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>/opt/Unity-2018.2.0b2/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Timeline">
  <HintPath>/opt/Unity-2018.2.0b2/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
  </Reference>
+ <Reference Include="UnityEditor.Timeline">
+ <HintPath>/opt/Unity-2018.2.0b2/Editor/Data/UnityExtensions/Unity/Timeline/Editor/UnityEditor.Timeline.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.TreeEditor">
+ <HintPath>/opt/Unity-2018.2.0b2/Editor/Data/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.GoogleAudioSpatializer">
+ <HintPath>/opt/Unity-2018.2.0b2/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/Editor/UnityEditor.GoogleAudioSpatializer.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.GoogleAudioSpatializer">
  <HintPath>/opt/Unity-2018.2.0b2/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.HoloLens">
+ <HintPath>/opt/Unity-2018.2.0b2/Editor/Data/UnityExtensions/Unity/UnityHoloLens/Editor/UnityEditor.HoloLens.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.HoloLens">
  <HintPath>/opt/Unity-2018.2.0b2/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
  </Reference>
+ <Reference Include="UnityEditor.SpatialTracking">
+ <HintPath>/opt/Unity-2018.2.0b2/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/Editor/UnityEditor.SpatialTracking.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.SpatialTracking">
  <HintPath>/opt/Unity-2018.2.0b2/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.VR">
+ <HintPath>/opt/Unity-2018.2.0b2/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Graphs">
+ <HintPath>/opt/Unity-2018.2.0b2/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.LinuxStandalone.Extensions">
+ <HintPath>/opt/Unity-2018.2.0b2/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="NetMQ">
  <HintPath>/home/heider/Github/Neodroid/AAV/Assets/droid/Neodroid/Libaries/NetMQ.4.0.0.156-pre/lib/net40/NetMQ.dll</HintPath>
@@ -494,6 +306,12 @@
  </Reference>
  <Reference Include="Newtonsoft.Json">
  <HintPath>/home/heider/Github/Neodroid/AAV/Assets/droid/Neodroid/Libaries/Newtonsoft.Json.11.0.2/lib/net45/Newtonsoft.Json.dll</HintPath>
+ </Reference>
+ <Reference Include="ProBuilderEditor">
+ <HintPath>/home/heider/.config/unity3d/cache/packages/packages.unity.com/com.unity.probuilder@3.0.8/ProBuilder/Editor/ProBuilderEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="AssetIdRemapUtility">
+ <HintPath>/home/heider/.config/unity3d/cache/packages/packages.unity.com/com.unity.probuilder@3.0.8/ProBuilder/AssetIdRemapUtility/Editor/AssetIdRemapUtility.dll</HintPath>
  </Reference>
  <Reference Include="ProBuilderCore">
  <HintPath>/home/heider/.config/unity3d/cache/packages/packages.unity.com/com.unity.probuilder@3.0.8/ProBuilder/Classes/ProBuilderCore.dll</HintPath>

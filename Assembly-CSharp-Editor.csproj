@@ -51,26 +51,27 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Neodroid\Editor\GameObjects\EditorGameObjectMenuPath.cs" />
-     <Compile Include="Assets\Neodroid\Editor\GameObjects\GeneralSpawner.cs" />
-     <Compile Include="Assets\Neodroid\Editor\GameObjects\MotorSpawner.cs" />
-     <Compile Include="Assets\Neodroid\Editor\GameObjects\ObserverSpawner.cs" />
-     <Compile Include="Assets\Neodroid\Editor\GameObjects\PrebuiltSpawner.cs" />
-     <Compile Include="Assets\Neodroid\Editor\ScriptableObjects\Curriculum.cs" />
-     <Compile Include="Assets\Neodroid\Editor\ScriptableObjects\EditorScriptableObjectMenuPath.cs" />
-     <Compile Include="Assets\Neodroid\Editor\ScriptableObjects\NeodroidTask.cs" />
-     <Compile Include="Assets\Neodroid\Editor\ScriptableObjects\PlayerMotions.cs" />
-     <Compile Include="Assets\Neodroid\Editor\ScriptableObjects\Segmentations.cs" />
-     <Compile Include="Assets\Neodroid\Editor\Windows\CameraSynchronisationWindow.cs" />
-     <Compile Include="Assets\Neodroid\Editor\Windows\DebugWindow.cs" />
-     <Compile Include="Assets\Neodroid\Editor\Windows\DemonstrationWindow.cs" />
-     <Compile Include="Assets\Neodroid\Editor\Windows\EditorWindowMenuPath.cs" />
-     <Compile Include="Assets\Neodroid\Editor\Windows\PreferenceWindow.cs" />
-     <Compile Include="Assets\Neodroid\Editor\Windows\RenderTextureConfiguratorWindow.cs" />
-     <Compile Include="Assets\Neodroid\Editor\Windows\SegmentationWindow.cs" />
-     <Compile Include="Assets\Neodroid\Editor\Windows\SimulationWindow.cs" />
-     <Compile Include="Assets\Neodroid\Editor\Windows\TaskWindow.cs" />
-     <Compile Include="Assets\Neodroid\Editor\Windows\WindowManager.cs" />
+     <Compile Include="Assets\droid\Neodroid\Editor\GameObjects\EditorGameObjectMenuPath.cs" />
+     <Compile Include="Assets\droid\Neodroid\Editor\GameObjects\GeneralSpawner.cs" />
+     <Compile Include="Assets\droid\Neodroid\Editor\GameObjects\MotorSpawner.cs" />
+     <Compile Include="Assets\droid\Neodroid\Editor\GameObjects\ObserverSpawner.cs" />
+     <Compile Include="Assets\droid\Neodroid\Editor\GameObjects\PrebuiltSpawner.cs" />
+     <Compile Include="Assets\droid\Neodroid\Editor\ScriptableObjects\Curriculum.cs" />
+     <Compile Include="Assets\droid\Neodroid\Editor\ScriptableObjects\EditorScriptableObjectMenuPath.cs" />
+     <Compile Include="Assets\droid\Neodroid\Editor\ScriptableObjects\NeodroidTask.cs" />
+     <Compile Include="Assets\droid\Neodroid\Editor\ScriptableObjects\PlayerMotions.cs" />
+     <Compile Include="Assets\droid\Neodroid\Editor\ScriptableObjects\Segmentations.cs" />
+     <Compile Include="Assets\droid\Neodroid\Editor\Utilities\Utilities.cs" />
+     <Compile Include="Assets\droid\Neodroid\Editor\Windows\CameraSynchronisationWindow.cs" />
+     <Compile Include="Assets\droid\Neodroid\Editor\Windows\DebugWindow.cs" />
+     <Compile Include="Assets\droid\Neodroid\Editor\Windows\DemonstrationWindow.cs" />
+     <Compile Include="Assets\droid\Neodroid\Editor\Windows\EditorWindowMenuPath.cs" />
+     <Compile Include="Assets\droid\Neodroid\Editor\Windows\PreferenceWindow.cs" />
+     <Compile Include="Assets\droid\Neodroid\Editor\Windows\RenderTextureConfiguratorWindow.cs" />
+     <Compile Include="Assets\droid\Neodroid\Editor\Windows\SegmentationWindow.cs" />
+     <Compile Include="Assets\droid\Neodroid\Editor\Windows\SimulationWindow.cs" />
+     <Compile Include="Assets\droid\Neodroid\Editor\Windows\TaskWindow.cs" />
+     <Compile Include="Assets\droid\Neodroid\Editor\Windows\WindowManager.cs" />
  <Reference Include="Unity.ProBuilder.AddOns.Editor">
  <HintPath>/home/heider/Github/Neodroid/AAV/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
  </Reference>
@@ -330,19 +331,19 @@
  <HintPath>/opt/Unity-2018.2.0b2/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="NetMQ">
- <HintPath>/home/heider/Github/Neodroid/AAV/Assets/Neodroid/Libaries/NetMQ.4.0.0.156-pre/lib/net40/NetMQ.dll</HintPath>
+ <HintPath>/home/heider/Github/Neodroid/AAV/Assets/droid/Neodroid/Libaries/NetMQ.4.0.0.156-pre/lib/net40/NetMQ.dll</HintPath>
  </Reference>
  <Reference Include="Neodroid-FlatBuffers">
- <HintPath>/home/heider/Github/Neodroid/AAV/Assets/Neodroid/Libaries/Neodroid-FlatBuffers.1.0.0/lib/net45/Neodroid-FlatBuffers.dll</HintPath>
+ <HintPath>/home/heider/Github/Neodroid/AAV/Assets/droid/Neodroid/Libaries/Neodroid-FlatBuffers.1.0.0/lib/net45/Neodroid-FlatBuffers.dll</HintPath>
  </Reference>
  <Reference Include="AsyncIO">
- <HintPath>/home/heider/Github/Neodroid/AAV/Assets/Neodroid/Libaries/AsyncIO.0.1.40/lib/net40/AsyncIO.dll</HintPath>
+ <HintPath>/home/heider/Github/Neodroid/AAV/Assets/droid/Neodroid/Libaries/AsyncIO.0.1.40/lib/net40/AsyncIO.dll</HintPath>
  </Reference>
  <Reference Include="Priority Queue">
- <HintPath>/home/heider/Github/Neodroid/AAV/Assets/Neodroid/Libaries/OptimizedPriorityQueue.4.1.1/lib/net45/Priority Queue.dll</HintPath>
+ <HintPath>/home/heider/Github/Neodroid/AAV/Assets/droid/Neodroid/Libaries/OptimizedPriorityQueue.4.1.1/lib/net45/Priority Queue.dll</HintPath>
  </Reference>
  <Reference Include="Newtonsoft.Json">
- <HintPath>/home/heider/Github/Neodroid/AAV/Assets/Neodroid/Libaries/Newtonsoft.Json.11.0.2/lib/net45/Newtonsoft.Json.dll</HintPath>
+ <HintPath>/home/heider/Github/Neodroid/AAV/Assets/droid/Neodroid/Libaries/Newtonsoft.Json.11.0.2/lib/net45/Newtonsoft.Json.dll</HintPath>
  </Reference>
  <Reference Include="ProBuilderEditor">
  <HintPath>/home/heider/.config/unity3d/cache/packages/packages.unity.com/com.unity.probuilder@3.0.8/ProBuilder/Editor/ProBuilderEditor.dll</HintPath>
