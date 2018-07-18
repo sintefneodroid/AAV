@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 
 namespace AAV {
+  /// <inheritdoc />
+  /// <summary>
+  /// </summary>
   public class DroneController : MonoBehaviour {
     [SerializeField] float _add_force_factor = 9.82f;
 
@@ -77,7 +80,7 @@ namespace AAV {
     public bool _RotateWithTorque;
 
     public bool _SpinRotors = true;
-    public float _MaxRotorRpm = 3600;
+    public float _MaxRotorRpm = 2600;
     [SerializeField] float _cur_rotor_speed;
     public bool _ShowTelemetry;
 
@@ -529,14 +532,14 @@ Ctrl-Q: Quit";
     }
     */
 
-    Vector3 FixEuler(Vector3 euler) {
-      euler.x = this.FixAngle(euler.x);
-      euler.y = this.FixAngle(euler.y);
-      euler.z = this.FixAngle(euler.z);
+    static Vector3 FixEuler(Vector3 euler) {
+      euler.x = FixAngle(euler.x);
+      euler.y = FixAngle(euler.y);
+      euler.z = FixAngle(euler.z);
       return euler;
     }
 
-    float FixAngle(float angle) {
+    static float FixAngle(float angle) {
       if (angle > 180f) {
         angle -= 360f;
       }
