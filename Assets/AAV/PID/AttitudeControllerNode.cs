@@ -1,10 +1,11 @@
 ﻿using System;
+using Neodroid.Utilities.Structs;
 using UnityEngine;
 
-namespace SceneAssets.Excluded.Drone.PID {
+namespace AAV.PID {
   [Serializable]
   public class AttitudeControllerNode {
-    public Action<Neodroid.Utilities.Structs.DoubleVector3> _TorqueCallback;
+    public Action<DoubleVector3> _TorqueCallback;
     public Action<double> _ThrustCallback;
 
     public PidController _RollController;
@@ -62,10 +63,10 @@ namespace SceneAssets.Excluded.Drone.PID {
       this._YawController.SetStartTime(start_time);
     }
 
-    void UpdateAttitude(Neodroid.Utilities.Structs.DoubleVector3 att_vector) {
-      this._RollController.SetTarget(att_vector.x);
-      this._PitchController.SetTarget(att_vector.y);
-      this._YawController.SetTarget(att_vector.z);
+    void UpdateAttitude(DoubleVector3 att_vector) {
+      this._RollController.SetTarget(att_vector.X);
+      this._PitchController.SetTarget(att_vector.Y);
+      this._YawController.SetTarget(att_vector.Z);
     }
 
     void UpdateThrust(double thrust) { this._z_thrust = thrust; }
@@ -87,7 +88,7 @@ namespace SceneAssets.Excluded.Drone.PID {
       s = $"pry in degrees: {euler.x * Mathf.Rad2Deg},{euler.y * Mathf.Rad2Deg},{euler.z * Mathf.Rad2Deg}";
       Debug.Log(s);
 
-      var v = new Neodroid.Utilities.Structs.DoubleVector3(roll_cmd, pitch_cmd, yaw_cmd);
+      var v = new DoubleVector3(roll_cmd, pitch_cmd, yaw_cmd);
 
       this._TorqueCallback(v);
       this._ThrustCallback(this._z_thrust);

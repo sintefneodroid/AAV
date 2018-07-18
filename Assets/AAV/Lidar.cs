@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-namespace SceneAssets.Excluded.Drone {
+namespace AAV {
   public class Lidar : MonoBehaviour {
     static Transform _lidar_parent;
     public GameObject _Layer;

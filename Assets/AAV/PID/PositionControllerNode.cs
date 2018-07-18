@@ -1,10 +1,11 @@
 ﻿using System;
+using Neodroid.Utilities.Structs;
 using UnityEngine;
 
 //from dynamic_reconfigure.server import Server
 //from quad_controller.cfg import position_controller_paramsConfig
 
-namespace SceneAssets.Excluded.Drone.PID {
+namespace AAV.PID {
   [Serializable]
   public class PositionControllerNode {
     bool _first_pose_received;
@@ -12,7 +13,7 @@ namespace SceneAssets.Excluded.Drone.PID {
     public PidController _YController;
     public PidController _ZController;
 
-    public Action<Neodroid.Utilities.Structs.DoubleVector3> _TorqueCallback;
+    public Action<DoubleVector3> _TorqueCallback;
     public Action<double> _ThrustCallback;
 
     // x config
@@ -71,7 +72,7 @@ namespace SceneAssets.Excluded.Drone.PID {
         this.SetGoal(ps.position);
       }
 
-      var rpy_cmd = new Neodroid.Utilities.Structs.DoubleVector3();
+      var rpy_cmd = new DoubleVector3();
 
       const Double radian = Math.PI / 180;
       double t = Time.time;
@@ -87,8 +88,8 @@ namespace SceneAssets.Excluded.Drone.PID {
       // Control Thrust to move along Z
       var thrust = this._ZController.Update(ps.position.z, t);
 
-      rpy_cmd.x = roll_cmd;
-      rpy_cmd.y = pitch_cmd;
+      rpy_cmd.X = roll_cmd;
+      rpy_cmd.Y = pitch_cmd;
 
       var s = $"r: {roll_cmd}, p: {pitch_cmd}, thrust: {thrust}";
       Debug.Log(s);

@@ -10,10 +10,10 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{6B3B36E2-DC80-C193-F349-E532D686FC3F}</ProjectGuid>
+    <ProjectGuid>{ED424ABC-59E6-C9EA-5472-CCB26886B72A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>NeodroidTests</AssemblyName>
+    <AssemblyName>net.cnheider.neodroid</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>.</BaseDirectory>
@@ -54,7 +54,238 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Packages\droid\NeodroidTests\SimulatorTests.cs" />
+    <Compile Include="Packages\droid\ExampleScenes\MultiArmedBandit\MultiArmedBanditEvaluation.cs" />
+    <Compile Include="Packages\droid\ExampleScenes\MultiArmedBandit\MultiArmedBanditMotor.cs" />
+    <Compile Include="Packages\droid\ExampleScenes\MultiArmedBandit\TextBarPlotDisplayer.cs" />
+    <Compile Include="Packages\droid\Neodroid\Editor\GameObjects\EditorGameObjectMenuPath.cs" />
+    <Compile Include="Packages\droid\Neodroid\Editor\GameObjects\GeneralSpawner.cs" />
+    <Compile Include="Packages\droid\Neodroid\Editor\GameObjects\MotorSpawner.cs" />
+    <Compile Include="Packages\droid\Neodroid\Editor\GameObjects\ObserverSpawner.cs" />
+    <Compile Include="Packages\droid\Neodroid\Editor\GameObjects\PrebuiltSpawner.cs" />
+    <Compile Include="Packages\droid\Neodroid\Editor\ScriptableObjects\Curriculum.cs" />
+    <Compile Include="Packages\droid\Neodroid\Editor\ScriptableObjects\EditorScriptableObjectMenuPath.cs" />
+    <Compile Include="Packages\droid\Neodroid\Editor\ScriptableObjects\NeodroidTask.cs" />
+    <Compile Include="Packages\droid\Neodroid\Editor\ScriptableObjects\PlayerMotions.cs" />
+    <Compile Include="Packages\droid\Neodroid\Editor\ScriptableObjects\Segmentations.cs" />
+    <Compile Include="Packages\droid\Neodroid\Editor\Utilities\NeodroidEditorUtilities.cs" />
+    <Compile Include="Packages\droid\Neodroid\Editor\Windows\CameraSynchronisationWindow.cs" />
+    <Compile Include="Packages\droid\Neodroid\Editor\Windows\DebugWindow.cs" />
+    <Compile Include="Packages\droid\Neodroid\Editor\Windows\DemonstrationWindow.cs" />
+    <Compile Include="Packages\droid\Neodroid\Editor\Windows\EditorWindowMenuPath.cs" />
+    <Compile Include="Packages\droid\Neodroid\Editor\Windows\PreferenceWindow.cs" />
+    <Compile Include="Packages\droid\Neodroid\Editor\Windows\RenderTextureConfiguratorWindow.cs" />
+    <Compile Include="Packages\droid\Neodroid\Editor\Windows\SegmentationWindow.cs" />
+    <Compile Include="Packages\droid\Neodroid\Editor\Windows\SimulationWindow.cs" />
+    <Compile Include="Packages\droid\Neodroid\Editor\Windows\TaskWindow.cs" />
+    <Compile Include="Packages\droid\Neodroid\Editor\Windows\UnityDebug\FindMissingScripts.cs" />
+    <Compile Include="Packages\droid\Neodroid\Editor\Windows\WindowManager.cs" />
+    <Compile Include="Packages\droid\Neodroid\Environments\Experimental\ImitationEnvironment.cs" />
+    <Compile Include="Packages\droid\Neodroid\Environments\NeodroidEnvironment.cs" />
+    <Compile Include="Packages\droid\Neodroid\Environments\PrototypingEnvironment.cs" />
+    <Compile Include="Packages\droid\Neodroid\Environments\RandomisedEnvironment.cs" />
+    <Compile Include="Packages\droid\Neodroid\Environments\ScriptedEnviroment.cs" />
+    <Compile Include="Packages\droid\Neodroid\Managers\Experimental\CurriculumManager.cs" />
+    <Compile Include="Packages\droid\Neodroid\Managers\Experimental\ThinManager.cs" />
+    <Compile Include="Packages\droid\Neodroid\Managers\NeodroidManager.cs" />
+    <Compile Include="Packages\droid\Neodroid\Managers\PausableManager.cs" />
+    <Compile Include="Packages\droid\Neodroid\NeodroidInfo.cs" />
+    <Compile Include="Packages\droid\Neodroid\PlayerControls\KeyEventEnabler.cs" />
+    <Compile Include="Packages\droid\Neodroid\PlayerControls\PlayerReactions.cs" />
+    <Compile Include="Packages\droid\Neodroid\PlayerControls\ScriptedReactions.cs" />
+    <Compile Include="Packages\droid\Neodroid\Properties\AssemblyInfo.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Actors\Actor.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Actors\ActorComponentMenuPath.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Actors\KillableActor.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Configurables\ColorConfigurable.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Configurables\Configurable.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Configurables\ConfigurableComponentMenuPath.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Configurables\ConfigurableGameObject.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Configurables\DifficultyConfigurable.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Configurables\EulerTransformConfigurable.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Configurables\ObjectSpawnerConfigurable.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Configurables\PositionConfigurable.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Configurables\QuaternionTransformConfigurable.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Configurables\RigidbodyConfigurable.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Configurables\SimulationConfigurable.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Configurables\TransformConfigurable1Dof.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Displayers\Canvas\CanvasBarDisplayer.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Displayers\Canvas\CanvasTextDisplayer.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Displayers\Displayer.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Displayers\DisplayerComponentMenuPath.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Displayers\Experimental\ECS\ECSDisplayer.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Displayers\Experimental\ECS\ECSScatterPlotDisplayer.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Displayers\GameObjectScatterPlotDisplayer.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Displayers\ScatterPlotDisplayer.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Displayers\TextMeshDisplayer.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Evaluation\AngularVelocityEvaluation.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Evaluation\EuclideanDistance.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Evaluation\EvaluationComponentMenuPath.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Evaluation\ObjectiveFunction.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Evaluation\PoseDeviance.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Evaluation\PunishmentFunction.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Evaluation\ReachArea.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Evaluation\ReachGoal.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Evaluation\RestInArea.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Evaluation\Tasks\TaskSequence.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Evaluation\Terms\CollidersPunishmentTerm.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Evaluation\Terms\CollsionsPunishmentTerm.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Evaluation\Terms\RushTerm.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Evaluation\Terms\Term.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Evaluation\Terms\TermComponentMenuPath.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Evaluation\VelocityEvaluation.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Internals\EnvironmentListener.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Internals\Resetable.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Internals\ResetableComponentMenuPath.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Internals\TransformResetable.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Motors\BanditArmMotor.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Motors\EulerTransformMotor.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Motors\EulerTransformMotor1Dof.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Motors\EulerTransformMotor3Dof.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Motors\IndexedMotionMotor.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Motors\Motor.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Motors\MotorComponentMenuPath.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Motors\Particles\RocketMotor.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Motors\RigidbodyMotor.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Motors\RigidbodyMotor1Dof.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Motors\RigidbodyMotor3Dof.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Motors\WheelColliderMotor\SteeringMotor.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Motors\WheelColliderMotor\TorqueMotor.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Observers\Camera\CameraObserver.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Observers\Camera\FloatArrayCameraObserver.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Observers\CategoricalObserver.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Observers\CompassObserver.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Observers\Experimental\BoundingBoxObserver.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Observers\Grid\GoalCellObserver.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Observers\Grid\GridPositionObserver.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Observers\Observer.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Observers\ObserverComponentMenuPath.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Observers\Rays\AdjacencyObserver.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Observers\Rays\FixedLidarObserver.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Observers\Rays\LineOfSightObserver.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Observers\Rays\NearestByTagObserver.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Observers\Rays\RaycastObserver.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Observers\Rigidbody\AngularVelocityObserver.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Observers\Rigidbody\RigidbodyObserver.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Observers\Rigidbody\VelocityObserver.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Observers\Transform\EulerTransformObserver.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Observers\Transform\PositionObserver.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Observers\Transform\PositionObserver2D.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Observers\Transform\QuaternionTransformObserver.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Observers\Transform\RotationObserver.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\Observers\ValueObserver.cs" />
+    <Compile Include="Packages\droid\Neodroid\Prototyping\PrototypingComponentMenuPath.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\BoundingBoxes\BoundingBox.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\BoundingBoxes\Corners.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\BoundingBoxes\DrawBoundingBoxes.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\BoundingBoxes\DrawBoundingBoxOnCamera.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\BoundingBoxes\Experimental\BoundingBoxUtilities.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\Enums\Axis.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\Enums\CoordinateSystem.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\Enums\DimensionCombination.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\Enums\WaitOn.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\EventRecipients\DataPoller.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\EventRecipients\TextUpdater.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\EventRecipients\ToggleUpdater.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\GameObjects\PrototypingGameObject.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\Interfaces\IHasArray.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\Interfaces\IHasByteArray.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\Interfaces\IHasDouble.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\Interfaces\IHasEulerTransform.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\Interfaces\IHasFloatEnumarable.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\Interfaces\IHasQuadruple.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\Interfaces\IHasQuaternionTransform.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\Interfaces\IHasRegister.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\Interfaces\IHasRigidbody.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\Interfaces\IHasSingle.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\Interfaces\IHasTriple.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\Messaging\FBS\CustomFlatBufferImplementation.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\Messaging\FBS\FBSReactionUtilities.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\Messaging\FBS\FBSStateUtilities.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\Messaging\FBS\NeodroidFBSObservation.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\Messaging\FBS\NeodroidFBSReaction.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\Messaging\FBS\NeodroidFBSReactions.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\Messaging\FBS\NeodroidFBSShared.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\Messaging\FBS\NeodroidFBSState.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\Messaging\FBS\NeodroidFBSStates.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\Messaging\FBS\NeodroidFBSTypes.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\Messaging\Messages\Body.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\Messaging\Messages\Configuration.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\Messaging\Messages\Displayables\Displayable.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\Messaging\Messages\Displayables\DisplayableFloat.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\Messaging\Messages\Displayables\DisplayableString.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\Messaging\Messages\Displayables\DisplayableValuedVector3s.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\Messaging\Messages\Displayables\DisplayableValues.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\Messaging\Messages\Displayables\DisplayableVector3s.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\Messaging\Messages\EnvironmentDescription.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\Messaging\Messages\EnvironmentState.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\Messaging\Messages\MotorMotion.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\Messaging\Messages\Reaction.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\Messaging\Messages\ReactionParameters.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\Messaging\Messages\Reactions.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\Messaging\Messages\SimulatorConfigurationMessage.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\Messaging\Messages\Unobservables.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\Messaging\MessageServer.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\NeodroidCamera\DisparityCameraBehaviour.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\NeodroidCamera\FlowCameraBehaviour.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\NeodroidCamera\IgnoreLightSource.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\NeodroidCamera\InfraredLightSource.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\NeodroidCamera\ReplacementShaderEffect.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\NeodroidCamera\SynchroniseCameraProperties.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\Noise\ProjectileSpammer.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\Noise\SelfDestruct.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\Plotting\DrawSpaces.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\Plotting\Meshes.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\Plotting\PlotFunctions.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\Plotting\ValueRangePlotter.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\ScriptableObjects\Curriculum.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\ScriptableObjects\NeodroidTask.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\ScriptableObjects\PlayerMotions.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\ScriptableObjects\Segmentation.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\ScriptableObjects\SimulatorConfiguration.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\Segmentation\ChangeMaterialOnRenderByInstance.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\Segmentation\ChangeMaterialOnRenderByTag.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\Segmentation\SegmentationColor.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\Sensors\ChildColliderSensor.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\SerialisableDictionary\Example.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\SerialisableDictionary\SerializableDictionary.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\SerialisableDictionary\SerializableDictionaryDrawer.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\SerialisableDictionary\SerializableDictionaryDrawerImplementations.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\SerialisableDictionary\SerializableDictionaryImplementations.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\SerialisableDictionary\SerializedPropertyExtension.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\Structs\DoubleVector3.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\Structs\IntVector3.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\Structs\Points.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\Structs\Space2.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\Structs\Space3.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\Structs\Space4.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\Structs\ValueSpace.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\Unsorted\ActionCounter.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\Unsorted\DrawString.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\Unsorted\EnsureValidState.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\Unsorted\FollowTarget.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\Unsorted\FollowTargetRotation.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\Unsorted\GameObjectCloner.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\Unsorted\GraspingUtilities.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\Unsorted\GridCell.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\Unsorted\JointFix.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\Unsorted\MotionTracker.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\Unsorted\Note.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\Unsorted\Obstruction.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\Unsorted\OnCollision.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\Unsorted\ParticleController.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\Unsorted\PointInDirection.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\Unsorted\SnakeSpaceFilling.cs" />
+    <Compile Include="Packages\droid\Neodroid\Utilities\Unsorted\Utilities.cs" />
+    <None Include="Packages\droid\Neodroid\Shaders\Depth.shader" />
+    <None Include="Packages\droid\Neodroid\Utilities\Plotting\ValueRangePlotter.shader" />
+    <None Include="Packages\droid\Neodroid\Shaders\FlatColor.shader" />
+    <None Include="Packages\droid\Neodroid\Shaders\Normal.shader" />
+    <None Include="Packages\droid\Neodroid\Libaries\NetMQ.4.0.0.156-pre\lib\net40\NetMQ.xml" />
+    <None Include="Packages\droid\Neodroid\Gizmos\Icons\readme.txt" />
+    <None Include="Packages\droid\Neodroid\Shaders\Segmentation.shader" />
+    <None Include="Packages\droid\Neodroid\Libaries\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.xml" />
+    <None Include="Packages\droid\Neodroid\Libaries\OptimizedPriorityQueue.4.1.1\lib\net45\Priority Queue.xml" />
+    <None Include="Packages\droid\Neodroid\Shaders\ScreenSpaceFlow.shader" />
     <Reference Include="UnityEngine.AIModule">
       <HintPath>/opt/Unity-2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
     </Reference>
@@ -129,9 +360,6 @@
     </Reference>
     <Reference Include="UnityEngine.ParticleSystemModule">
       <HintPath>/opt/Unity-2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.ParticlesLegacyModule">
-      <HintPath>/opt/Unity-2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.ParticlesLegacyModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.PerformanceReportingModule">
       <HintPath>/opt/Unity-2018.2.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll</HintPath>
@@ -243,15 +471,6 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>/opt/Unity-2018.2.0f2/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.TestRunner">
-      <HintPath>/opt/Unity-2018.2.0f2/Editor/Data/UnityExtensions/Unity/TestRunner/Editor/UnityEditor.TestRunner.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.TestRunner">
-      <HintPath>/opt/Unity-2018.2.0f2/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
-    </Reference>
-    <Reference Include="nunit.framework">
-      <HintPath>/opt/Unity-2018.2.0f2/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Timeline">
       <HintPath>/opt/Unity-2018.2.0f2/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>

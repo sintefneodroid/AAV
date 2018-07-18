@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace SceneAssets.Excluded.Drone {
+namespace AAV {
   public class DroneController : MonoBehaviour {
     [SerializeField] float _add_force_factor = 9.82f;
 
