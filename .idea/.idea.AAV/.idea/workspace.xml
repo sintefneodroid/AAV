@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9851936-d408-4d51-aaf1-4a3d5c358fe8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AAV/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AAV/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AAV/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AAV/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/AAV/DroneController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AAV/DroneController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/AAV.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/AAV.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/droid" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/droid" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -67,58 +65,61 @@
       <file leaf-file-name="DroneController.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/AAV/DroneController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="82" column="35" selection-start-line="82" selection-start-column="35" selection-end-line="82" selection-end-column="35" />
+            <state relative-caret-position="88">
+              <caret line="4" column="15" lean-forward="true" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
               <folding>
-                <marker date="1531926071172" expanded="true" signature="34:19726" ph="{...}" />
-                <marker date="1531926071172" expanded="true" signature="38:89" ph="/// ... " />
-                <marker date="1531926071172" expanded="true" signature="137:19724" ph="{...}" />
-                <marker date="1531926071172" expanded="false" signature="298:339" ph="///  ... " />
-                <marker date="1531926071172" expanded="false" signature="388:429" ph="///  ... " />
-                <marker date="1531926071172" expanded="false" signature="491:532" ph="///  ... " />
-                <marker date="1531926071172" expanded="false" signature="596:637" ph="///  ... " />
-                <marker date="1531926071172" expanded="false" signature="694:735" ph="///  ... " />
-                <marker date="1531926071172" expanded="false" signature="795:836" ph="///  ... " />
-                <marker date="1531926071172" expanded="false" signature="900:941" ph="///  ... " />
-                <marker date="1531926071172" expanded="false" signature="1004:1045" ph="///  ... " />
-                <marker date="1531926071172" expanded="true" signature="1710:1786" ph="/* public PathFollower _Pather; ... */" />
-                <marker date="1531926071172" expanded="false" signature="3502:4446" ph="{...}" />
-                <marker date="1531926071172" expanded="true" signature="3541:3584" ph="{...}" />
-                <marker date="1531926071172" expanded="true" signature="3662:3798" ph="{...}" />
-                <marker date="1531926071172" expanded="true" signature="3964:4440" ph="/* this._InputCtrl = this.GetComponent&lt;SimpleQuadController&gt; (); ... */" />
-                <marker date="1531926071172" expanded="true" signature="4466:4851" ph="{...}" />
-                <marker date="1531926071172" expanded="true" signature="4496:4572" ph="{...}" />
-                <marker date="1531926071172" expanded="true" signature="4766:4845" ph="{...}" />
-                <marker date="1531926071172" expanded="true" signature="4875:7031" ph="{...}" />
-                <marker date="1531926071172" expanded="true" signature="4905:4981" ph="{...}" />
-                <marker date="1531926071172" expanded="true" signature="5454:5491" ph="{...}" />
-                <marker date="1531926071172" expanded="true" signature="5532:5587" ph="{...}" />
-                <marker date="1531926071172" expanded="true" signature="5623:6078" ph="{...}" />
-                <marker date="1531926071172" expanded="true" signature="5707:5773" ph="{...}" />
-                <marker date="1531926071172" expanded="true" signature="5878:5915" ph="{...}" />
-                <marker date="1531926071172" expanded="true" signature="5948:5985" ph="{...}" />
-                <marker date="1531926071172" expanded="true" signature="6108:7025" ph="{...}" />
-                <marker date="1531926071172" expanded="true" signature="6237:6771" ph="/* if ( inputCtrl.active ) ... */" />
-                <marker date="1531926071172" expanded="true" signature="7056:7654" ph="{...}" />
-                <marker date="1531926071172" expanded="true" signature="7656:9291" ph="/* void FixedUpdate () ... */" />
-                <marker date="1531926071172" expanded="true" signature="9297:16649" ph="/* void OnGUI() { ... */" />
-                <marker date="1531926071172" expanded="true" signature="16694:16826" ph="{...}" />
-                <marker date="1531926071172" expanded="true" signature="16867:17011" ph="{...}" />
-                <marker date="1531926071172" expanded="true" signature="16893:16925" ph="{...}" />
-                <marker date="1531926071172" expanded="true" signature="16952:16984" ph="{...}" />
-                <marker date="1531926071172" expanded="false" signature="17109:17553" ph="{...}" />
-                <marker date="1531926071172" expanded="false" signature="17579:18019" ph="{...}" />
-                <marker date="1531926071172" expanded="true" signature="17612:18013" ph="{...}" />
-                <marker date="1531926071172" expanded="false" signature="18156:18412" ph="{...}" />
-                <marker date="1531926071172" expanded="true" signature="18220:18310" ph="{...}" />
-                <marker date="1531926071172" expanded="false" signature="18443:19090" ph="{...}" />
-                <marker date="1531926071172" expanded="true" signature="18518:18578" ph="{...}" />
-                <marker date="1531926071172" expanded="true" signature="18612:18672" ph="{...}" />
-                <marker date="1531926071172" expanded="true" signature="18706:18766" ph="{...}" />
-                <marker date="1531926071172" expanded="true" signature="18801:18861" ph="{...}" />
-                <marker date="1531926071172" expanded="true" signature="18896:18956" ph="{...}" />
-                <marker date="1531926071172" expanded="true" signature="18991:19051" ph="{...}" />
-                <marker date="1531926071172" expanded="false" signature="19128:19720" ph="{...}" />
+                <marker date="1531928136176" expanded="true" signature="34:19864" ph="{...}" />
+                <marker date="1531928136176" expanded="true" signature="38:89" ph="/// ... " />
+                <marker date="1531928136176" expanded="true" signature="137:19862" ph="{...}" />
+                <marker date="1531928136176" expanded="true" signature="244:285" ph="///  ... " />
+                <marker date="1531928136176" expanded="false" signature="344:385" ph="///  ... " />
+                <marker date="1531928136176" expanded="false" signature="434:475" ph="///  ... " />
+                <marker date="1531928136176" expanded="false" signature="537:578" ph="///  ... " />
+                <marker date="1531928136176" expanded="false" signature="642:683" ph="///  ... " />
+                <marker date="1531928136176" expanded="false" signature="740:781" ph="///  ... " />
+                <marker date="1531928136176" expanded="false" signature="841:882" ph="///  ... " />
+                <marker date="1531928136176" expanded="false" signature="946:987" ph="///  ... " />
+                <marker date="1531928136176" expanded="false" signature="1050:1091" ph="///  ... " />
+                <marker date="1531928136176" expanded="true" signature="1726:1767" ph="///  ... " />
+                <marker date="1531928136176" expanded="true" signature="1802:1878" ph="/* public PathFollower _Pather; ... */" />
+                <marker date="1531928136176" expanded="true" signature="2208:2249" ph="///  ... " />
+                <marker date="1531928136176" expanded="false" signature="3640:4584" ph="{...}" />
+                <marker date="1531928136176" expanded="true" signature="3679:3722" ph="{...}" />
+                <marker date="1531928136176" expanded="true" signature="3800:3936" ph="{...}" />
+                <marker date="1531928136176" expanded="true" signature="4102:4578" ph="/* this._InputCtrl = this.GetComponent&lt;SimpleQuadController&gt; (); ... */" />
+                <marker date="1531928136176" expanded="true" signature="4604:4989" ph="{...}" />
+                <marker date="1531928136176" expanded="true" signature="4634:4710" ph="{...}" />
+                <marker date="1531928136176" expanded="true" signature="4904:4983" ph="{...}" />
+                <marker date="1531928136176" expanded="true" signature="5013:7169" ph="{...}" />
+                <marker date="1531928136176" expanded="true" signature="5043:5119" ph="{...}" />
+                <marker date="1531928136176" expanded="true" signature="5592:5629" ph="{...}" />
+                <marker date="1531928136176" expanded="true" signature="5670:5725" ph="{...}" />
+                <marker date="1531928136176" expanded="true" signature="5761:6216" ph="{...}" />
+                <marker date="1531928136176" expanded="true" signature="5845:5911" ph="{...}" />
+                <marker date="1531928136176" expanded="true" signature="6016:6053" ph="{...}" />
+                <marker date="1531928136176" expanded="true" signature="6086:6123" ph="{...}" />
+                <marker date="1531928136176" expanded="true" signature="6246:7163" ph="{...}" />
+                <marker date="1531928136176" expanded="true" signature="6375:6909" ph="/* if ( inputCtrl.active ) ... */" />
+                <marker date="1531928136176" expanded="true" signature="7194:7792" ph="{...}" />
+                <marker date="1531928136176" expanded="true" signature="7794:9429" ph="/* void FixedUpdate () ... */" />
+                <marker date="1531928136176" expanded="true" signature="9435:16787" ph="/* void OnGUI() { ... */" />
+                <marker date="1531928136176" expanded="true" signature="16832:16964" ph="{...}" />
+                <marker date="1531928136176" expanded="true" signature="17005:17149" ph="{...}" />
+                <marker date="1531928136176" expanded="true" signature="17031:17063" ph="{...}" />
+                <marker date="1531928136176" expanded="true" signature="17090:17122" ph="{...}" />
+                <marker date="1531928136176" expanded="false" signature="17247:17691" ph="{...}" />
+                <marker date="1531928136176" expanded="false" signature="17717:18157" ph="{...}" />
+                <marker date="1531928136176" expanded="true" signature="17750:18151" ph="{...}" />
+                <marker date="1531928136176" expanded="false" signature="18294:18550" ph="{...}" />
+                <marker date="1531928136176" expanded="true" signature="18358:18448" ph="{...}" />
+                <marker date="1531928136176" expanded="false" signature="18581:19228" ph="{...}" />
+                <marker date="1531928136176" expanded="true" signature="18656:18716" ph="{...}" />
+                <marker date="1531928136176" expanded="true" signature="18750:18810" ph="{...}" />
+                <marker date="1531928136176" expanded="true" signature="18844:18904" ph="{...}" />
+                <marker date="1531928136176" expanded="true" signature="18939:18999" ph="{...}" />
+                <marker date="1531928136176" expanded="true" signature="19034:19094" ph="{...}" />
+                <marker date="1531928136176" expanded="true" signature="19129:19189" ph="{...}" />
+                <marker date="1531928136176" expanded="false" signature="19266:19858" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -291,12 +292,12 @@
       <workItem from="1531907170828" duration="2507000" />
       <workItem from="1531913131309" duration="2165000" />
       <workItem from="1531919492753" duration="18000" />
-      <workItem from="1531925843717" duration="622000" />
+      <workItem from="1531925843717" duration="915000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5312000" />
+    <option name="totallyTimeSpent" value="5605000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -309,7 +310,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="25" y="25" width="1870" height="1030" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="TODO" order="7" side_tool="true" />
       <window_info anchor="right" id="Errors In Solution" order="13" />
@@ -1264,58 +1264,61 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/AAV/DroneController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="82" column="35" selection-start-line="82" selection-start-column="35" selection-end-line="82" selection-end-column="35" />
+        <state relative-caret-position="88">
+          <caret line="4" column="15" lean-forward="true" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
           <folding>
-            <marker date="1531926071172" expanded="true" signature="34:19726" ph="{...}" />
-            <marker date="1531926071172" expanded="true" signature="38:89" ph="/// ... " />
-            <marker date="1531926071172" expanded="true" signature="137:19724" ph="{...}" />
-            <marker date="1531926071172" expanded="false" signature="298:339" ph="///  ... " />
-            <marker date="1531926071172" expanded="false" signature="388:429" ph="///  ... " />
-            <marker date="1531926071172" expanded="false" signature="491:532" ph="///  ... " />
-            <marker date="1531926071172" expanded="false" signature="596:637" ph="///  ... " />
-            <marker date="1531926071172" expanded="false" signature="694:735" ph="///  ... " />
-            <marker date="1531926071172" expanded="false" signature="795:836" ph="///  ... " />
-            <marker date="1531926071172" expanded="false" signature="900:941" ph="///  ... " />
-            <marker date="1531926071172" expanded="false" signature="1004:1045" ph="///  ... " />
-            <marker date="1531926071172" expanded="true" signature="1710:1786" ph="/* public PathFollower _Pather; ... */" />
-            <marker date="1531926071172" expanded="false" signature="3502:4446" ph="{...}" />
-            <marker date="1531926071172" expanded="true" signature="3541:3584" ph="{...}" />
-            <marker date="1531926071172" expanded="true" signature="3662:3798" ph="{...}" />
-            <marker date="1531926071172" expanded="true" signature="3964:4440" ph="/* this._InputCtrl = this.GetComponent&lt;SimpleQuadController&gt; (); ... */" />
-            <marker date="1531926071172" expanded="true" signature="4466:4851" ph="{...}" />
-            <marker date="1531926071172" expanded="true" signature="4496:4572" ph="{...}" />
-            <marker date="1531926071172" expanded="true" signature="4766:4845" ph="{...}" />
-            <marker date="1531926071172" expanded="true" signature="4875:7031" ph="{...}" />
-            <marker date="1531926071172" expanded="true" signature="4905:4981" ph="{...}" />
-            <marker date="1531926071172" expanded="true" signature="5454:5491" ph="{...}" />
-            <marker date="1531926071172" expanded="true" signature="5532:5587" ph="{...}" />
-            <marker date="1531926071172" expanded="true" signature="5623:6078" ph="{...}" />
-            <marker date="1531926071172" expanded="true" signature="5707:5773" ph="{...}" />
-            <marker date="1531926071172" expanded="true" signature="5878:5915" ph="{...}" />
-            <marker date="1531926071172" expanded="true" signature="5948:5985" ph="{...}" />
-            <marker date="1531926071172" expanded="true" signature="6108:7025" ph="{...}" />
-            <marker date="1531926071172" expanded="true" signature="6237:6771" ph="/* if ( inputCtrl.active ) ... */" />
-            <marker date="1531926071172" expanded="true" signature="7056:7654" ph="{...}" />
-            <marker date="1531926071172" expanded="true" signature="7656:9291" ph="/* void FixedUpdate () ... */" />
-            <marker date="1531926071172" expanded="true" signature="9297:16649" ph="/* void OnGUI() { ... */" />
-            <marker date="1531926071172" expanded="true" signature="16694:16826" ph="{...}" />
-            <marker date="1531926071172" expanded="true" signature="16867:17011" ph="{...}" />
-            <marker date="1531926071172" expanded="true" signature="16893:16925" ph="{...}" />
-            <marker date="1531926071172" expanded="true" signature="16952:16984" ph="{...}" />
-            <marker date="1531926071172" expanded="false" signature="17109:17553" ph="{...}" />
-            <marker date="1531926071172" expanded="false" signature="17579:18019" ph="{...}" />
-            <marker date="1531926071172" expanded="true" signature="17612:18013" ph="{...}" />
-            <marker date="1531926071172" expanded="false" signature="18156:18412" ph="{...}" />
-            <marker date="1531926071172" expanded="true" signature="18220:18310" ph="{...}" />
-            <marker date="1531926071172" expanded="false" signature="18443:19090" ph="{...}" />
-            <marker date="1531926071172" expanded="true" signature="18518:18578" ph="{...}" />
-            <marker date="1531926071172" expanded="true" signature="18612:18672" ph="{...}" />
-            <marker date="1531926071172" expanded="true" signature="18706:18766" ph="{...}" />
-            <marker date="1531926071172" expanded="true" signature="18801:18861" ph="{...}" />
-            <marker date="1531926071172" expanded="true" signature="18896:18956" ph="{...}" />
-            <marker date="1531926071172" expanded="true" signature="18991:19051" ph="{...}" />
-            <marker date="1531926071172" expanded="false" signature="19128:19720" ph="{...}" />
+            <marker date="1531928136176" expanded="true" signature="34:19864" ph="{...}" />
+            <marker date="1531928136176" expanded="true" signature="38:89" ph="/// ... " />
+            <marker date="1531928136176" expanded="true" signature="137:19862" ph="{...}" />
+            <marker date="1531928136176" expanded="true" signature="244:285" ph="///  ... " />
+            <marker date="1531928136176" expanded="false" signature="344:385" ph="///  ... " />
+            <marker date="1531928136176" expanded="false" signature="434:475" ph="///  ... " />
+            <marker date="1531928136176" expanded="false" signature="537:578" ph="///  ... " />
+            <marker date="1531928136176" expanded="false" signature="642:683" ph="///  ... " />
+            <marker date="1531928136176" expanded="false" signature="740:781" ph="///  ... " />
+            <marker date="1531928136176" expanded="false" signature="841:882" ph="///  ... " />
+            <marker date="1531928136176" expanded="false" signature="946:987" ph="///  ... " />
+            <marker date="1531928136176" expanded="false" signature="1050:1091" ph="///  ... " />
+            <marker date="1531928136176" expanded="true" signature="1726:1767" ph="///  ... " />
+            <marker date="1531928136176" expanded="true" signature="1802:1878" ph="/* public PathFollower _Pather; ... */" />
+            <marker date="1531928136176" expanded="true" signature="2208:2249" ph="///  ... " />
+            <marker date="1531928136176" expanded="false" signature="3640:4584" ph="{...}" />
+            <marker date="1531928136176" expanded="true" signature="3679:3722" ph="{...}" />
+            <marker date="1531928136176" expanded="true" signature="3800:3936" ph="{...}" />
+            <marker date="1531928136176" expanded="true" signature="4102:4578" ph="/* this._InputCtrl = this.GetComponent&lt;SimpleQuadController&gt; (); ... */" />
+            <marker date="1531928136176" expanded="true" signature="4604:4989" ph="{...}" />
+            <marker date="1531928136176" expanded="true" signature="4634:4710" ph="{...}" />
+            <marker date="1531928136176" expanded="true" signature="4904:4983" ph="{...}" />
+            <marker date="1531928136176" expanded="true" signature="5013:7169" ph="{...}" />
+            <marker date="1531928136176" expanded="true" signature="5043:5119" ph="{...}" />
+            <marker date="1531928136176" expanded="true" signature="5592:5629" ph="{...}" />
+            <marker date="1531928136176" expanded="true" signature="5670:5725" ph="{...}" />
+            <marker date="1531928136176" expanded="true" signature="5761:6216" ph="{...}" />
+            <marker date="1531928136176" expanded="true" signature="5845:5911" ph="{...}" />
+            <marker date="1531928136176" expanded="true" signature="6016:6053" ph="{...}" />
+            <marker date="1531928136176" expanded="true" signature="6086:6123" ph="{...}" />
+            <marker date="1531928136176" expanded="true" signature="6246:7163" ph="{...}" />
+            <marker date="1531928136176" expanded="true" signature="6375:6909" ph="/* if ( inputCtrl.active ) ... */" />
+            <marker date="1531928136176" expanded="true" signature="7194:7792" ph="{...}" />
+            <marker date="1531928136176" expanded="true" signature="7794:9429" ph="/* void FixedUpdate () ... */" />
+            <marker date="1531928136176" expanded="true" signature="9435:16787" ph="/* void OnGUI() { ... */" />
+            <marker date="1531928136176" expanded="true" signature="16832:16964" ph="{...}" />
+            <marker date="1531928136176" expanded="true" signature="17005:17149" ph="{...}" />
+            <marker date="1531928136176" expanded="true" signature="17031:17063" ph="{...}" />
+            <marker date="1531928136176" expanded="true" signature="17090:17122" ph="{...}" />
+            <marker date="1531928136176" expanded="false" signature="17247:17691" ph="{...}" />
+            <marker date="1531928136176" expanded="false" signature="17717:18157" ph="{...}" />
+            <marker date="1531928136176" expanded="true" signature="17750:18151" ph="{...}" />
+            <marker date="1531928136176" expanded="false" signature="18294:18550" ph="{...}" />
+            <marker date="1531928136176" expanded="true" signature="18358:18448" ph="{...}" />
+            <marker date="1531928136176" expanded="false" signature="18581:19228" ph="{...}" />
+            <marker date="1531928136176" expanded="true" signature="18656:18716" ph="{...}" />
+            <marker date="1531928136176" expanded="true" signature="18750:18810" ph="{...}" />
+            <marker date="1531928136176" expanded="true" signature="18844:18904" ph="{...}" />
+            <marker date="1531928136176" expanded="true" signature="18939:18999" ph="{...}" />
+            <marker date="1531928136176" expanded="true" signature="19034:19094" ph="{...}" />
+            <marker date="1531928136176" expanded="true" signature="19129:19189" ph="{...}" />
+            <marker date="1531928136176" expanded="false" signature="19266:19858" ph="{...}" />
           </folding>
         </state>
       </provider>

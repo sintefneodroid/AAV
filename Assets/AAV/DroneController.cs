@@ -9,6 +9,9 @@ namespace AAV {
 
     const float _mph_to_ms = 2.23693629205f;
 
+    /// <summary>
+    /// 
+    /// </summary>
     public static DroneController _ActiveController;
 
     /// <summary>
@@ -58,6 +61,9 @@ namespace AAV {
     public Transform _RearLeftRotor;
     public Transform _RearRightRotor;
 
+    /// <summary>
+    /// 
+    /// </summary>
     public Camera _DroneCam1;
     //public PathFollower _Pather;
     //public SimpleQuadController _InputCtrl;
@@ -71,6 +77,9 @@ namespace AAV {
     public ForceMode _TorqueMode = ForceMode.Force;
 
     public Texture2D[] _AxisArrows;
+    /// <summary>
+    /// 
+    /// </summary>
     public Color[] _AxisColors;
     public float _ArrowScreenSize = 100f;
     public bool _DrawArrows;
