@@ -1,5 +1,12 @@
 # AAV
 
+---
+
+_[Neodroid](https://github.com/sintefneodroid) is developed with support from Research Council of Norway Grant #262900. ([https://www.forskningsradet.no/prosjektbanken/#/project/NFR/262900](https://www.forskningsradet.no/prosjektbanken/#/project/NFR/262900))_
+
+---
+
+
 ![Scene](.github/images/AAV.png)
 
 Note: Temporary file hosting repo, may be taken down and replaced at any moment.
