@@ -2,29 +2,29 @@
 
 namespace AAV.PID {
   /// <summary>
-  /// 
+  ///
   /// </summary>
   [System.Serializable]
   public class PidController {
     /// <summary>
-    /// 
+    ///
     /// </summary>
-    public double _Kp;
+    [SerializeField] double _Kp;
     /// <summary>
-    /// 
+    ///
     /// </summary>
-    public double _Ki;
+    [SerializeField] double _Ki;
     /// <summary>
-    /// 
+    ///
     /// </summary>
-    public double _Kd;
+    [SerializeField] double _Kd;
     double _error_sum;
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public double _SetPoint;
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public double _MaxWindup;
     double _start_time;
@@ -51,7 +51,7 @@ namespace AAV.PID {
     }
 
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public System.Double LastWindup { get { return this._last_windup; } set { this._last_windup = value; } }
 

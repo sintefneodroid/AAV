@@ -2,43 +2,48 @@
 using UnityEngine;
 
 namespace AAV {
+  /// <summary>
+  ///
+  /// </summary>
   public class Lidar : MonoBehaviour {
     static Transform _lidar_parent;
-    public GameObject _Layer;
-    public float _LineWidth = 0.05f;
-    public int _RayCount = 100;
-    public int _LayerCount = 15;
+    [SerializeField] GameObject layer;
+    [SerializeField] float lineWidth = 0.05f;
+    [SerializeField] int rayCount = 100;
+    [SerializeField] int layerCount = 15;
 
     List<LineRenderer> _layers;
     List<List<Vector3>> _lidar_points;
-    [SerializeField] bool _is_ray;
+    [SerializeField] bool isRay;
     bool _is_layer;
 
-    public System.Boolean IsRay { get { return this._is_ray; } set { this._is_ray = value; } }
+    /// <summary>
+    ///
+    /// </summary>
+    public System.Boolean IsRay { get { return this.isRay; } set { this.isRay = value; } }
 
     void Start() {
       if (_lidar_parent == null) {
         _lidar_parent = new GameObject("LidarParent").transform;
       }
 
-      this._is_ray = false;
+      this.isRay = false;
       this._is_layer = true;
 
       this._layers = new List<LineRenderer>();
       this._lidar_points = new List<List<Vector3>>();
 
       if (this._is_layer) {
-        for (var j = 0; j < this._LayerCount; j++) {
-          var get_layer = Instantiate(this._Layer);
-          get_layer.transform.SetParent(_lidar_parent);
+        for (var j = 0; j < this.layerCount; j++) {
+          var get_layer = Instantiate(this.layer, _lidar_parent, true);
           this._layers.Add(get_layer.GetComponent<LineRenderer>());
-          this._layers[j].positionCount = this._RayCount;
+          this._layers[j].positionCount = this.rayCount;
           //this._layers[j].SetWidth(this._LineWidth, this._LineWidth);
           this._layers[j].widthCurve = new AnimationCurve(
-              new Keyframe(0.0f, this._LineWidth),
-              new Keyframe(1.0f, this._LineWidth));
-          
-          this._lidar_points.Add(new List<Vector3>(new Vector3[this._RayCount]));
+              new Keyframe(0.0f, this.lineWidth),
+              new Keyframe(1.0f, this.lineWidth));
+
+          this._lidar_points.Add(new List<Vector3>(new Vector3[this.rayCount]));
         }
       }
     }
@@ -50,27 +55,28 @@ namespace AAV {
 
       const System.Single angle_range = Mathf.PI;
 
-      for (var j = 0; j < this._LayerCount; j++) {
+      for (var j = 0; j < this.layerCount; j++) {
         var layer_points = this._lidar_points[j];
 
-        for (var i = 0; i < this._RayCount; i++) {
+        for (var i = 0; i < this.rayCount; i++) {
           RaycastHit hit;
 
-          var angle = -angle_range / 2 + i * (angle_range) / (this._RayCount - 1);
+          var angle = -angle_range / 2 + i * (angle_range) / (this.rayCount - 1);
 
-          var raycast_dir = this.transform.TransformPoint(
+          var position = this.transform.position;
+          var raycast_dir =  this.transform.TransformPoint(
                                 (j * 1.0f + 2.5f) * Mathf.Cos(angle),
                                 -1.0f,
                                 (j * 1.0f + 2.5f) * Mathf.Sin(angle))
-                            - this.transform.position;
-          Physics.Raycast(this.transform.position, raycast_dir, out hit);
+                            - position;
+          Physics.Raycast(position, raycast_dir, out hit);
 
           var base_angle = this.transform.eulerAngles.y * Mathf.Deg2Rad;
           var raycast_render = this.transform.TransformPoint(
                                    (j * 1.0f + 2.5f) * Mathf.Cos(base_angle + angle),
                                    -1.0f,
                                    (j * 1.0f + 2.5f) * Mathf.Sin(base_angle + angle))
-                               - this.transform.position;
+                               - position;
 
           if (hit.collider) {
             var vector_point = this.transform.TransformPoint(raycast_render.normalized * hit.distance * 4);
@@ -92,6 +98,10 @@ namespace AAV {
       }
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <returns></returns>
     public List<List<Vector3>> SendLidarData() { return this._lidar_points; }
   }
 }

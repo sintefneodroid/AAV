@@ -3,6 +3,12 @@
 namespace AAV.PID {
 // .....
 // basically empty Tuple class to mimic .NET's since no access to that one here
+  /// <summary>
+  /// 
+  /// </summary>
+  /// <typeparam name="T1"></typeparam>
+  /// <typeparam name="T2"></typeparam>
+  /// <typeparam name="T3"></typeparam>
   public class Tuple<T1, T2, T3> {
     public T1 _First;
     public T2 _Second;
@@ -17,6 +23,9 @@ namespace AAV.PID {
     }
   }
 
+  /// <summary>
+  /// 
+  /// </summary>
   public class Twiddle {
     Func<Double[], Double> _algorithm;
     double[] _parms;
@@ -39,6 +48,10 @@ namespace AAV.PID {
       this._iterations = 0;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <returns></returns>
     public Tuple<Int32, Double[], Double> Run() {
       if (this._first_run) {
         // ??

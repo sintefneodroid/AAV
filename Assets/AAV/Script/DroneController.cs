@@ -1,117 +1,118 @@
 ﻿using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace AAV {
   /// <inheritdoc />
   /// <summary>
   /// </summary>
   public class DroneController : MonoBehaviour {
-    [SerializeField] float _add_force_factor = 9.82f;
+    [SerializeField] float addForceFactor = 9.82f;
 
     const float _mph_to_ms = 2.23693629205f;
 
     /// <summary>
-    /// 
+    ///
     /// </summary>
-    public static DroneController _ActiveController;
+    [SerializeField]  static DroneController _active_controller;
 
     /// <summary>
-    /// 
+    ///
     /// </summary>
-    public bool MotorsEnabled { get; set; }
+    [SerializeField]  bool MotorsEnabled { get; set; }
     /// <summary>
-    /// 
+    ///
     /// </summary>
-    public Vector3 Force { get { return this._force; } }
+    [SerializeField]  Vector3 Force { get { return this._force; } }
     /// <summary>
-    /// 
+    ///
     /// </summary>
-    public Vector3 Torque { get { return this._torque; } }
+    [SerializeField]  Vector3 Torque { get { return this._torque; } }
     /// <summary>
-    /// 
+    ///
     /// </summary>
-    public Vector3 Position { get; protected set; }
+    [SerializeField]  Vector3 Position { get; set; }
     /// <summary>
-    /// 
+    ///
     /// </summary>
-    public Quaternion Rotation { get; protected set; }
+    [SerializeField]  Quaternion Rotation { get;  set; }
     /// <summary>
-    /// 
+    ///
     /// </summary>
-    public Vector3 AngularVelocity { get; protected set; }
+    [SerializeField]  Vector3 AngularVelocity { get;  set; }
     /// <summary>
-    /// 
+    ///
     /// </summary>
-    public Vector3 LinearVelocity { get; protected set; }
+    [SerializeField]  Vector3 LinearVelocity { get;  set; }
     /// <summary>
-    /// 
+    ///
     /// </summary>
-    public Vector3 LinearAcceleration { get; protected set; }
-    public bool UseGravity { get; set; }
-    public bool ConstrainForceX { get; set; }
-    public bool ConstrainForceY { get; set; }
-    public bool ConstrainForceZ { get; set; }
-    public bool ConstrainTorqueX { get; set; }
-    public bool ConstrainTorqueY { get; set; }
-    public bool ConstrainTorqueZ { get; set; }
+    [SerializeField]  Vector3 LinearAcceleration { get;  set; }
+    [SerializeField]  bool UseGravity { get; set; }
+    [SerializeField]  bool ConstrainForceX { get; set; }
+    [SerializeField]  bool ConstrainForceY { get; set; }
+    [SerializeField]  bool ConstrainForceZ { get; set; }
+    [SerializeField]  bool ConstrainTorqueX { get; set; }
+    [SerializeField]  bool ConstrainTorqueY { get; set; }
+    [SerializeField]  bool ConstrainTorqueZ { get; set; }
 
-    public Transform[] Rotors { get { return this._rotors; } set { this._rotors = value; } }
+    [SerializeField]  Transform[] Rotors { get { return this._rotors; } set { this._rotors = value; } }
 
-    public Transform _FrontLeftRotor;
-    public Transform _FrontRightRotor;
-    public Transform _RearLeftRotor;
-    public Transform _RearRightRotor;
+    [SerializeField] Transform frontLeftRotor;
+    [SerializeField]  Transform frontRightRotor;
+    [SerializeField]  Transform rearLeftRotor;
+    [SerializeField]  Transform rearRightRotor;
 
     /// <summary>
-    /// 
+    ///
     /// </summary>
-    public Camera _DroneCam1;
+    [SerializeField]  Camera droneCam1;
     //public PathFollower _Pather;
     //public SimpleQuadController _InputCtrl;
 
-    public bool _ClampForce = true;
-    public bool _ClampTorque = true;
-    public float _MaxForce = 100;
-    public float _MaxTorqueDegrees = 17;
-    public float _MaxTorqueRadians;
-    public ForceMode _ForceMode = ForceMode.Force;
-    public ForceMode _TorqueMode = ForceMode.Force;
+    [SerializeField]  bool clampForce = true;
+    [SerializeField]  bool clampTorque = true;
+    [SerializeField]  float maxForce = 100;
+    [SerializeField]  float maxTorqueDegrees = 17;
+    [SerializeField]  float maxTorqueRadians;
+    [SerializeField]  ForceMode forceMode = ForceMode.Force;
+    [SerializeField]  ForceMode torqueMode = ForceMode.Force;
 
-    public Texture2D[] _AxisArrows;
+    [SerializeField]  Texture2D[] axisArrows;
     /// <summary>
-    /// 
+    ///
     /// </summary>
-    public Color[] _AxisColors;
-    public float _ArrowScreenSize = 100f;
-    public bool _DrawArrows;
-    public bool _DrawArrowsAlways;
-    public bool _ShowLegend;
+    [SerializeField]  Color[] axisColors;
+    [SerializeField]  float arrowScreenSize = 100f;
+    [SerializeField]  bool drawArrows;
+    [SerializeField]  bool drawArrowsAlways;
+    [SerializeField]  bool showLegend;
 
-    public bool _RotateWithTorque;
+    [SerializeField]  bool rotateWithTorque;
 
-    public bool _SpinRotors = true;
-    public float _MaxRotorRpm = 2600;
-    [SerializeField] float _cur_rotor_speed;
-    public bool _ShowTelemetry;
+    [SerializeField]  bool spinRotors = true;
+    [SerializeField]  float maxRotorRpm = 2600;
+    [SerializeField] float curRotorSpeed;
+    [SerializeField]  bool showTelemetry;
 
     // recording vars
-    public float _PathRecordFrequency = 3;
+    [SerializeField]  float pathRecordFrequency = 3;
     [System.NonSerialized] public bool _IsRecordingPath;
     float _next_node_time;
 
     // patrol vars
-    public float _MaxPatrolSpeed = 30;
-    public float _PatrolWaitTime = 3;
-    public float _ParolAccelTime = 3;
-    public float _GimbalSweepVAngle = 45;
+    [SerializeField]  float maxPatrolSpeed = 30;
+    [SerializeField]  float patrolWaitTime = 3;
+    [SerializeField]  float patrolAccelerationTime = 3;
+    [SerializeField]  float gimbalSweepVAngle = 45;
 
     // target follow vars
-    public float _FollowDistance = 2;
-    public float _FollowHeight = 2;
-    public float _MaxFollowSpeed = 15;
-    public float _FollowAccelTime = 2;
+    [SerializeField]  float followDistance = 2;
+    [SerializeField]  float followHeight = 2;
+    [SerializeField]  float maxFollowSpeed = 15;
+    [SerializeField]  float followAccelerationTime = 2;
 
     Rigidbody _rb;
-    public BoxCollider _BoxCollider;
+    [SerializeField]  BoxCollider boxCollider;
     Transform[] _rotors;
     Vector3 _force;
     Vector3 _torque;
@@ -120,7 +121,7 @@ namespace AAV {
 
     RaycastHit _ray_hit;
 
-    [SerializeField] float _cur_speed;
+    [SerializeField] float curSpeed;
 
     byte[] _camera_data;
     bool _reset_flag;
@@ -130,21 +131,21 @@ namespace AAV {
     Vector3 _pose_position;
     Quaternion _pose_orientation;
     Texture2D _dot;
-    
-    [SerializeField] float _stability = 0.3f;
-    [SerializeField] float _stability_speed = 2.0f;
+
+    [SerializeField] float stability = 0.3f;
+    [SerializeField] float stabilitySpeed = 2.0f;
 
     void Awake() {
-      if (_ActiveController == null) {
-        _ActiveController = this;
+      if (_active_controller == null) {
+        _active_controller = this;
       }
 
       this._rb = this.GetComponent<Rigidbody>();
       this._rotors = new[] {
-          this._FrontLeftRotor,
-          this._FrontRightRotor,
-          this._RearLeftRotor,
-          this._RearRightRotor
+          this.frontLeftRotor,
+          this.frontRightRotor,
+          this.rearLeftRotor,
+          this.rearRightRotor
       };
       this.MotorsEnabled = false;
 
@@ -175,7 +176,7 @@ namespace AAV {
       this.Rotation = this.transform.rotation;
 
       if (this._IsRecordingPath && Time.time > this._next_node_time) {
-        this._next_node_time = Time.time + this._PathRecordFrequency;
+        this._next_node_time = Time.time + this.pathRecordFrequency;
       }
     }
 
@@ -198,10 +199,10 @@ namespace AAV {
       }
 
       if (Input.GetKeyDown(KeyCode.L)) {
-        this._ShowLegend = !this._ShowLegend;
+        this.showLegend = !this.showLegend;
       }
 
-      if (this._RotateWithTorque) {
+      if (this.rotateWithTorque) {
         float z_angle;
         var up = this.transform.up;
         if (up.y >= 0) {
@@ -221,10 +222,10 @@ namespace AAV {
         this.transform.Rotate(Vector3.up * -z_angle * Time.deltaTime, Space.World);
       }
 
-      if (this._SpinRotors) {
-        var rps = this._MaxRotorRpm / 60f;
+      if (this.spinRotors) {
+        var rps = this.maxRotorRpm / 60f;
         var deg_per_sec = rps * 360f;
-        this._cur_rotor_speed = deg_per_sec;
+        this.curRotorSpeed = deg_per_sec;
 
 //			if ( inputCtrl.active )
 //			{
@@ -239,30 +240,30 @@ namespace AAV {
 //				{
 //					curRotorSpeed = 0.5f * degPerSec * force.y / -Physics.gravity.y / rb.mass;
 //				}
-//				
+//
 //			}
 
         // use forward for now because rotors are rotated -90
-        var rot = Vector3.forward * this._cur_rotor_speed * Time.deltaTime;
-        this._FrontLeftRotor.Rotate(rot);
-        this._FrontRightRotor.Rotate(-rot);
-        this._RearLeftRotor.Rotate(-rot);
-        this._RearRightRotor.Rotate(rot);
+        var rot = Vector3.forward * this.curRotorSpeed * Time.deltaTime;
+        this.frontLeftRotor.Rotate(rot);
+        this.frontRightRotor.Rotate(-rot);
+        this.rearLeftRotor.Rotate(-rot);
+        this.rearRightRotor.Rotate(rot);
       }
     }
 
     void FixedUpdate() {
-      this._rb.AddRelativeForce(Vector3.up * this._add_force_factor);
-      
+      this._rb.AddRelativeForce(Vector3.up * this.addForceFactor);
+
       var predicted_up = Quaternion.AngleAxis(
                              this._rb.angularVelocity.magnitude
                              * Mathf.Rad2Deg
-                             * this._stability
-                             / this._stability_speed,
+                             * this.stability
+                             / this.stabilitySpeed,
                              this._rb.angularVelocity)
                          * this.transform.up;
       var torque_vector = Vector3.Cross(predicted_up, Vector3.up);
-      this._rb.AddTorque(torque_vector * this._stability_speed * this._stability_speed);
+      this._rb.AddTorque(torque_vector * this.stabilitySpeed * this.stabilitySpeed);
     }
 
 /*	void FixedUpdate ()
@@ -302,7 +303,7 @@ namespace AAV {
 				if ( clampForce )
 					force = Vector3.ClampMagnitude ( force, maxForce );
 				rb.AddRelativeForce ( force, forceMode );
-				
+
 				// add torque. but first clamp it
 				if ( maxTorqueDegrees != 0 )
 					maxTorqueRadians = maxTorqueDegrees * Mathf.Deg2Rad;
@@ -338,7 +339,7 @@ namespace AAV {
       var font_size = label.fontSize;
       label.fontSize = (int)(22f * Screen.height / 1080);
 
-      
+
       if (this._ShowTelemetry) {
         info = @"Force: "
                + this.Force.ToRos().ToString()
@@ -635,12 +636,13 @@ Ctrl-Q: Quit";
     }
 
     public void UpdateConstraints() {
-      this.ConstrainForceX = (this._rb.constraints & RigidbodyConstraints.FreezePositionZ) != 0;
-      this.ConstrainForceY = (this._rb.constraints & RigidbodyConstraints.FreezePositionX) != 0;
-      this.ConstrainForceZ = (this._rb.constraints & RigidbodyConstraints.FreezePositionY) != 0;
-      this.ConstrainTorqueX = (this._rb.constraints & RigidbodyConstraints.FreezeRotationZ) != 0;
-      this.ConstrainTorqueY = (this._rb.constraints & RigidbodyConstraints.FreezeRotationX) != 0;
-      this.ConstrainTorqueZ = (this._rb.constraints & RigidbodyConstraints.FreezeRotationY) != 0;
+      var constraints = this._rb.constraints;
+      this.ConstrainForceX = (constraints & RigidbodyConstraints.FreezePositionZ) != 0;
+      this.ConstrainForceY = (constraints & RigidbodyConstraints.FreezePositionX) != 0;
+      this.ConstrainForceZ = (constraints & RigidbodyConstraints.FreezePositionY) != 0;
+      this.ConstrainTorqueX = (constraints & RigidbodyConstraints.FreezeRotationZ) != 0;
+      this.ConstrainTorqueY = (constraints & RigidbodyConstraints.FreezeRotationX) != 0;
+      this.ConstrainTorqueZ = (constraints & RigidbodyConstraints.FreezeRotationY) != 0;
     }
   }
 }

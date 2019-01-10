@@ -5,21 +5,23 @@
     <e p="$APPLICATION_CONFIG_DIR$/extensions" t="IncludeRecursive" />
     <e p="$APPLICATION_CONFIG_DIR$/scratches" t="IncludeRecursive" />
     <e p="$USER_HOME$/.Rider2018.3/system/extResources" t="IncludeRecursive" />
-    <e p="$USER_HOME$/.Rider2018.3/system/resharper-host/local/Transient/ReSharperHost/v183/SolutionCaches/_AAV.479785176.00" t="ExcludeRecursive" />
+    <e p="$USER_HOME$/.Rider2018.3/system/resharper-host/local/Transient/ReSharperHost/v183/SolutionCaches/_UnityProject.-1550819472.00" t="ExcludeRecursive" />
     <e p="$PROJECT_DIR$" t="IncludeRecursive">
-      <e p="AAV.sln" t="IncludeFlat" />
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="AAV" t="Include">
-          <e p="DroneController.cs" t="Include" />
-          <e p="Lidar.cs" t="Include" />
-          <e p="PID" t="Include">
-            <e p="AttitudeControllerNode.cs" t="Include" />
-            <e p="HoverControllerNode.cs" t="Include" />
-            <e p="HoverTwiddleTunerNode.cs" t="Include" />
-            <e p="PIDController.cs" t="Include" />
-            <e p="PositionControllerNode.cs" t="Include" />
-            <e p="Twiddle.cs" t="Include" />
+          <e p="Script" t="Include">
+            <e p="DroneController.cs" t="Include" />
+            <e p="Lidar.cs" t="Include" />
+            <e p="PID" t="Include">
+              <e p="AttitudeControllerNode.cs" t="Include" />
+              <e p="HoverControllerNode.cs" t="Include" />
+              <e p="HoverTwiddleTunerNode.cs" t="Include" />
+              <e p="PIDController.cs" t="Include" />
+              <e p="PositionControllerNode.cs" t="Include" />
+              <e p="Twiddle.cs" t="Include" />
+            </e>
           </e>
           <e p="Trash" t="Include">
             <e p="Shaders" t="Include">
@@ -98,11 +100,47 @@
             <e p="EmojiOne Attribution.txt" t="Include" />
           </e>
         </e>
+        <e p="droid" t="Include">
+          <e p="Neodroid" t="Include">
+            <e p="Editor" t="Include">
+              <e p="GameObjects" t="Include">
+                <e p="EditorGameObjectMenuPath.cs" t="Include" />
+                <e p="GeneralSpawner.cs" t="Include" />
+                <e p="MotorSpawner.cs" t="Include" />
+                <e p="ObserverSpawner.cs" t="Include" />
+                <e p="PrebuiltSpawner.cs" t="Include" />
+              </e>
+              <e p="ScriptableObjects" t="Include">
+                <e p="Curriculum.cs" t="Include" />
+                <e p="EditorScriptableObjectMenuPath.cs" t="Include" />
+                <e p="NeodroidTask.cs" t="Include" />
+                <e p="PlayerMotions.cs" t="Include" />
+                <e p="Segmentations.cs" t="Include" />
+              </e>
+              <e p="Utilities" t="Include">
+                <e p="Utilities.cs" t="Include" />
+              </e>
+              <e p="Windows" t="Include">
+                <e p="CameraSynchronisationWindow.cs" t="Include" />
+                <e p="DebugWindow.cs" t="Include" />
+                <e p="DemonstrationWindow.cs" t="Include" />
+                <e p="EditorWindowMenuPath.cs" t="Include" />
+                <e p="PreferenceWindow.cs" t="Include" />
+                <e p="RenderTextureConfiguratorWindow.cs" t="Include" />
+                <e p="SegmentationWindow.cs" t="Include" />
+                <e p="SimulationWindow.cs" t="Include" />
+                <e p="TaskWindow.cs" t="Include" />
+                <e p="WindowManager.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
       </e>
       <e p="Library" t="ExcludeRecursive" />
       <e p="Temp" t="ExcludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
       </e>
+      <e p="UnityProject.sln" t="IncludeFlat" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="packages" t="ExcludeRecursive" />
     </e>

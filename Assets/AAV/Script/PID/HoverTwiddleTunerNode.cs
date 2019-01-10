@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 
 namespace AAV.PID {
+  /// <summary>
+  /// 
+  /// </summary>
   public class HoverTestRun {
     bool _is_started;
     List<double[]> _test_data;
