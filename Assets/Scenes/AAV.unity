@@ -223,6 +223,39 @@ Transform:
   m_Father: {fileID: 639402439}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &617675404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_GeneratorAsset: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 0ff5f73ed10ef42709ef975f07e9b1a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _always_serialise_unobservables: 0
+  _always_serialise_individual_observables: 0
+  _apply_resolution_settings: 0
+  _frame_finishes: 3
+  _frame_skips: 0
+  _full_screen: 0
+  _height: 500
+  _ip_address: localhost
+  _max_reply_interval: 0
+  _num_of_environments: 0
+  _port: 6969
+  _quality_level: 1
+  _replay_reaction_in_skips: 0
+  _reset_iterations: 1
+  _simulation_type: 0
+  _step_execution_phase: 1
+  _target_frame_rate: -1
+  _time_scale: 1
+  _update_fixed_time_scale: 0
+  _width: 500
 --- !u!1001 &639402438
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -235,14 +268,6 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: cbba522cc208c6242822fe0184bc93b5, type: 3}
-      propertyPath: m_Layer
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: cbba522cc208c6242822fe0184bc93b5, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: cbba522cc208c6242822fe0184bc93b5, type: 3}
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
@@ -270,6 +295,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: RearRightRotor
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: cbba522cc208c6242822fe0184bc93b5, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: cbba522cc208c6242822fe0184bc93b5, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 100016, guid: cbba522cc208c6242822fe0184bc93b5, type: 3}
       propertyPath: m_TagString
       value: Player
@@ -285,6 +318,10 @@ PrefabInstance:
     - target: {fileID: 100018, guid: cbba522cc208c6242822fe0184bc93b5, type: 3}
       propertyPath: m_Layer
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 400016, guid: cbba522cc208c6242822fe0184bc93b5, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: cbba522cc208c6242822fe0184bc93b5, type: 3}
       propertyPath: m_RootOrder
@@ -329,10 +366,6 @@ PrefabInstance:
     - target: {fileID: 400014, guid: cbba522cc208c6242822fe0184bc93b5, type: 3}
       propertyPath: m_RootOrder
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 400016, guid: cbba522cc208c6242822fe0184bc93b5, type: 3}
-      propertyPath: m_RootOrder
-      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400018, guid: cbba522cc208c6242822fe0184bc93b5, type: 3}
       propertyPath: m_RootOrder
@@ -410,6 +443,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8b7c65bfbcfa4ac381370b0b8eef1bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _Custom_Name: 
+  _debugging: 0
+  _disables_children: 0
+  _editor_reregistering: 1
+  _Use_Custom_Name: 0
+  _bounds:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
+  _draw_bounds: 0
 --- !u!114 &639402445
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1046,6 +1088,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4675f9235ecc46a5982e50590d858cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _Custom_Name: 
+  _debugging: 0
+  _disables_children: 0
+  _editor_reregistering: 1
+  _Use_Custom_Name: 0
+  _current_frame_number: 0
+  _Energy_Spent: 0
+  _episode_length: 1000
+  _Lastest_Reset_Time: 0
+  _LastTermination_Reason: None
+  _Resetting: 0
+  _Terminable: 1
+  _Terminated: 0
+  _objective_function: {fileID: 861801050}
+  _coordinate_reference_point: {fileID: 0}
+  _track_only_children: 1
+  _coordinate_system: 1
+  _playable_area: {fileID: 861801047}
+  _reset_i: 0
+  _initials_saved_flag: 0
+  _update_observations_with_every_tick: 0
 --- !u!114 &861801047
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1059,6 +1122,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69e918915125b4fdfb1a4025246b5ea5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _BasedOn: 0
+  _FreezeAfterFirstCalculation: 0
+  _Include_Children: 1
+  _Line_Color: {r: 1, g: 0.36, b: 0.38, a: 0.74}
+  _Setup_On_Awake: 0
 --- !u!65 &861801048
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1085,6 +1153,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74a1dc8369fb4a558f780b51d8d95442, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _debugging: 0
+  _testing_motors: 0
+  _configuration: {fileID: 617675404}
+  _skip_frame_i: 0
+  _syncing_environments: 0
+  _awaiting_reply: 0
+  _step: 0
+  _last_simulation_time: 0
+  _has_stepped: 0
+  _allow_in_editor_blockage: 0
 --- !u!114 &861801050
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1098,6 +1176,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 405bb38db1f054b65915028d4f64e32b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _Custom_Name: 
+  _debugging: 0
+  _disables_children: 0
+  _editor_reregistering: 1
+  _Use_Custom_Name: 0
+  _Episode_Return: 0
+  _environment: {fileID: 861801046}
+  _solved_threshold: 0
+  _last_signal: 0
+  _g1: {fileID: 639402439}
+  _g2: {fileID: 861801045}
 --- !u!1001 &914441410
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1326,7 +1415,7 @@ PrefabInstance:
     - target: {fileID: 224701342121933384, guid: 2e92782f81c5740819ca66bda35481ce,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -736
+      value: -736.0005
       objectReference: {fileID: 0}
     - target: {fileID: 224219095199356408, guid: 2e92782f81c5740819ca66bda35481ce,
         type: 3}
@@ -1756,6 +1845,11 @@ PrefabInstance:
       propertyPath: m_CullingMask.m_Bits
       value: 279
       objectReference: {fileID: 0}
+    - target: {fileID: 8729723661813516162, guid: 9e9875463c1ed451bb25878f63e0cdc7,
+        type: 3}
+      propertyPath: _observation_value
+      value: ', Outline: RGBA(1.000, 0.000, 1.000, 1.000)'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e9875463c1ed451bb25878f63e0cdc7, type: 3}
 --- !u!1 &997604691
@@ -2179,6 +2273,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90d8486c2d1444fb8ac452a5a74cf74b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _automatically_add_directional_lights_if_not_empty: 0
+  _ignore_infrared_if_empty: 1
+  _lights_to_ignore:
+  - {fileID: 1956297451}
 --- !u!4 &1562747156 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400018, guid: cbba522cc208c6242822fe0184bc93b5,
@@ -2215,6 +2313,34 @@ Transform:
   m_Father: {fileID: 552354221}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!21 &1946438788
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Unlit/Color
+  m_Shader: {fileID: 10755, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!108 &1956297451 stripped
+Light:
+  m_CorrespondingSourceObject: {fileID: 108906297679887750, guid: 9e9875463c1ed451bb25878f63e0cdc7,
+    type: 3}
+  m_PrefabInstance: {fileID: 985666458}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1967401438
 GameObject:
   m_ObjectHideFlags: 0

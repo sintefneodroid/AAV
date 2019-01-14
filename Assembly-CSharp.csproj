@@ -129,6 +129,9 @@
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>/home/heider/Projects/Neodroid/AAV/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Neodroid.Editor">
+      <HintPath>/home/heider/Projects/Neodroid/AAV/Library/ScriptAssemblies/Neodroid.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.ProBuilder.AddOns.Editor">
       <HintPath>/home/heider/Projects/Neodroid/AAV/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
     </Reference>
@@ -149,6 +152,9 @@
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
       <HintPath>/home/heider/Projects/Neodroid/AAV/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Neodroid.Runtime">
+      <HintPath>/home/heider/Projects/Neodroid/AAV/Library/ScriptAssemblies/Neodroid.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.SpatialTracking">
       <HintPath>/home/heider/Projects/Neodroid/AAV/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
@@ -345,6 +351,21 @@
     <Reference Include="UnityEngine.Networking">
       <HintPath>/home/heider/Unity/Hub/Editor/2019.1.0a11/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
     </Reference>
+    <Reference Include="Neodroid-FlatBuffers">
+      <HintPath>/home/heider/Projects/Neodroid/AAV/Library/PackageCache/com.neodroid.droid@34dcd438b71eb75fb424890cc97b5c1c5ec36ce5/Libaries/Neodroid-FlatBuffers.1.0.0/lib/net45/Neodroid-FlatBuffers.dll</HintPath>
+    </Reference>
+    <Reference Include="NetMQ">
+      <HintPath>/home/heider/Projects/Neodroid/AAV/Library/PackageCache/com.neodroid.droid@34dcd438b71eb75fb424890cc97b5c1c5ec36ce5/Libaries/NetMQ.4.0.0.175-pre/lib/net40/NetMQ.dll</HintPath>
+    </Reference>
+    <Reference Include="Priority Queue">
+      <HintPath>/home/heider/Projects/Neodroid/AAV/Library/PackageCache/com.neodroid.droid@34dcd438b71eb75fb424890cc97b5c1c5ec36ce5/Libaries/OptimizedPriorityQueue.4.1.1/lib/net45/Priority Queue.dll</HintPath>
+    </Reference>
+    <Reference Include="AsyncIO">
+      <HintPath>/home/heider/Projects/Neodroid/AAV/Library/PackageCache/com.neodroid.droid@34dcd438b71eb75fb424890cc97b5c1c5ec36ce5/Libaries/AsyncIO.0.1.61/lib/net40/AsyncIO.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>/home/heider/Projects/Neodroid/AAV/Library/PackageCache/com.neodroid.droid@34dcd438b71eb75fb424890cc97b5c1c5ec36ce5/Libaries/Newtonsoft.Json.11.0.2/lib/net45/Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="ProBuilderCore">
       <HintPath>/home/heider/Projects/Neodroid/AAV/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Classes/ProBuilderCore.dll</HintPath>
     </Reference>
@@ -359,21 +380,6 @@
     </Reference>
     <Reference Include="Poly2Tri">
       <HintPath>/home/heider/Projects/Neodroid/AAV/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Classes/ClassesLib/Poly2Tri.dll</HintPath>
-    </Reference>
-    <Reference Include="Neodroid-FlatBuffers">
-      <HintPath>/home/heider/Projects/Neodroid/AAV/Library/PackageCache/net.cnheider.neodroid@6430818d62aa095b969b345476a1bd318d0c0a1f/Libaries/Neodroid-FlatBuffers.1.0.0/lib/net45/Neodroid-FlatBuffers.dll</HintPath>
-    </Reference>
-    <Reference Include="NetMQ">
-      <HintPath>/home/heider/Projects/Neodroid/AAV/Library/PackageCache/net.cnheider.neodroid@6430818d62aa095b969b345476a1bd318d0c0a1f/Libaries/NetMQ.4.0.0.175-pre/lib/net40/NetMQ.dll</HintPath>
-    </Reference>
-    <Reference Include="Priority Queue">
-      <HintPath>/home/heider/Projects/Neodroid/AAV/Library/PackageCache/net.cnheider.neodroid@6430818d62aa095b969b345476a1bd318d0c0a1f/Libaries/OptimizedPriorityQueue.4.1.1/lib/net45/Priority Queue.dll</HintPath>
-    </Reference>
-    <Reference Include="AsyncIO">
-      <HintPath>/home/heider/Projects/Neodroid/AAV/Library/PackageCache/net.cnheider.neodroid@6430818d62aa095b969b345476a1bd318d0c0a1f/Libaries/AsyncIO.0.1.61/lib/net40/AsyncIO.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>/home/heider/Projects/Neodroid/AAV/Library/PackageCache/net.cnheider.neodroid@6430818d62aa095b969b345476a1bd318d0c0a1f/Libaries/Newtonsoft.Json.11.0.2/lib/net45/Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>/home/heider/Unity/Hub/Editor/2019.1.0a11/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
