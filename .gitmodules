@@ -1,3 +1,3 @@
-[submodule "Packages/droid"]
-	path = Packages/droid
-	url = https://github.com/sintefneodroid/droid
+[submodule "Assets/droid"]
+	path = Assets/droid
+	url = https://github.com/sintefneodroid/droid.git

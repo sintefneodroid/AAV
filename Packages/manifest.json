@@ -1,8 +1,9 @@
 {
   "dependencies": {
-    "com.neodroid.droid": "https://github.com/sintefneodroid/droid.git",
-    "com.unity.collab-proxy": "1.2.9",
+    "com.cnheider.unity-test-package": "https://github.com/cnheider/unity-test-package.git",
+    "com.unity.collab-proxy": "1.2.15",
     "com.unity.package-manager-ui": "0.0.0-builtin",
+    "com.unity.postprocessing": "2.1.2",
     "com.unity.probuilder": "3.0.9",
     "com.unity.progrids": "3.0.3-preview.0",
     "com.unity.textmeshpro": "1.3.0",
@@ -40,8 +41,8 @@
     "com.unity.modules.xr": "1.0.0"
   },
   "lock": {
-    "com.neodroid.droid": {
-      "hash": "34dcd438b71eb75fb424890cc97b5c1c5ec36ce5",
+    "com.cnheider.unity-test-package": {
+      "hash": "b61c5308a6287d67a1ebe0aa71d0945666497dd0",
       "revision": "HEAD"
     }
   }

@@ -15,10 +15,10 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{258B7383-B6F1-C952-97B1-CDC4EA1FC865}</ProjectGuid>
+    <ProjectGuid>{C9AF1D98-9147-2CAA-2E34-899F917C4921}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <AssemblyName>Neodroid.Runtime</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>.</BaseDirectory>
@@ -32,7 +32,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
-    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -41,7 +41,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
-    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup>
     <NoConfig>true</NoConfig>
@@ -62,170 +62,271 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\AAV\DroneEvaluation.cs" />
-    <Compile Include="Assets\AAV\Script\DroneController.cs" />
-    <Compile Include="Assets\AAV\Script\Lidar.cs" />
-    <Compile Include="Assets\AAV\Script\PID\AttitudeControllerNode.cs" />
-    <Compile Include="Assets\AAV\Script\PID\HoverControllerNode.cs" />
-    <Compile Include="Assets\AAV\Script\PID\HoverTwiddleTunerNode.cs" />
-    <Compile Include="Assets\AAV\Script\PID\PIDController.cs" />
-    <Compile Include="Assets\AAV\Script\PID\PositionControllerNode.cs" />
-    <Compile Include="Assets\AAV\Script\PID\Twiddle.cs" />
-    <Compile Include="Assets\droid\Samples\MultiArmedBandit\MultiArmedBanditEvaluation.cs" />
-    <Compile Include="Assets\droid\Samples\MultiArmedBandit\MultiArmedBanditMotor.cs" />
-    <Compile Include="Assets\droid\Samples\MultiArmedBandit\RestlessMultiArmedBanditMotor.cs" />
-    <Compile Include="Assets\droid\Samples\MultiArmedBandit\TextBarPlotDisplayer.cs" />
-    <Compile Include="Assets\droid\Tests\Runtime\SimulatorTests.cs" />
-    <Compile Include="Assets\Exclude\NatureManufacture Assets - Trials Not Full Resolution\NatureManufacture Wind\NM_Wind.cs" />
-    <Compile Include="Assets\Exclude\unity-chan!\Unity-chan! Model\Scripts\AutoBlink.cs" />
-    <Compile Include="Assets\Exclude\unity-chan!\Unity-chan! Model\Scripts\CameraController.cs" />
-    <Compile Include="Assets\Exclude\unity-chan!\Unity-chan! Model\Scripts\FaceUpdate.cs" />
-    <Compile Include="Assets\Exclude\unity-chan!\Unity-chan! Model\Scripts\IdleChanger.cs" />
-    <Compile Include="Assets\Exclude\unity-chan!\Unity-chan! Model\Scripts\IKCtrlRightHand.cs" />
-    <Compile Include="Assets\Exclude\unity-chan!\Unity-chan! Model\Scripts\RandomWind.cs" />
-    <Compile Include="Assets\Exclude\unity-chan!\Unity-chan! Model\Scripts\SpringBone.cs" />
-    <Compile Include="Assets\Exclude\unity-chan!\Unity-chan! Model\Scripts\SpringCollider.cs" />
-    <Compile Include="Assets\Exclude\unity-chan!\Unity-chan! Model\Scripts\SpringManager.cs" />
-    <Compile Include="Assets\Exclude\unity-chan!\Unity-chan! Model\Scripts\ThirdPersonCamera.cs" />
-    <Compile Include="Assets\Exclude\unity-chan!\Unity-chan! Model\Scripts\UnityChanControlScriptWithRgidBody.cs" />
-    <Compile Include="Assets\Exclude\Windridge City Assets\Scripts\ExtendedFlycam.cs" />
-    <Compile Include="Assets\Exclude\Windridge City Assets\Scripts\UIQuallityManager\UIQualityManager.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextConsoleSimulator.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
-    <None Include="Assets\Exclude\unity-chan!\Unity-chan! Model\Art\UnityChanShader\Shader\Unitychan_chara_eye.shader" />
-    <None Include="Assets\Exclude\unity-chan!\Unity-chan! Model\Art\UnityChanShader\Shader\Unitychan_chara_fuku.shader" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
-    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
-    <None Include="Assets\AAV\Trash\Shaders\Lines.shader" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
-    <None Include="Assets\Exclude\Windridge City Assets\CTS Trial\Shaders\CTS Terrain Shader Advanced Trial.shader" />
-    <None Include="Assets\Exclude\Windridge City Assets\READ ME - About project and assets.txt" />
-    <None Include="Assets\AAV\Trash\Shaders\Grid.shader" />
-    <None Include="Assets\Exclude\NatureManufacture Assets - Trials Not Full Resolution\Foliage Shaders\Cross_Model_Shader.shader" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
-    <None Include="Assets\droid\Libaries\OptimizedPriorityQueue.4.1.1\lib\net45\Priority Queue.xml" />
-    <None Include="Assets\Exclude\unity-chan!\Unity-chan! Model\Audio\Voice\unity-chan_voice_list.txt" />
-    <None Include="Assets\Exclude\NatureManufacture Assets - Trials Not Full Resolution\EasyRoads-HD_Add_ON\Shaders\Decal_Metalic_Road_Shader Parallax ArrayTrial.shader" />
-    <None Include="Assets\Exclude\NatureManufacture Assets - Trials Not Full Resolution\Foliage Shaders\NMWindNoShiver.cginc" />
-    <None Include="Assets\Exclude\unity-chan!\Unity-chan! Model\Art\UnityChanShader\Shader\Unitychan_chara_fuku_ds.shader" />
-    <None Include="Assets\Exclude\unity-chan!\Unity-chan! Model\Art\UnityChanShader\Shader\Unitychan_chara_eye_blend.shader" />
-    <None Include="Assets\Exclude\unity-chan!\Unity-chan! Model\Art\UnityChanShader\Shader\Unitychan_chara_hair_ds.shader" />
-    <None Include="Assets\Exclude\unity-chan!\Unity-chan! Model\Art\UnityChanShader\Shader\Unitychan_chara_akarami_blend.shader" />
-    <None Include="Assets\Exclude\Windridge City Assets\CTS Trial\Shaders\CTS Terrain Shader Advanced LOD Trial.shader" />
-    <None Include="Assets\Exclude\NatureManufacture Assets - Trials Not Full Resolution\EasyRoads-HD_Add_ON\Shaders\Decal_Metalic_Road_Shader Parallax Trial.shader" />
-    <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Oswald-Bold - OFL.txt" />
-    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
-    <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
-    <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Anton OFL.txt" />
-    <None Include="Assets\Exclude\unity-chan!\Unity-chan! Model\Art\UnityChanShader\Shader\Unitychan_chara_hair.shader" />
-    <None Include="Assets\Exclude\NatureManufacture Assets - Trials Not Full Resolution\Foliage Shaders\NM_indirect.cginc" />
-    <None Include="Assets\Exclude\unity-chan!\Unity-chan! Model\Art\Stage\Shader\AlphaMask.shader" />
-    <None Include="Assets\Exclude\unity-chan!\Unity-chan! Model\Art\UnityChanShader\Shader\Unitychan_chara_eyelash_blend.shader" />
-    <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Bangers - OFL.txt" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
-    <None Include="Assets\AAV\Trash\Shaders\Transparent-Depth.shader" />
-    <None Include="Assets\droid\Gizmos\Icons\readme.txt" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
-    <None Include="Assets\Exclude\NatureManufacture Assets - Trials Not Full Resolution\EasyRoads-HD_Add_ON\Shaders\Standard_Metalic_Cross_Road_Shader Parallax ArrayTrial.shader" />
-    <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\LiberationSans - OFL.txt" />
-    <None Include="Assets\Exclude\READ ME - About Scene.txt" />
-    <None Include="Assets\Exclude\unity-chan!\Unity-chan! Model\Art\UnityChanShader\Shader\Unitychan_chara_hada.shader" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
-    <None Include="Assets\droid\Libaries\NetMQ.4.0.0.175-pre\lib\net40\NetMQ.xml" />
-    <None Include="Assets\Exclude\unity-chan!\Unity-chan! Model\Art\UnityChanShader\Shader\Unitychan_chara_hada_blend.shader" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
-    <None Include="Assets\Exclude\NatureManufacture Assets - Trials Not Full Resolution\Foliage Shaders\Tree_Bark_Metalic.shader" />
-    <None Include="Assets\Exclude\NatureManufacture Assets - Trials Not Full Resolution\Park Photo Scanned Assets\Shaders\Standard_Metalic_UV_Free_Walls_and_Floors.shader" />
-    <None Include="Assets\Exclude\NatureManufacture Assets - Trials Not Full Resolution\EasyRoads-HD_Add_ON\Shaders\Standard_Metalic_Road_Shader Parallax ArrayTrial.shader" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
-    <None Include="Assets\Exclude\Windridge City Assets\Third-Party Notices.txt" />
-    <None Include="Assets\AAV\Trash\Shaders\Depth.shader" />
-    <None Include="Assets\Exclude\NatureManufacture Assets - Trials Not Full Resolution\Foliage Shaders\Tree_Leaves_Specular.shader" />
-    <None Include="Assets\droid\Libaries\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.xml" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
-    <None Include="Assets\Exclude\NatureManufacture Assets - Trials Not Full Resolution\Foliage Shaders\NMWind.cginc" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
-    <None Include="Assets\Exclude\Windridge City Assets\UnityCompanionLicense_ForAssetComnponentsStatedInThird-PartyNotices.txt" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
-    <Reference Include="Unity.Timeline.Editor">
-      <HintPath>/home/heider/Projects/Neodroid/AAV/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.ProBuilder.AddOns.Editor">
-      <HintPath>/home/heider/Projects/Neodroid/AAV/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.ProGrids">
-      <HintPath>/home/heider/Projects/Neodroid/AAV/Library/ScriptAssemblies/Unity.ProGrids.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.ProGrids.Editor">
-      <HintPath>/home/heider/Projects/Neodroid/AAV/Library/ScriptAssemblies/Unity.ProGrids.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>/home/heider/Projects/Neodroid/AAV/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>/home/heider/Projects/Neodroid/AAV/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Timeline">
-      <HintPath>/home/heider/Projects/Neodroid/AAV/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>/home/heider/Projects/Neodroid/AAV/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Postprocessing.Editor">
-      <HintPath>/home/heider/Projects/Neodroid/AAV/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Postprocessing.Runtime">
-      <HintPath>/home/heider/Projects/Neodroid/AAV/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.SpatialTracking">
-      <HintPath>/home/heider/Projects/Neodroid/AAV/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.SpatialTracking">
-      <HintPath>/home/heider/Projects/Neodroid/AAV/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro">
-      <HintPath>/home/heider/Projects/Neodroid/AAV/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityTestPackage.Editor">
-      <HintPath>/home/heider/Projects/Neodroid/AAV/Library/ScriptAssemblies/UnityTestPackage.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityTestPackage.Runtime">
-      <HintPath>/home/heider/Projects/Neodroid/AAV/Library/ScriptAssemblies/UnityTestPackage.Runtime.dll</HintPath>
-    </Reference>
+    <Compile Include="Assets\droid\Runtime\Environments\Experimental\ImitationEnvironment.cs" />
+    <Compile Include="Assets\droid\Runtime\Environments\NeodroidEnvironment.cs" />
+    <Compile Include="Assets\droid\Runtime\Environments\PrototypingEnvironment.cs" />
+    <Compile Include="Assets\droid\Runtime\Environments\RandomisedEnvironment.cs" />
+    <Compile Include="Assets\droid\Runtime\Environments\ScriptedEnviroment.cs" />
+    <Compile Include="Assets\droid\Runtime\Interfaces\IActor.cs" />
+    <Compile Include="Assets\droid\Runtime\Interfaces\IConfigurable.cs" />
+    <Compile Include="Assets\droid\Runtime\Interfaces\IConfigurableConfiguration.cs" />
+    <Compile Include="Assets\droid\Runtime\Interfaces\IDisplayer.cs" />
+    <Compile Include="Assets\droid\Runtime\Interfaces\IEnvironment.cs" />
+    <Compile Include="Assets\droid\Runtime\Interfaces\IEnvironmentListener.cs" />
+    <Compile Include="Assets\droid\Runtime\Interfaces\IHasArray.cs" />
+    <Compile Include="Assets\droid\Runtime\Interfaces\IHasByteArray.cs" />
+    <Compile Include="Assets\droid\Runtime\Interfaces\IHasDouble.cs" />
+    <Compile Include="Assets\droid\Runtime\Interfaces\IHasEulerTransform.cs" />
+    <Compile Include="Assets\droid\Runtime\Interfaces\IHasFloatEnumerable.cs" />
+    <Compile Include="Assets\droid\Runtime\Interfaces\IHasQuadruple.cs" />
+    <Compile Include="Assets\droid\Runtime\Interfaces\IHasQuaternionTransform.cs" />
+    <Compile Include="Assets\droid\Runtime\Interfaces\IHasRegister.cs" />
+    <Compile Include="Assets\droid\Runtime\Interfaces\IHasRigidbody.cs" />
+    <Compile Include="Assets\droid\Runtime\Interfaces\IHasSingle.cs" />
+    <Compile Include="Assets\droid\Runtime\Interfaces\IHasString.cs" />
+    <Compile Include="Assets\droid\Runtime\Interfaces\IHasTriple.cs" />
+    <Compile Include="Assets\droid\Runtime\Interfaces\IManager.cs" />
+    <Compile Include="Assets\droid\Runtime\Interfaces\IMaterialManipulator.cs" />
+    <Compile Include="Assets\droid\Runtime\Interfaces\IMotor.cs" />
+    <Compile Include="Assets\droid\Runtime\Interfaces\IMotorMotion.cs" />
+    <Compile Include="Assets\droid\Runtime\Interfaces\IObjective.cs" />
+    <Compile Include="Assets\droid\Runtime\Interfaces\IObserver.cs" />
+    <Compile Include="Assets\droid\Runtime\Interfaces\IPrototypingEnvironment.cs" />
+    <Compile Include="Assets\droid\Runtime\Interfaces\IResetable.cs" />
+    <Compile Include="Assets\droid\Runtime\Interfaces\ISimulatorConfiguration.cs" />
+    <Compile Include="Assets\droid\Runtime\InternalReactions\KeyEventEnabler.cs" />
+    <Compile Include="Assets\droid\Runtime\InternalReactions\PlayerReactions.cs" />
+    <Compile Include="Assets\droid\Runtime\InternalReactions\ScriptedReactions.cs" />
+    <Compile Include="Assets\droid\Runtime\Managers\Experimental\CurriculumManager.cs" />
+    <Compile Include="Assets\droid\Runtime\Managers\Experimental\ThinManager.cs" />
+    <Compile Include="Assets\droid\Runtime\Managers\NeodroidManager.cs" />
+    <Compile Include="Assets\droid\Runtime\Managers\PausableManager.cs" />
+    <Compile Include="Assets\droid\Runtime\Messaging\FBS\CustomFlatBufferImplementation.cs" />
+    <Compile Include="Assets\droid\Runtime\Messaging\FBS\FBSReactionUtilities.cs" />
+    <Compile Include="Assets\droid\Runtime\Messaging\FBS\FBSStateUtilities.cs" />
+    <Compile Include="Assets\droid\Runtime\Messaging\FBS\NeodroidFBSObservation.cs" />
+    <Compile Include="Assets\droid\Runtime\Messaging\FBS\NeodroidFBSReaction.cs" />
+    <Compile Include="Assets\droid\Runtime\Messaging\FBS\NeodroidFBSReactions.cs" />
+    <Compile Include="Assets\droid\Runtime\Messaging\FBS\NeodroidFBSShared.cs" />
+    <Compile Include="Assets\droid\Runtime\Messaging\FBS\NeodroidFBSState.cs" />
+    <Compile Include="Assets\droid\Runtime\Messaging\FBS\NeodroidFBSStates.cs" />
+    <Compile Include="Assets\droid\Runtime\Messaging\FBS\NeodroidFBSTypes.cs" />
+    <Compile Include="Assets\droid\Runtime\Messaging\Messages\Body.cs" />
+    <Compile Include="Assets\droid\Runtime\Messaging\Messages\Configuration.cs" />
+    <Compile Include="Assets\droid\Runtime\Messaging\Messages\Displayables\Displayable.cs" />
+    <Compile Include="Assets\droid\Runtime\Messaging\Messages\Displayables\DisplayableFloat.cs" />
+    <Compile Include="Assets\droid\Runtime\Messaging\Messages\Displayables\DisplayableString.cs" />
+    <Compile Include="Assets\droid\Runtime\Messaging\Messages\Displayables\DisplayableValuedVector3s.cs" />
+    <Compile Include="Assets\droid\Runtime\Messaging\Messages\Displayables\DisplayableValues.cs" />
+    <Compile Include="Assets\droid\Runtime\Messaging\Messages\Displayables\DisplayableVector3s.cs" />
+    <Compile Include="Assets\droid\Runtime\Messaging\Messages\EnvironmentDescription.cs" />
+    <Compile Include="Assets\droid\Runtime\Messaging\Messages\EnvironmentState.cs" />
+    <Compile Include="Assets\droid\Runtime\Messaging\Messages\MotorMotion.cs" />
+    <Compile Include="Assets\droid\Runtime\Messaging\Messages\Reaction.cs" />
+    <Compile Include="Assets\droid\Runtime\Messaging\Messages\ReactionParameters.cs" />
+    <Compile Include="Assets\droid\Runtime\Messaging\Messages\Reactions.cs" />
+    <Compile Include="Assets\droid\Runtime\Messaging\Messages\SimulatorConfigurationMessage.cs" />
+    <Compile Include="Assets\droid\Runtime\Messaging\Messages\Unobservables.cs" />
+    <Compile Include="Assets\droid\Runtime\Messaging\MessageServer.cs" />
+    <Compile Include="Assets\droid\Runtime\NeodroidInfo.cs" />
+    <Compile Include="Assets\droid\Runtime\Properties\AssemblyInfo.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Actors\Actor.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Actors\ActorComponentMenuPath.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Actors\KillableActor.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Configurables\ColorConfigurable.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Configurables\Configurable.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Configurables\ConfigurableComponentMenuPath.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Configurables\DifficultyConfigurable.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Configurables\EulerTransformConfigurable.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Configurables\Experimental\ExternalMeshConfigurable.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Configurables\Experimental\ExternalTextureConfigurable.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Configurables\Experimental\LightConfigurable.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Configurables\Experimental\MeshConfigurable.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Configurables\Experimental\ScreenSpaceOcclusionConfigurable.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Configurables\Experimental\StandardShaderMaterialConfigurable.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Configurables\Experimental\TextureConfigurable.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Configurables\FrictionConfigurable.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Configurables\ObjectSpawnerConfigurable.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Configurables\PositionConfigurable.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Configurables\QuaternionTransformConfigurable.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Configurables\RigidbodyConfigurable.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Configurables\ScreenSpacePositionConfigurable.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Configurables\SimulationConfigurable.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Configurables\SizeConfigurable.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Configurables\TransformConfigurable1Dof.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Displayers\Canvas\CanvasBarDisplayer.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Displayers\Canvas\CanvasTextDisplayer.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Displayers\Canvas\DistributionDisplayer.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Displayers\Cells\HexCellDisplayer.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Displayers\Cells\QuadCellDisplayer.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Displayers\Displayer.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Displayers\DisplayerComponentMenuPath.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Displayers\Experimental\ECS\ECSDisplayer.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Displayers\Experimental\ECS\ECSScatterPlotDisplayer.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Displayers\GridWorld\GridWorldVectorFieldDisplayer.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Displayers\ScatterPlots\GameObjectScatterPlotDisplayer.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Displayers\ScatterPlots\IndexedScatterPlotDisplayer.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Displayers\ScatterPlots\ScatterPlotDisplayer.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Displayers\ScatterPlots\TextScatterPlotDisplayer.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Displayers\ScatterPlots\VectorFieldDisplayer.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Displayers\TextMeshDisplayer.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Evaluation\AngularVelocityEvaluation.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Evaluation\AvoidCollisionEvaluation.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Evaluation\EuclideanDistance.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Evaluation\EvaluationComponentMenuPath.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Evaluation\ObjectiveFunction.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Evaluation\PoseDeviance.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Evaluation\PunishmentFunction.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Evaluation\ReachArea.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Evaluation\ReachGoal.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Evaluation\RestInArea.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Evaluation\SeekAndAvoidEvaluation.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Evaluation\Tasks\TaskSequence.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Evaluation\Terms\CollidersPunishmentTerm.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Evaluation\Terms\CollsionsPunishmentTerm.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Evaluation\Terms\RushTerm.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Evaluation\Terms\Term.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Evaluation\Terms\TermComponentMenuPath.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Evaluation\VelocityEvaluation.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Internals\ActionCounter.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Internals\EnvironmentListener.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Internals\Resetable.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Internals\ResetableComponentMenuPath.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Internals\StateValidation\EnsureValidState.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Internals\TransformResetable.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Motors\BanditArmMotor.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Motors\EulerTransformMotor.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Motors\EulerTransformMotor1Dof.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Motors\EulerTransformMotor3Dof.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Motors\IndexedMotionMotor.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Motors\Motor.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Motors\MotorComponentMenuPath.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Motors\Particles\RocketMotor.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Motors\RigidbodyMotor.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Motors\RigidbodyMotor1Dof.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Motors\RigidbodyMotor3Dof.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Motors\TargetRigidbodyMotor.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Motors\WheelColliderMotor\SteeringMotor.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Motors\WheelColliderMotor\TorqueMotor.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Observers\BoundingBox\BoundingBoxObserver.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Observers\BoundingBox\ScreenSpaceBoundingBoxObserver.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Observers\Camera\CameraObserver.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Observers\Camera\FloatArrayCameraObserver.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Observers\Camera\Segmentation\SegmentationCameraObserver.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Observers\Camera\Segmentation\SegmentationObserver.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Observers\Camera\StringAugmentedCameraObserver.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Observers\CategoricalObserver.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Observers\CompassObserver.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Observers\Grid\GoalCellObserver.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Observers\Grid\GridPositionObserver.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Observers\Observer.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Observers\ObserverComponentMenuPath.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Observers\Rays\AdjacencyObserver.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Observers\Rays\FixedLidarObserver.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Observers\Rays\LineOfSightObserver.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Observers\Rays\NearestByTagObserver.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Observers\Rays\RaycastObserver.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Observers\Rigidbody\AngularVelocityObserver.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Observers\Rigidbody\RigidbodyObserver.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Observers\Rigidbody\VelocityObserver.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Observers\StringObserver.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Observers\TargetRigidbodyObserver.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Observers\Transform\EulerTransformObserver.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Observers\Transform\PositionObserver.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Observers\Transform\PositionObserver2D.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Observers\Transform\QuaternionTransformObserver.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Observers\Transform\RotationObserver.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Observers\Transform\SingleAxisTransformObserver.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Observers\TwoDimensionalScreenSpaceObserver.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\Observers\ValueObserver.cs" />
+    <Compile Include="Assets\droid\Runtime\Prototyping\PrototypingComponentMenuPath.cs" />
+    <Compile Include="Assets\droid\Runtime\Utilities\BoundingBoxes\BoundingBox.cs" />
+    <Compile Include="Assets\droid\Runtime\Utilities\BoundingBoxes\Draw3DBoundingBox.cs" />
+    <Compile Include="Assets\droid\Runtime\Utilities\BoundingBoxes\DrawScreenSpaceBoundingBox.cs" />
+    <Compile Include="Assets\droid\Runtime\Utilities\BoundingBoxes\Experimental\BoundingBoxUtilities.cs" />
+    <Compile Include="Assets\droid\Runtime\Utilities\BoundingBoxes\Experimental\Corners.cs" />
+    <Compile Include="Assets\droid\Runtime\Utilities\BoundingBoxes\Experimental\DrawBoundingBoxes.cs" />
+    <Compile Include="Assets\droid\Runtime\Utilities\Debugging\DebugPrinting.cs" />
+    <Compile Include="Assets\droid\Runtime\Utilities\Enums\Axis.cs" />
+    <Compile Include="Assets\droid\Runtime\Utilities\Enums\CoordinateSystem.cs" />
+    <Compile Include="Assets\droid\Runtime\Utilities\Enums\DimensionCombination.cs" />
+    <Compile Include="Assets\droid\Runtime\Utilities\Enums\FrameFinishes.cs" />
+    <Compile Include="Assets\droid\Runtime\Utilities\Enums\SimulationType.cs" />
+    <Compile Include="Assets\droid\Runtime\Utilities\Enums\WaitOn.cs" />
+    <Compile Include="Assets\droid\Runtime\Utilities\EventRecipients\DataPoller.cs" />
+    <Compile Include="Assets\droid\Runtime\Utilities\EventRecipients\InputFieldUpdater.cs" />
+    <Compile Include="Assets\droid\Runtime\Utilities\EventRecipients\TextUpdater.cs" />
+    <Compile Include="Assets\droid\Runtime\Utilities\EventRecipients\ToggleUpdater.cs" />
+    <Compile Include="Assets\droid\Runtime\Utilities\GameObjects\PrototypingGameObject.cs" />
+    <Compile Include="Assets\droid\Runtime\Utilities\Misc\Drawing\DrawString.cs" />
+    <Compile Include="Assets\droid\Runtime\Utilities\Misc\Drawing\GuiDraw.cs" />
+    <Compile Include="Assets\droid\Runtime\Utilities\Misc\Drawing\NeodroidDrawingUtilities.cs" />
+    <Compile Include="Assets\droid\Runtime\Utilities\Misc\Extensions\JointFix.cs" />
+    <Compile Include="Assets\droid\Runtime\Utilities\Misc\Extensions\Obstruction.cs" />
+    <Compile Include="Assets\droid\Runtime\Utilities\Misc\Extensions\OnCollision.cs" />
+    <Compile Include="Assets\droid\Runtime\Utilities\Misc\Extensions\ParticleController.cs" />
+    <Compile Include="Assets\droid\Runtime\Utilities\Misc\Grasping\GraspingUtilities.cs" />
+    <Compile Include="Assets\droid\Runtime\Utilities\Misc\Grid\GridCell.cs" />
+    <Compile Include="Assets\droid\Runtime\Utilities\Misc\NeodroidUtilities.cs" />
+    <Compile Include="Assets\droid\Runtime\Utilities\Misc\Note.cs" />
+    <Compile Include="Assets\droid\Runtime\Utilities\Misc\Orientation\FollowTarget.cs" />
+    <Compile Include="Assets\droid\Runtime\Utilities\Misc\Orientation\FollowTargetRotation.cs" />
+    <Compile Include="Assets\droid\Runtime\Utilities\Misc\Orientation\MotionTracker.cs" />
+    <Compile Include="Assets\droid\Runtime\Utilities\Misc\Orientation\PointInDirection.cs" />
+    <Compile Include="Assets\droid\Runtime\Utilities\Misc\Perlin.cs" />
+    <Compile Include="Assets\droid\Runtime\Utilities\Misc\Procedural\GameObjectCloner.cs" />
+    <Compile Include="Assets\droid\Runtime\Utilities\Misc\Procedural\SnakeSpaceFilling.cs" />
+    <Compile Include="Assets\droid\Runtime\Utilities\Misc\SearchableEnum\SearchableEnumAttribute.cs" />
+    <Compile Include="Assets\droid\Runtime\Utilities\NeodroidCamera\CameraObservationTextureController.cs" />
+    <Compile Include="Assets\droid\Runtime\Utilities\NeodroidCamera\DisparityCameraBehaviour.cs" />
+    <Compile Include="Assets\droid\Runtime\Utilities\NeodroidCamera\FlowCameraBehaviour.cs" />
+    <Compile Include="Assets\droid\Runtime\Utilities\NeodroidCamera\IgnoreLightSource.cs" />
+    <Compile Include="Assets\droid\Runtime\Utilities\NeodroidCamera\InfraredLightSource.cs" />
+    <Compile Include="Assets\droid\Runtime\Utilities\NeodroidCamera\ReplacementShaderEffect.cs" />
+    <Compile Include="Assets\droid\Runtime\Utilities\NeodroidCamera\Segmentation\ChangeMaterialOnRenderByInstance.cs" />
+    <Compile Include="Assets\droid\Runtime\Utilities\NeodroidCamera\Segmentation\ChangeMaterialOnRenderByTag.cs" />
+    <Compile Include="Assets\droid\Runtime\Utilities\NeodroidCamera\Segmentation\Segmenter.cs" />
+    <Compile Include="Assets\droid\Runtime\Utilities\NeodroidCamera\SynchroniseCameraProperties.cs" />
+    <Compile Include="Assets\droid\Runtime\Utilities\Noise\ProjectileSpammer.cs" />
+    <Compile Include="Assets\droid\Runtime\Utilities\Noise\SelfDestruct.cs" />
+    <Compile Include="Assets\droid\Runtime\Utilities\Plotting\DrawSpaces.cs" />
+    <Compile Include="Assets\droid\Runtime\Utilities\Plotting\Meshes.cs" />
+    <Compile Include="Assets\droid\Runtime\Utilities\Plotting\PlotFunctions.cs" />
+    <Compile Include="Assets\droid\Runtime\Utilities\Plotting\ValueRangePlotter.cs" />
+    <Compile Include="Assets\droid\Runtime\Utilities\ScriptableObjects\Curriculum.cs" />
+    <Compile Include="Assets\droid\Runtime\Utilities\ScriptableObjects\NeodroidTask.cs" />
+    <Compile Include="Assets\droid\Runtime\Utilities\ScriptableObjects\PlayerMotions.cs" />
+    <Compile Include="Assets\droid\Runtime\Utilities\ScriptableObjects\Segmentation.cs" />
+    <Compile Include="Assets\droid\Runtime\Utilities\ScriptableObjects\SimulatorConfiguration.cs" />
+    <Compile Include="Assets\droid\Runtime\Utilities\Sensors\ChildColliderSensor.cs" />
+    <Compile Include="Assets\droid\Runtime\Utilities\SerialisableDictionary\Example.cs" />
+    <Compile Include="Assets\droid\Runtime\Utilities\SerialisableDictionary\SerializableDictionary.cs" />
+    <Compile Include="Assets\droid\Runtime\Utilities\SerialisableDictionary\SerializableDictionaryDrawer.cs" />
+    <Compile Include="Assets\droid\Runtime\Utilities\SerialisableDictionary\SerializableDictionaryDrawerImplementations.cs" />
+    <Compile Include="Assets\droid\Runtime\Utilities\SerialisableDictionary\SerializableDictionaryImplementations.cs" />
+    <Compile Include="Assets\droid\Runtime\Utilities\SerialisableDictionary\SerializedPropertyExtension.cs" />
+    <Compile Include="Assets\droid\Runtime\Utilities\StatusDisplayer\AutoSetupStatusDisplayer.cs" />
+    <Compile Include="Assets\droid\Runtime\Utilities\Structs\DoubleVector3.cs" />
+    <Compile Include="Assets\droid\Runtime\Utilities\Structs\IntVector3.cs" />
+    <Compile Include="Assets\droid\Runtime\Utilities\Structs\Points.cs" />
+    <Compile Include="Assets\droid\Runtime\Utilities\Structs\SegmentationColor.cs" />
+    <Compile Include="Assets\droid\Runtime\Utilities\Structs\Space2.cs" />
+    <Compile Include="Assets\droid\Runtime\Utilities\Structs\Space3.cs" />
+    <Compile Include="Assets\droid\Runtime\Utilities\Structs\Space4.cs" />
+    <Compile Include="Assets\droid\Runtime\Utilities\Structs\ValueSpace.cs" />
+    <None Include="Assets\droid\Runtime\Shaders\Depth.shader" />
+    <None Include="Assets\droid\Runtime\Shaders\ObjectSpace.shader" />
+    <None Include="Assets\droid\Runtime\Shaders\Tangents.shader" />
+    <None Include="Assets\droid\Runtime\Utilities\Plotting\ValueRangePlotter.shader" />
+    <None Include="Assets\droid\Runtime\Shaders\FlatColor.shader" />
+    <None Include="Assets\droid\Runtime\Shaders\Normal.shader" />
+    <None Include="Assets\droid\Runtime\Shaders\Segmentation\Outlined.shader" />
+    <None Include="Assets\droid\Runtime\Neodroid.Runtime.asmdef" />
+    <None Include="Assets\droid\Runtime\Shaders\Experimental\OpticalFlow.shader" />
+    <None Include="Assets\droid\Runtime\Shaders\Segmentation\Flat.shader" />
+    <None Include="Assets\droid\Runtime\Shaders\UVs.shader" />
+    <None Include="Assets\droid\Runtime\Shaders\ScreenSpaceFlow.shader" />
+    <None Include="Assets\droid\Runtime\Shaders\Experimental\UltimateOutline.shader" />
     <Reference Include="UnityEngine.AIModule">
       <HintPath>/home/heider/Unity/Hub/Editor/2019.1.0a13/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
     </Reference>
@@ -403,11 +504,29 @@
     <Reference Include="UnityEngine.UI">
       <HintPath>/home/heider/Unity/Hub/Editor/2019.1.0a13/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>/home/heider/Unity/Hub/Editor/2019.1.0a13/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.TestRunner">
+      <HintPath>/home/heider/Unity/Hub/Editor/2019.1.0a13/Editor/Data/UnityExtensions/Unity/TestRunner/Editor/UnityEditor.TestRunner.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.TestRunner">
       <HintPath>/home/heider/Unity/Hub/Editor/2019.1.0a13/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>/home/heider/Unity/Hub/Editor/2019.1.0a13/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.VR">
+      <HintPath>/home/heider/Unity/Hub/Editor/2019.1.0a13/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Graphs">
+      <HintPath>/home/heider/Unity/Hub/Editor/2019.1.0a13/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.LinuxStandalone.Extensions">
+      <HintPath>/home/heider/Unity/Hub/Editor/2019.1.0a13/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="JetBrains.Rider.Unity.Editor.Plugin.Repacked">
+      <HintPath>/home/heider/Projects/Neodroid/AAV/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll</HintPath>
     </Reference>
     <Reference Include="Priority Queue">
       <HintPath>/home/heider/Projects/Neodroid/AAV/Assets/droid/Libaries/OptimizedPriorityQueue.4.1.1/lib/net45/Priority Queue.dll</HintPath>
@@ -424,6 +543,9 @@
     <Reference Include="AsyncIO">
       <HintPath>/home/heider/Projects/Neodroid/AAV/Assets/droid/Libaries/AsyncIO.0.1.61/lib/net40/AsyncIO.dll</HintPath>
     </Reference>
+    <Reference Include="AssetIdRemapUtility">
+      <HintPath>/home/heider/Projects/Neodroid/AAV/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/AssetIdRemapUtility/Editor/AssetIdRemapUtility.dll</HintPath>
+    </Reference>
     <Reference Include="ProBuilderCore">
       <HintPath>/home/heider/Projects/Neodroid/AAV/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Classes/ProBuilderCore.dll</HintPath>
     </Reference>
@@ -438,6 +560,9 @@
     </Reference>
     <Reference Include="pb_Stl">
       <HintPath>/home/heider/Projects/Neodroid/AAV/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Classes/ClassesLib/pb_Stl.dll</HintPath>
+    </Reference>
+    <Reference Include="ProBuilderEditor">
+      <HintPath>/home/heider/Projects/Neodroid/AAV/Library/PackageCache/com.unity.probuilder@3.0.9/ProBuilder/Editor/ProBuilderEditor.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>/home/heider/Unity/Hub/Editor/2019.1.0a13/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -793,16 +918,6 @@
     <Reference Include="Boo.Lang">
       <HintPath>/home/heider/Unity/Hub/Editor/2019.1.0a13/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
     </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="Neodroid.Editor.csproj">
-      <Project>{287336BF-D71A-A11C-9417-B518566D3B4D}</Project>
-      <Name>Neodroid.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Neodroid.Runtime.csproj">
-      <Project>{C9AF1D98-9147-2CAA-2E34-899F917C4921}</Project>
-      <Name>Neodroid.Runtime</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -12,6 +12,8 @@
 JetBrains/
 
 *[Ee]xcluded.*
+*[Ee]xclude.*
+*[Ee]xclude/
 
 sysinfo.txt
 

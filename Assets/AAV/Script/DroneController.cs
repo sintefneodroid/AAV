@@ -5,8 +5,11 @@ namespace AAV {
   /// <inheritdoc />
   /// <summary>
   /// </summary>
-  public class DroneController : MonoBehaviour {
-    [SerializeField] float addForceFactor = 9.82f;
+  public class DroneController : MonoBehaviour
+  {
+    [SerializeField] bool _use_gravity_y_value_as_add_force = true;
+
+    [SerializeField] float addForceFactor = 9.81f;
 
     const float _mph_to_ms = 2.23693629205f;
 
@@ -149,6 +152,10 @@ namespace AAV {
       };
       this.MotorsEnabled = false;
 
+      if (_use_gravity_y_value_as_add_force){
+        this.addForceFactor = -Physics.gravity.y;
+      }
+
       this.UseGravity = this._rb.useGravity;
 //		UpdateConstraints ();
       this._rb.maxAngularVelocity = Mathf.Infinity;
@@ -264,6 +271,9 @@ namespace AAV {
                          * this.transform.up;
       var torque_vector = Vector3.Cross(predicted_up, Vector3.up);
       this._rb.AddTorque(torque_vector * this.stabilitySpeed * this.stabilitySpeed);
+
+      var stabilise_y_torque = new Vector3(0,-this._rb.angularVelocity.y,0)*stability;
+      this._rb.AddTorque(stabilise_y_torque,ForceMode.Force);
     }
 
 /*	void FixedUpdate ()
