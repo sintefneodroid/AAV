@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
-using UnityEngine.Serialization;
 
-namespace AAV {
+namespace AAV.Drone.Script {
   /// <inheritdoc />
   /// <summary>
   /// </summary>
@@ -152,7 +151,7 @@ namespace AAV {
       };
       this.MotorsEnabled = false;
 
-      if (_use_gravity_y_value_as_add_force){
+      if (this._use_gravity_y_value_as_add_force){
         this.addForceFactor = -Physics.gravity.y;
       }
 
@@ -272,7 +271,7 @@ namespace AAV {
       var torque_vector = Vector3.Cross(predicted_up, Vector3.up);
       this._rb.AddTorque(torque_vector * this.stabilitySpeed * this.stabilitySpeed);
 
-      var stabilise_y_torque = new Vector3(0,-this._rb.angularVelocity.y,0)*stability;
+      var stabilise_y_torque = new Vector3(0,-this._rb.angularVelocity.y,0)* this.stability;
       this._rb.AddTorque(stabilise_y_torque,ForceMode.Force);
     }
 

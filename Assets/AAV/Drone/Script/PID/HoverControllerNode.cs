@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AAV.PID {
+namespace AAV.Drone.Script.PID {
   [Serializable]
   public class HoverControllerNode {
     PidController _controller;

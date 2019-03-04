@@ -8,4 +8,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Exclude/City.unity
     guid: 819e90a3007ac704bbd1683ca0fa5c54
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: dbcca21a227d1e00e8a88ded1de15203,
+      type: 2}

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AAV.PID {
+namespace AAV.Drone.Script.PID {
 // .....
 // basically empty Tuple class to mimic .NET's since no access to that one here
   /// <summary>

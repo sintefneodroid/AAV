@@ -1,10 +1,7 @@
-﻿using UnityEngine;
-using UnityEngine.UI;
-using System.Collections;
-using TMPro;
+﻿using TMPro;
+using UnityEngine;
 
-
-namespace TMPro.Examples
+namespace TextMesh_Pro.Scripts
 {
 
     public class TMP_ExampleScript_01 : MonoBehaviour
@@ -26,37 +23,37 @@ namespace TMPro.Examples
         {
             // Get a reference to the TMP text component if one already exists otherwise add one.
             // This example show the convenience of having both TMP components derive from TMP_Text. 
-            if (ObjectType == 0)
-                m_text = GetComponent<TextMeshPro>() ?? gameObject.AddComponent<TextMeshPro>();
+            if (this.ObjectType == 0)
+                this.m_text = this.GetComponent<TextMeshPro>() ?? this.gameObject.AddComponent<TextMeshPro>();
             else
-                m_text = GetComponent<TextMeshProUGUI>() ?? gameObject.AddComponent<TextMeshProUGUI>();
+                this.m_text = this.GetComponent<TextMeshProUGUI>() ?? this.gameObject.AddComponent<TextMeshProUGUI>();
 
             // Load a new font asset and assign it to the text object.
-            m_text.font = Resources.Load<TMP_FontAsset>("Fonts & Materials/Anton SDF");
+            this.m_text.font = Resources.Load<TMP_FontAsset>("Fonts & Materials/Anton SDF");
 
             // Load a new material preset which was created with the context menu duplicate.
-            m_text.fontSharedMaterial = Resources.Load<Material>("Fonts & Materials/Anton SDF - Drop Shadow");
+            this.m_text.fontSharedMaterial = Resources.Load<Material>("Fonts & Materials/Anton SDF - Drop Shadow");
 
             // Set the size of the font.
-            m_text.fontSize = 120;
+            this.m_text.fontSize = 120;
 
             // Set the text
-            m_text.text = "A <#0080ff>simple</color> line of text.";
+            this.m_text.text = "A <#0080ff>simple</color> line of text.";
 
             // Get the preferred width and height based on the supplied width and height as opposed to the actual size of the current text container.
-            Vector2 size = m_text.GetPreferredValues(Mathf.Infinity, Mathf.Infinity);
+            var size = this.m_text.GetPreferredValues(Mathf.Infinity, Mathf.Infinity);
 
             // Set the size of the RectTransform based on the new calculated values.
-            m_text.rectTransform.sizeDelta = new Vector2(size.x, size.y);
+            this.m_text.rectTransform.sizeDelta = new Vector2(size.x, size.y);
         }
 
 
         void Update()
         {
-            if (!isStatic)
+            if (!this.isStatic)
             {
-                m_text.SetText(k_label, count % 1000);
-                count += 1;
+                this.m_text.SetText(k_label, this.count % 1000);
+                this.count += 1;
             }
         }
 

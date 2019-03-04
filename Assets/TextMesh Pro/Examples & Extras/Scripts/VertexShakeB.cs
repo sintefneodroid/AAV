@@ -1,8 +1,8 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using System.Collections;
+using TMPro;
+using UnityEngine;
 
-
-namespace TMPro.Examples
+namespace TextMesh_Pro.Scripts
 {
 
     public class VertexShakeB : MonoBehaviour
@@ -18,31 +18,30 @@ namespace TMPro.Examples
 
         void Awake()
         {
-            m_TextComponent = GetComponent<TMP_Text>();
+            this.m_TextComponent = this.GetComponent<TMP_Text>();
         }
 
         void OnEnable()
         {
             // Subscribe to event fired when text object has been regenerated.
-            TMPro_EventManager.TEXT_CHANGED_EVENT.Add(ON_TEXT_CHANGED);
+            TMPro_EventManager.TEXT_CHANGED_EVENT.Add(this.ON_TEXT_CHANGED);
         }
 
         void OnDisable()
         {
-            TMPro_EventManager.TEXT_CHANGED_EVENT.Remove(ON_TEXT_CHANGED);
+            TMPro_EventManager.TEXT_CHANGED_EVENT.Remove(this.ON_TEXT_CHANGED);
         }
 
 
         void Start()
         {
-            StartCoroutine(AnimateVertexColors());
+            this.StartCoroutine(this.AnimateVertexColors());
         }
 
 
         void ON_TEXT_CHANGED(Object obj)
         {
-            if (obj = m_TextComponent)
-                hasTextChanged = true;
+            if (obj = this.m_TextComponent) this.hasTextChanged = true;
         }
 
         /// <summary>
@@ -54,33 +53,33 @@ namespace TMPro.Examples
 
             // We force an update of the text object since it would only be updated at the end of the frame. Ie. before this code is executed on the first frame.
             // Alternatively, we could yield and wait until the end of the frame when the text object will be generated.
-            m_TextComponent.ForceMeshUpdate();
+            this.m_TextComponent.ForceMeshUpdate();
 
-            TMP_TextInfo textInfo = m_TextComponent.textInfo;
+            var textInfo = this.m_TextComponent.textInfo;
 
             Matrix4x4 matrix;
-            Vector3[][] copyOfVertices = new Vector3[0][];
+            var copyOfVertices = new Vector3[0][];
 
-            hasTextChanged = true;
+            this.hasTextChanged = true;
 
             while (true)
             {
                 // Allocate new vertices 
-                if (hasTextChanged)
+                if (this.hasTextChanged)
                 {
                     if (copyOfVertices.Length < textInfo.meshInfo.Length)
                         copyOfVertices = new Vector3[textInfo.meshInfo.Length][];
 
-                    for (int i = 0; i < textInfo.meshInfo.Length; i++)
+                    for (var i = 0; i < textInfo.meshInfo.Length; i++)
                     {
-                        int length = textInfo.meshInfo[i].vertices.Length;
+                        var length = textInfo.meshInfo[i].vertices.Length;
                         copyOfVertices[i] = new Vector3[length];
                     }
 
-                    hasTextChanged = false;
+                    this.hasTextChanged = false;
                 }
 
-                int characterCount = textInfo.characterCount;
+                var characterCount = textInfo.characterCount;
 
                 // If No Characters then just yield and wait for some text to be added
                 if (characterCount == 0)
@@ -89,37 +88,37 @@ namespace TMPro.Examples
                     continue;
                 }
 
-                int lineCount = textInfo.lineCount;
+                var lineCount = textInfo.lineCount;
 
                 // Iterate through each line of the text.
-                for (int i = 0; i < lineCount; i++)
+                for (var i = 0; i < lineCount; i++)
                 {
 
-                    int first = textInfo.lineInfo[i].firstCharacterIndex;
-                    int last = textInfo.lineInfo[i].lastCharacterIndex;
+                    var first = textInfo.lineInfo[i].firstCharacterIndex;
+                    var last = textInfo.lineInfo[i].lastCharacterIndex;
 
                     // Determine the center of each line
-                    Vector3 centerOfLine = (textInfo.characterInfo[first].bottomLeft + textInfo.characterInfo[last].topRight) / 2;
-                    Quaternion rotation = Quaternion.Euler(0, 0, Random.Range(-0.25f, 0.25f));
+                    var centerOfLine = (textInfo.characterInfo[first].bottomLeft + textInfo.characterInfo[last].topRight) / 2;
+                    var rotation = Quaternion.Euler(0, 0, Random.Range(-0.25f, 0.25f));
 
                     // Iterate through each character of the line.
-                    for (int j = first; j <= last; j++)
+                    for (var j = first; j <= last; j++)
                     {
                         // Skip characters that are not visible and thus have no geometry to manipulate.
                         if (!textInfo.characterInfo[j].isVisible)
                             continue;
 
                         // Get the index of the material used by the current character.
-                        int materialIndex = textInfo.characterInfo[j].materialReferenceIndex;
+                        var materialIndex = textInfo.characterInfo[j].materialReferenceIndex;
 
                         // Get the index of the first vertex used by this text element.
-                        int vertexIndex = textInfo.characterInfo[j].vertexIndex;
+                        var vertexIndex = textInfo.characterInfo[j].vertexIndex;
 
                         // Get the vertices of the mesh used by this text element (character or sprite).
-                        Vector3[] sourceVertices = textInfo.meshInfo[materialIndex].vertices;
+                        var sourceVertices = textInfo.meshInfo[materialIndex].vertices;
 
                         // Determine the center point of each character at the baseline.
-                        Vector3 charCenter = (sourceVertices[vertexIndex + 0] + sourceVertices[vertexIndex + 2]) / 2;
+                        var charCenter = (sourceVertices[vertexIndex + 0] + sourceVertices[vertexIndex + 2]) / 2;
 
                         // Need to translate all 4 vertices of each quad to aligned with center of character.
                         // This is needed so the matrix TRS is applied at the origin for each character.
@@ -129,7 +128,7 @@ namespace TMPro.Examples
                         copyOfVertices[materialIndex][vertexIndex + 3] = sourceVertices[vertexIndex + 3] - charCenter;
 
                         // Determine the random scale change for each character.
-                        float randomScale = Random.Range(0.95f, 1.05f);
+                        var randomScale = Random.Range(0.95f, 1.05f);
 
                         // Setup the matrix for the scale change.
                         matrix = Matrix4x4.TRS(Vector3.one, Quaternion.identity, Vector3.one * randomScale);
@@ -171,10 +170,10 @@ namespace TMPro.Examples
                 }
 
                 // Push changes into meshes
-                for (int i = 0; i < textInfo.meshInfo.Length; i++)
+                for (var i = 0; i < textInfo.meshInfo.Length; i++)
                 {
                     textInfo.meshInfo[i].mesh.vertices = copyOfVertices[i];
-                    m_TextComponent.UpdateGeometry(textInfo.meshInfo[i].mesh, i);
+                    this.m_TextComponent.UpdateGeometry(textInfo.meshInfo[i].mesh, i);
                 }
 
                 yield return new WaitForSeconds(0.1f);

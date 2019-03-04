@@ -7,6 +7,8 @@ TagManager:
   - CameraBody
   - Infrared
   - New tag
+  - Underside
+  - Pop Tire
   layers:
   - Default
   - TransparentFX
@@ -18,9 +20,9 @@ TagManager:
   - 
   - PostProcessing
   - Player
-  - 
-  - 
-  - 
+  - Detachable Part
+  - Ignore Wheel Cast
+  - Vehicles
   - 
   - 
   - 

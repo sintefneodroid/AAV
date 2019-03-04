@@ -1,8 +1,7 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using TMPro;
+using UnityEngine;
 
-
-namespace TMPro.Examples
+namespace TextMesh_Pro.Scripts
 {
     
     public class TMP_UiFrameRateCounter : MonoBehaviour
@@ -25,64 +24,63 @@ namespace TMPro.Examples
 
         void Awake()
         {
-            if (!enabled)
+            if (!this.enabled)
                 return;
 
             Application.targetFrameRate = -1;
 
-            GameObject frameCounter = new GameObject("Frame Counter");
-            m_frameCounter_transform = frameCounter.AddComponent<RectTransform>();
+            var frameCounter = new GameObject("Frame Counter");
+            this.m_frameCounter_transform = frameCounter.AddComponent<RectTransform>();
 
-            m_frameCounter_transform.SetParent(this.transform, false);
+            this.m_frameCounter_transform.SetParent(this.transform, false);
 
-            m_TextMeshPro = frameCounter.AddComponent<TextMeshProUGUI>();
-            m_TextMeshPro.font = Resources.Load<TMP_FontAsset>("Fonts & Materials/LiberationSans SDF");
-            m_TextMeshPro.fontSharedMaterial = Resources.Load<Material>("Fonts & Materials/LiberationSans SDF - Overlay");
+            this.m_TextMeshPro = frameCounter.AddComponent<TextMeshProUGUI>();
+            this.m_TextMeshPro.font = Resources.Load<TMP_FontAsset>("Fonts & Materials/LiberationSans SDF");
+            this.m_TextMeshPro.fontSharedMaterial = Resources.Load<Material>("Fonts & Materials/LiberationSans SDF - Overlay");
 
-            m_TextMeshPro.enableWordWrapping = false;
-            m_TextMeshPro.fontSize = 36;
+            this.m_TextMeshPro.enableWordWrapping = false;
+            this.m_TextMeshPro.fontSize = 36;
 
-            m_TextMeshPro.isOverlay = true;
+            this.m_TextMeshPro.isOverlay = true;
 
-            Set_FrameCounter_Position(AnchorPosition);
-            last_AnchorPosition = AnchorPosition;
+            this.Set_FrameCounter_Position(this.AnchorPosition);
+            this.last_AnchorPosition = this.AnchorPosition;
         }
 
 
         void Start()
         {
-            m_LastInterval = Time.realtimeSinceStartup;
-            m_Frames = 0;
+            this.m_LastInterval = Time.realtimeSinceStartup;
+            this.m_Frames = 0;
         }
 
 
         void Update()
         {
-            if (AnchorPosition != last_AnchorPosition)
-                Set_FrameCounter_Position(AnchorPosition);
+            if (this.AnchorPosition != this.last_AnchorPosition) this.Set_FrameCounter_Position(this.AnchorPosition);
 
-            last_AnchorPosition = AnchorPosition;
+            this.last_AnchorPosition = this.AnchorPosition;
 
-            m_Frames += 1;
-            float timeNow = Time.realtimeSinceStartup;
+            this.m_Frames += 1;
+            var timeNow = Time.realtimeSinceStartup;
 
-            if (timeNow > m_LastInterval + UpdateInterval)
+            if (timeNow > this.m_LastInterval + this.UpdateInterval)
             {
                 // display two fractional digits (f2 format)
-                float fps = m_Frames / (timeNow - m_LastInterval);
-                float ms = 1000.0f / Mathf.Max(fps, 0.00001f);
+                var fps = this.m_Frames / (timeNow - this.m_LastInterval);
+                var ms = 1000.0f / Mathf.Max(fps, 0.00001f);
 
                 if (fps < 30)
-                    htmlColorTag = "<color=yellow>";
+                    this.htmlColorTag = "<color=yellow>";
                 else if (fps < 10)
-                    htmlColorTag = "<color=red>";
+                    this.htmlColorTag = "<color=red>";
                 else
-                    htmlColorTag = "<color=green>";
+                    this.htmlColorTag = "<color=green>";
 
-                m_TextMeshPro.SetText(htmlColorTag + fpsLabel, fps, ms);
+                this.m_TextMeshPro.SetText(this.htmlColorTag + fpsLabel, fps, ms);
 
-                m_Frames = 0;
-                m_LastInterval = timeNow;
+                this.m_Frames = 0;
+                this.m_LastInterval = timeNow;
             }
         }
 
@@ -92,32 +90,32 @@ namespace TMPro.Examples
             switch (anchor_position)
             {
                 case FpsCounterAnchorPositions.TopLeft:
-                    m_TextMeshPro.alignment = TextAlignmentOptions.TopLeft;
-                    m_frameCounter_transform.pivot = new Vector2(0, 1);
-                    m_frameCounter_transform.anchorMin = new Vector2(0.01f, 0.99f);
-                    m_frameCounter_transform.anchorMax = new Vector2(0.01f, 0.99f);
-                    m_frameCounter_transform.anchoredPosition = new Vector2(0, 1);
+                    this.m_TextMeshPro.alignment = TextAlignmentOptions.TopLeft;
+                    this.m_frameCounter_transform.pivot = new Vector2(0, 1);
+                    this.m_frameCounter_transform.anchorMin = new Vector2(0.01f, 0.99f);
+                    this.m_frameCounter_transform.anchorMax = new Vector2(0.01f, 0.99f);
+                    this.m_frameCounter_transform.anchoredPosition = new Vector2(0, 1);
                     break;
                 case FpsCounterAnchorPositions.BottomLeft:
-                    m_TextMeshPro.alignment = TextAlignmentOptions.BottomLeft;
-                    m_frameCounter_transform.pivot = new Vector2(0, 0);
-                    m_frameCounter_transform.anchorMin = new Vector2(0.01f, 0.01f);
-                    m_frameCounter_transform.anchorMax = new Vector2(0.01f, 0.01f);
-                    m_frameCounter_transform.anchoredPosition = new Vector2(0, 0);
+                    this.m_TextMeshPro.alignment = TextAlignmentOptions.BottomLeft;
+                    this.m_frameCounter_transform.pivot = new Vector2(0, 0);
+                    this.m_frameCounter_transform.anchorMin = new Vector2(0.01f, 0.01f);
+                    this.m_frameCounter_transform.anchorMax = new Vector2(0.01f, 0.01f);
+                    this.m_frameCounter_transform.anchoredPosition = new Vector2(0, 0);
                     break;
                 case FpsCounterAnchorPositions.TopRight:
-                    m_TextMeshPro.alignment = TextAlignmentOptions.TopRight;
-                    m_frameCounter_transform.pivot = new Vector2(1, 1);
-                    m_frameCounter_transform.anchorMin = new Vector2(0.99f, 0.99f);
-                    m_frameCounter_transform.anchorMax = new Vector2(0.99f, 0.99f);
-                    m_frameCounter_transform.anchoredPosition = new Vector2(1, 1);
+                    this.m_TextMeshPro.alignment = TextAlignmentOptions.TopRight;
+                    this.m_frameCounter_transform.pivot = new Vector2(1, 1);
+                    this.m_frameCounter_transform.anchorMin = new Vector2(0.99f, 0.99f);
+                    this.m_frameCounter_transform.anchorMax = new Vector2(0.99f, 0.99f);
+                    this.m_frameCounter_transform.anchoredPosition = new Vector2(1, 1);
                     break;
                 case FpsCounterAnchorPositions.BottomRight:
-                    m_TextMeshPro.alignment = TextAlignmentOptions.BottomRight;
-                    m_frameCounter_transform.pivot = new Vector2(1, 0);
-                    m_frameCounter_transform.anchorMin = new Vector2(0.99f, 0.01f);
-                    m_frameCounter_transform.anchorMax = new Vector2(0.99f, 0.01f);
-                    m_frameCounter_transform.anchoredPosition = new Vector2(1, 0);
+                    this.m_TextMeshPro.alignment = TextAlignmentOptions.BottomRight;
+                    this.m_frameCounter_transform.pivot = new Vector2(1, 0);
+                    this.m_frameCounter_transform.anchorMin = new Vector2(0.99f, 0.01f);
+                    this.m_frameCounter_transform.anchorMax = new Vector2(0.99f, 0.01f);
+                    this.m_frameCounter_transform.anchoredPosition = new Vector2(1, 0);
                     break;
             }
         }

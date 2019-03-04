@@ -17,19 +17,19 @@ MonoBehaviour:
   - _Key: 119
     _Actor: DroneActor
     _Motor: DroneRigidbodyRotX_
-    _Strength: -4
+    _Strength: -1
   - _Key: 115
     _Actor: DroneActor
     _Motor: DroneRigidbodyRotX_
-    _Strength: 4
+    _Strength: 1
   - _Key: 97
     _Actor: DroneActor
     _Motor: DroneRigidbodyRotZ_
-    _Strength: 4
+    _Strength: 1
   - _Key: 100
     _Actor: DroneActor
     _Motor: DroneRigidbodyRotZ_
-    _Strength: -4
+    _Strength: -1
   - _Key: 113
     _Actor: DroneActor
     _Motor: DroneRigidbodyRotY_

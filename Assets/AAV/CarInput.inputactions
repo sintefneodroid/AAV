@@ -1,0 +1,49 @@
+{
+    "name": "CarInput",
+    "maps": [
+        {
+            "name": "New action map",
+            "id": "0629ba02-3e90-4011-890a-e3ad221228e0",
+            "actions": [
+                {
+                    "name": "New action",
+                    "id": "e9099b0d-7bfd-46c4-98ee-6a6103d92e5c",
+                    "expectedControlLayout": "",
+                    "continuous": false,
+                    "passThrough": false,
+                    "processors": "",
+                    "interactions": "",
+                    "bindings": []
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "chainWithPrevious": false,
+                    "isComposite": false,
+                    "isPartOfComposite": false,
+                    "modifiers": ""
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "JoystickControlScheme",
+            "basedOn": "",
+            "bindingGroup": "New control scheme",
+            "devices": [
+                {
+                    "devicePath": "<Joystick>",
+                    "isOptional": true,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}

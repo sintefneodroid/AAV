@@ -1,8 +1,8 @@
 ﻿using System;
-//using Neodroid.Runtime.Utilities.Structs;
 using UnityEngine;
+//using Neodroid.Runtime.Utilities.Structs;
 
-namespace AAV.PID {
+namespace AAV.Drone.Script.PID {
   [Serializable]
   public class AttitudeControllerNode {
     Action<Vector3> _torque_callback;

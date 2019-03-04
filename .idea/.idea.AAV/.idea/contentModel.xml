@@ -9,17 +9,19 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="AAV" t="Include">
-          <e p="DroneEvaluation.cs" t="Include" />
-          <e p="Script" t="Include">
-            <e p="DroneController.cs" t="Include" />
-            <e p="Lidar.cs" t="Include" />
-            <e p="PID" t="Include">
-              <e p="AttitudeControllerNode.cs" t="Include" />
-              <e p="HoverControllerNode.cs" t="Include" />
-              <e p="HoverTwiddleTunerNode.cs" t="Include" />
-              <e p="PIDController.cs" t="Include" />
-              <e p="PositionControllerNode.cs" t="Include" />
-              <e p="Twiddle.cs" t="Include" />
+          <e p="Drone" t="Include">
+            <e p="DroneEvaluation.cs" t="Include" />
+            <e p="Script" t="Include">
+              <e p="DroneController.cs" t="Include" />
+              <e p="Lidar.cs" t="Include" />
+              <e p="PID" t="Include">
+                <e p="AttitudeControllerNode.cs" t="Include" />
+                <e p="HoverControllerNode.cs" t="Include" />
+                <e p="HoverTwiddleTunerNode.cs" t="Include" />
+                <e p="PIDController.cs" t="Include" />
+                <e p="PositionControllerNode.cs" t="Include" />
+                <e p="Twiddle.cs" t="Include" />
+              </e>
             </e>
           </e>
           <e p="Trash" t="Include">
@@ -32,6 +34,103 @@
           </e>
         </e>
         <e p="Exclude" t="Include">
+          <e p="CarChase" t="Include">
+            <e p="FollowAiTargetResetter.cs" t="Include" />
+            <e p="Scripts" t="Include">
+              <e p="AI" t="Include">
+                <e p="FollowAI.cs" t="Include" />
+                <e p="VehicleWaypoint.cs" t="Include" />
+              </e>
+              <e p="Camera" t="Include">
+                <e p="BasicCameraInput.cs" t="Include" />
+                <e p="CameraControl.cs" t="Include" />
+              </e>
+              <e p="Damage" t="Include">
+                <e p="DetachablePart.cs" t="Include" />
+                <e p="ShatterPart.cs" t="Include" />
+                <e p="VehicleDamage.cs" t="Include" />
+              </e>
+              <e p="Demo" t="Include">
+                <e p="PerformanceStats.cs" t="Include" />
+                <e p="VehicleMenu.cs" t="Include" />
+              </e>
+              <e p="Drivetrain" t="Include">
+                <e p="ContinuousTransmission.cs" t="Include" />
+                <e p="DriveForce.cs" t="Include" />
+                <e p="GasMotor.cs" t="Include" />
+                <e p="GearboxTransmission.cs" t="Include" />
+                <e p="Motor.cs" t="Include" />
+                <e p="Transmission.cs" t="Include" />
+                <e p="Wheel.cs" t="Include" />
+              </e>
+              <e p="Editors" t="Include">
+                <e p="DetachablePartEditor.cs" t="Include" />
+                <e p="GasMotorEditor.cs" t="Include" />
+                <e p="GearboxTransmissionEditor.cs" t="Include" />
+                <e p="GroundSurfaceInstanceEditor.cs" t="Include" />
+                <e p="HoverMotorEditor.cs" t="Include" />
+                <e p="HoverWheelEditor.cs" t="Include" />
+                <e p="PropertyToggleSetterEditor.cs" t="Include" />
+                <e p="SuspensionEditor.cs" t="Include" />
+                <e p="SuspensionPartEditor.cs" t="Include" />
+                <e p="TerrainSurfaceEditor.cs" t="Include" />
+                <e p="VehicleParentEditor.cs" t="Include" />
+                <e p="WheelEditor.cs" t="Include" />
+              </e>
+              <e p="Effects" t="Include">
+                <e p="LightController.cs" t="Include" />
+                <e p="TireMarkCreate.cs" t="Include" />
+                <e p="TireScreech.cs" t="Include" />
+                <e p="VehicleLight.cs" t="Include" />
+              </e>
+              <e p="Ground" t="Include">
+                <e p="GroundSurfaceInstance.cs" t="Include" />
+                <e p="GroundSurfaceMaster.cs" t="Include" />
+                <e p="TerrainSurface.cs" t="Include" />
+              </e>
+              <e p="Hover" t="Include">
+                <e p="HoverMotor.cs" t="Include" />
+                <e p="HoverSteer.cs" t="Include" />
+                <e p="HoverWheel.cs" t="Include" />
+              </e>
+              <e p="Input" t="Include">
+                <e p="BasicInput.cs" t="Include" />
+                <e p="MobileInput.cs" t="Include" />
+                <e p="MobileInputGet.cs" t="Include" />
+              </e>
+              <e p="Scene" t="Include">
+                <e p="GlobalControl.cs" t="Include" />
+                <e p="TimeMaster.cs" t="Include" />
+              </e>
+              <e p="Static" t="Include">
+                <e p="F.cs" t="Include" />
+                <e p="GizmosExtra.cs" t="Include" />
+                <e p="MeshUtil.cs" t="Include" />
+              </e>
+              <e p="Stunt" t="Include">
+                <e p="FlipControl.cs" t="Include" />
+                <e p="StuntDetect.cs" t="Include" />
+                <e p="StuntManager.cs" t="Include" />
+              </e>
+              <e p="Suspension" t="Include">
+                <e p="PropertyToggleSetter.cs" t="Include" />
+                <e p="Suspension.cs" t="Include" />
+                <e p="SuspensionPart.cs" t="Include" />
+                <e p="SuspensionPropertyToggle.cs" t="Include" />
+              </e>
+              <e p="Vehicle Control" t="Include">
+                <e p="SteeringControl.cs" t="Include" />
+                <e p="VehicleAssist.cs" t="Include" />
+                <e p="VehicleBalance.cs" t="Include" />
+                <e p="VehicleDebug.cs" t="Include" />
+                <e p="VehicleParent.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Shaders" t="Include">
+              <e p="Tires-Bump.shader" t="Include" />
+              <e p="Tires.shader" t="Include" />
+            </e>
+          </e>
           <e p="NatureManufacture Assets - Trials Not Full Resolution" t="Include">
             <e p="EasyRoads-HD_Add_ON" t="Include">
               <e p="Shaders" t="Include">
@@ -55,6 +154,46 @@
             <e p="Park Photo Scanned Assets" t="Include">
               <e p="Shaders" t="Include">
                 <e p="Standard_Metalic_UV_Free_Walls_and_Floors.shader" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Path" t="Include">
+            <e p="Core" t="Include">
+              <e p="Editor" t="Include">
+                <e p="Helper" t="Include">
+                  <e p="MouseUtility.cs" t="Include" />
+                  <e p="PathHandle.cs" t="Include" />
+                  <e p="ScreenSpacePolyLine.cs" t="Include" />
+                </e>
+                <e p="PathEditor.cs" t="Include" />
+              </e>
+              <e p="Scripts" t="Include">
+                <e p="Objects" t="Include">
+                  <e p="BezierPath.cs" t="Include" />
+                  <e p="EndOfPathInstruction.cs" t="Include" />
+                  <e p="GlobalDisplaySettings.cs" t="Include" />
+                  <e p="MinMax3D.cs" t="Include" />
+                  <e p="PathCreator.cs" t="Include" />
+                  <e p="PathCreatorData.cs" t="Include" />
+                  <e p="PathSpace.cs" t="Include" />
+                  <e p="VertexPath.cs" t="Include" />
+                </e>
+                <e p="Utility" t="Include">
+                  <e p="CubicBezierUtility.cs" t="Include" />
+                  <e p="MathUtility.cs" t="Include" />
+                  <e p="VertexPathUtility.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="Examples" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="Editor" t="Include">
+                  <e p="PathSceneToolEditor.cs" t="Include" />
+                </e>
+                <e p="PathFollower.cs" t="Include" />
+                <e p="PathFromObjects.cs" t="Include" />
+                <e p="PathSceneTool.cs" t="Include" />
+                <e p="RoadMeshCreator.cs" t="Include" />
               </e>
             </e>
           </e>
@@ -202,6 +341,7 @@
               <e p="PrefabSpawnerPopup.cs" t="Include" />
             </e>
             <e p="Neodroid.Editor.asmdef" t="Include" />
+            <e p="NeodroidEditorInfo.cs" t="Include" />
             <e p="Resources" t="Include">
               <e p="GithubExtension.uss" t="Include" />
               <e p="GithubExtension.uxml" t="Include" />
@@ -267,7 +407,7 @@
               <e p="readme.txt" t="Include" />
             </e>
           </e>
-          <e p="Libaries" t="Include">
+          <e p="Libraries" t="Include">
             <e p="NetMQ.4.0.0.175-pre" t="Include">
               <e p="lib" t="Include">
                 <e p="net40" t="Include">
@@ -291,6 +431,10 @@
             </e>
           </e>
           <e p="Runtime" t="Include">
+            <e p="EcsPrototyping" t="Include">
+              <e p="HelloRotationSpeedComponent.cs" t="Include" />
+              <e p="HelloRotationSpeedSystem.cs" t="Include" />
+            </e>
             <e p="Environments" t="Include">
               <e p="Experimental" t="Include">
                 <e p="ImitationEnvironment.cs" t="Include" />
@@ -302,6 +446,7 @@
             </e>
             <e p="Interfaces" t="Include">
               <e p="IActor.cs" t="Include" />
+              <e p="IColorProvider.cs" t="Include" />
               <e p="IConfigurable.cs" t="Include" />
               <e p="IConfigurableConfiguration.cs" t="Include" />
               <e p="IDisplayer.cs" t="Include" />
@@ -320,7 +465,6 @@
               <e p="IHasString.cs" t="Include" />
               <e p="IHasTriple.cs" t="Include" />
               <e p="IManager.cs" t="Include" />
-              <e p="IMaterialManipulator.cs" t="Include" />
               <e p="IMotor.cs" t="Include" />
               <e p="IMotorMotion.cs" t="Include" />
               <e p="IObjective.cs" t="Include" />
@@ -378,7 +522,6 @@
               </e>
             </e>
             <e p="Neodroid.Runtime.asmdef" t="Include" />
-            <e p="NeodroidInfo.cs" t="Include" />
             <e p="Properties" t="Include">
               <e p="AssemblyInfo.cs" t="Include" />
             </e>
@@ -395,6 +538,7 @@
                 <e p="DifficultyConfigurable.cs" t="Include" />
                 <e p="EulerTransformConfigurable.cs" t="Include" />
                 <e p="Experimental" t="Include">
+                  <e p="CameraConfigurable.cs" t="Include" />
                   <e p="ExternalMeshConfigurable.cs" t="Include" />
                   <e p="ExternalTextureConfigurable.cs" t="Include" />
                   <e p="LightConfigurable.cs" t="Include" />
@@ -547,21 +691,41 @@
               <e p="PrototypingComponentMenuPath.cs" t="Include" />
             </e>
             <e p="Shaders" t="Include">
-              <e p="Depth.shader" t="Include" />
               <e p="Experimental" t="Include">
+                <e p="AllShader.shader" t="Include" />
+                <e p="FlatSegmentation.shader" t="Include" />
+                <e p="MultiMode.shader" t="Include" />
                 <e p="OpticalFlow.shader" t="Include" />
-                <e p="UltimateOutline.shader" t="Include" />
+                <e p="Outline.shader" t="Include" />
+                <e p="StereoEyeIndexColor.shader" t="Include" />
+                <e p="ValueRangePlotter.shader" t="Include" />
+                <e p="XR.shader" t="Include" />
               </e>
               <e p="FlatColor.shader" t="Include" />
-              <e p="Normal.shader" t="Include" />
-              <e p="ObjectSpace.shader" t="Include" />
+              <e p="Model" t="Include">
+                <e p="Normal.shader" t="Include" />
+                <e p="Tangents.shader" t="Include" />
+                <e p="UVs.shader" t="Include" />
+                <e p="Us.shader" t="Include" />
+                <e p="Vs.shader" t="Include" />
+              </e>
               <e p="ScreenSpaceFlow.shader" t="Include" />
               <e p="Segmentation" t="Include">
-                <e p="Flat.shader" t="Include" />
-                <e p="Outlined.shader" t="Include" />
+                <e p="CategorySegmentation.shader" t="Include" />
+                <e p="Individual" t="Include">
+                  <e p="LayerSegmentation.shader" t="Include" />
+                  <e p="MaterialIdSegmentation.shader" t="Include" />
+                  <e p="ObjectIdSegmentation.shader" t="Include" />
+                  <e p="TagSegmentation.shader" t="Include" />
+                </e>
+                <e p="OutlinedSegmentation.shader" t="Include" />
               </e>
-              <e p="Tangents.shader" t="Include" />
-              <e p="UVs.shader" t="Include" />
+              <e p="Spaces" t="Include">
+                <e p="CompressedDepth.shader" t="Include" />
+                <e p="MultiChannelDepth.shader" t="Include" />
+                <e p="ObjectSpace.shader" t="Include" />
+                <e p="WorldSpace.shader" t="Include" />
+              </e>
             </e>
             <e p="Utilities" t="Include">
               <e p="BoundingBoxes" t="Include">
@@ -603,7 +767,6 @@
                 <e p="Extensions" t="Include">
                   <e p="JointFix.cs" t="Include" />
                   <e p="Obstruction.cs" t="Include" />
-                  <e p="OnCollision.cs" t="Include" />
                   <e p="ParticleController.cs" t="Include" />
                 </e>
                 <e p="Grasping" t="Include">
@@ -631,17 +794,29 @@
               </e>
               <e p="NeodroidCamera" t="Include">
                 <e p="CameraObservationTextureController.cs" t="Include" />
-                <e p="DisparityCameraBehaviour.cs" t="Include" />
+                <e p="Experimental" t="Include">
+                  <e p="DisparityCameraBehaviour.cs" t="Include" />
+                </e>
                 <e p="FlowCameraBehaviour.cs" t="Include" />
                 <e p="IgnoreLightSource.cs" t="Include" />
                 <e p="InfraredLightSource.cs" t="Include" />
                 <e p="ReplacementShaderEffect.cs" t="Include" />
                 <e p="Segmentation" t="Include">
-                  <e p="ChangeMaterialOnRenderByInstance.cs" t="Include" />
-                  <e p="ChangeMaterialOnRenderByTag.cs" t="Include" />
+                  <e p="CategorySegmenter.cs" t="Include" />
+                  <e p="MaterialIdSegmenter.cs" t="Include" />
+                  <e p="ObjectIdSegmenter.cs" t="Include" />
+                  <e p="Obsolete" t="Include">
+                    <e p="ChangeMaterialOnRenderByInstance.cs" t="Include" />
+                    <e p="ChangeMaterialOnRenderByTag.cs" t="Include" />
+                    <e p="ObsoleteSegmenter.cs" t="Include" />
+                  </e>
                   <e p="Segmenter.cs" t="Include" />
                 </e>
                 <e p="SynchroniseCameraProperties.cs" t="Include" />
+                <e p="Synthesis" t="Include">
+                  <e p="ColorEncoding.cs" t="Include" />
+                  <e p="SynthesisUtilities.cs" t="Include" />
+                </e>
               </e>
               <e p="Noise" t="Include">
                 <e p="ProjectileSpammer.cs" t="Include" />
@@ -652,7 +827,6 @@
                 <e p="Meshes.cs" t="Include" />
                 <e p="PlotFunctions.cs" t="Include" />
                 <e p="ValueRangePlotter.cs" t="Include" />
-                <e p="ValueRangePlotter.shader" t="Include" />
               </e>
               <e p="ScriptableObjects" t="Include">
                 <e p="Curriculum.cs" t="Include" />
@@ -662,6 +836,8 @@
                 <e p="SimulatorConfiguration.cs" t="Include" />
               </e>
               <e p="Sensors" t="Include">
+                <e p="ChildCollider2DSensor.cs" t="Include" />
+                <e p="ChildCollider3DSensor.cs" t="Include" />
                 <e p="ChildColliderSensor.cs" t="Include" />
               </e>
               <e p="SerialisableDictionary" t="Include">
@@ -674,6 +850,7 @@
               </e>
               <e p="StatusDisplayer" t="Include">
                 <e p="AutoSetupStatusDisplayer.cs" t="Include" />
+                <e p="RenderTextureList.cs" t="Include" />
               </e>
               <e p="Structs" t="Include">
                 <e p="DoubleVector3.cs" t="Include" />

@@ -1,8 +1,7 @@
+using TMPro;
 using UnityEngine;
-using System.Collections;
 
-
-namespace TMPro.Examples
+namespace TextMesh_Pro.Scripts
 {
     
     public class SimpleScript : MonoBehaviour
@@ -18,9 +17,9 @@ namespace TMPro.Examples
         void Start()
         {
             // Add new TextMesh Pro Component
-            m_textMeshPro = gameObject.AddComponent<TextMeshPro>();
+            this.m_textMeshPro = this.gameObject.AddComponent<TextMeshPro>();
 
-            m_textMeshPro.autoSizeTextContainer = true;
+            this.m_textMeshPro.autoSizeTextContainer = true;
 
             // Load the Font Asset to be used.
             //m_FontAsset = Resources.Load("Fonts & Materials/LiberationSans SDF", typeof(TMP_FontAsset)) as TMP_FontAsset;
@@ -31,9 +30,9 @@ namespace TMPro.Examples
             //m_textMeshPro.fontSharedMaterial.EnableKeyword("BEVEL_ON");
             
             // Set various font settings.
-            m_textMeshPro.fontSize = 48;
+            this.m_textMeshPro.fontSize = 48;
 
-            m_textMeshPro.alignment = TextAlignmentOptions.Center;
+            this.m_textMeshPro.alignment = TextAlignmentOptions.Center;
             
             //m_textMeshPro.anchorDampening = true; // Has been deprecated but under consideration for re-implementation.
             //m_textMeshPro.enableAutoSizing = true;
@@ -42,7 +41,7 @@ namespace TMPro.Examples
             //m_textMeshPro.wordSpacing = 0.1f;
 
             //m_textMeshPro.enableCulling = true;
-            m_textMeshPro.enableWordWrapping = false; 
+            this.m_textMeshPro.enableWordWrapping = false;
 
             //textMeshPro.fontColor = new Color32(255, 255, 255, 255);
         }
@@ -50,8 +49,8 @@ namespace TMPro.Examples
 
         void Update()
         {
-            m_textMeshPro.SetText(label, m_frame % 1000);
-            m_frame += 1 * Time.deltaTime;
+            this.m_textMeshPro.SetText(label, this.m_frame % 1000);
+            this.m_frame += 1 * Time.deltaTime;
         }
 
     }

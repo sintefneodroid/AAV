@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-namespace AAV {
+namespace AAV.Drone.Script {
   /// <summary>
   ///
   /// </summary>

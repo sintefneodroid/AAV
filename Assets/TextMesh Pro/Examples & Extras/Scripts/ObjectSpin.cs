@@ -1,8 +1,6 @@
 ﻿using UnityEngine;
-using System.Collections;
 
-
-namespace TMPro.Examples
+namespace TextMesh_Pro.Scripts
 {
     
     public class ObjectSpin : MonoBehaviour
@@ -26,43 +24,43 @@ namespace TMPro.Examples
 
         void Awake()
         {
-            m_transform = transform;
-            m_initial_Rotation = m_transform.rotation.eulerAngles;
-            m_initial_Position = m_transform.position;
+            this.m_transform = this.transform;
+            this.m_initial_Rotation = this.m_transform.rotation.eulerAngles;
+            this.m_initial_Position = this.m_transform.position;
 
-            Light light = GetComponent<Light>();
-            m_lightColor = light != null ? light.color : Color.black;
+            var light = this.GetComponent<Light>();
+            this.m_lightColor = light != null ? light.color : Color.black;
         }
 
 
         // Update is called once per frame
         void Update()
         {
-            if (Motion == MotionType.Rotation)
+            if (this.Motion == MotionType.Rotation)
             {
-                m_transform.Rotate(0, SpinSpeed * Time.deltaTime, 0);
+                this.m_transform.Rotate(0, this.SpinSpeed * Time.deltaTime, 0);
             }
-            else if (Motion == MotionType.BackAndForth)
+            else if (this.Motion == MotionType.BackAndForth)
             {
-                m_time += SpinSpeed * Time.deltaTime;
-                m_transform.rotation = Quaternion.Euler(m_initial_Rotation.x, Mathf.Sin(m_time) * RotationRange + m_initial_Rotation.y, m_initial_Rotation.z);
+                this.m_time += this.SpinSpeed * Time.deltaTime;
+                this.m_transform.rotation = Quaternion.Euler(this.m_initial_Rotation.x, Mathf.Sin(this.m_time) * this.RotationRange + this.m_initial_Rotation.y, this.m_initial_Rotation.z);
             }
             else
             {
-                m_time += SpinSpeed * Time.deltaTime;
+                this.m_time += this.SpinSpeed * Time.deltaTime;
 
-                float x = 15 * Mathf.Cos(m_time * .95f);
+                var x = 15 * Mathf.Cos(this.m_time * .95f);
                 float y = 10; // *Mathf.Sin(m_time * 1f) * Mathf.Cos(m_time * 1f);
-                float z = 0f; // *Mathf.Sin(m_time * .9f);    
+                var z = 0f; // *Mathf.Sin(m_time * .9f);
 
-                m_transform.position = m_initial_Position + new Vector3(x, z, y);
+                this.m_transform.position = this.m_initial_Position + new Vector3(x, z, y);
 
                 // Drawing light patterns because they can be cool looking.
                 //if (frames > 2)
                 //    Debug.DrawLine(m_transform.position, m_prevPOS, m_lightColor, 100f);
 
-                m_prevPOS = m_transform.position;
-                frames += 1;
+                this.m_prevPOS = this.m_transform.position;
+                this.frames += 1;
             }
         }
     }

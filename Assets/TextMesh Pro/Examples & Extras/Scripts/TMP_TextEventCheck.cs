@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 
-
-namespace TMPro.Examples
+namespace TextMesh_Pro.Scripts
 {
     public class TMP_TextEventCheck : MonoBehaviour
     {
@@ -10,26 +9,26 @@ namespace TMPro.Examples
 
         void OnEnable()
         {
-            if (TextEventHandler != null)
+            if (this.TextEventHandler != null)
             {
-                TextEventHandler.onCharacterSelection.AddListener(OnCharacterSelection);
-                TextEventHandler.onSpriteSelection.AddListener(OnSpriteSelection);
-                TextEventHandler.onWordSelection.AddListener(OnWordSelection);
-                TextEventHandler.onLineSelection.AddListener(OnLineSelection);
-                TextEventHandler.onLinkSelection.AddListener(OnLinkSelection);
+                this.TextEventHandler.onCharacterSelection.AddListener(this.OnCharacterSelection);
+                this.TextEventHandler.onSpriteSelection.AddListener(this.OnSpriteSelection);
+                this.TextEventHandler.onWordSelection.AddListener(this.OnWordSelection);
+                this.TextEventHandler.onLineSelection.AddListener(this.OnLineSelection);
+                this.TextEventHandler.onLinkSelection.AddListener(this.OnLinkSelection);
             }
         }
 
 
         void OnDisable()
         {
-            if (TextEventHandler != null)
+            if (this.TextEventHandler != null)
             {
-                TextEventHandler.onCharacterSelection.RemoveListener(OnCharacterSelection);
-                TextEventHandler.onSpriteSelection.RemoveListener(OnSpriteSelection);
-                TextEventHandler.onWordSelection.RemoveListener(OnWordSelection);
-                TextEventHandler.onLineSelection.RemoveListener(OnLineSelection);
-                TextEventHandler.onLinkSelection.RemoveListener(OnLinkSelection);
+                this.TextEventHandler.onCharacterSelection.RemoveListener(this.OnCharacterSelection);
+                this.TextEventHandler.onSpriteSelection.RemoveListener(this.OnSpriteSelection);
+                this.TextEventHandler.onWordSelection.RemoveListener(this.OnWordSelection);
+                this.TextEventHandler.onLineSelection.RemoveListener(this.OnLineSelection);
+                this.TextEventHandler.onLinkSelection.RemoveListener(this.OnLinkSelection);
             }
         }
 
