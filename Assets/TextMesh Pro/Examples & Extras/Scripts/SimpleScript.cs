@@ -6,12 +6,11 @@ namespace TextMesh_Pro.Scripts
     
     public class SimpleScript : MonoBehaviour
     {
-
-        private TextMeshPro m_textMeshPro;
+        TextMeshPro m_textMeshPro;
         //private TMP_FontAsset m_FontAsset;
 
-        private const string label = "The <#0050FF>count is: </color>{0:2}";
-        private float m_frame;
+        const string label = "The <#0050FF>count is: </color>{0:2}";
+        float m_frame;
 
 
         void Start()

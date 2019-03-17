@@ -6,8 +6,8 @@ namespace TextMesh_Pro.Scripts
 {
     public class TextConsoleSimulator : MonoBehaviour
     {
-        private TMP_Text m_TextComponent;
-        private bool hasTextChanged;
+        TMP_Text m_TextComponent;
+        bool hasTextChanged;
 
         void Awake()
         {

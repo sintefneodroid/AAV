@@ -7,9 +7,8 @@ namespace TextMesh_Pro.Scripts
     
     public class ShaderPropAnimator : MonoBehaviour
     {
-
-        private Renderer m_Renderer;
-        private Material m_Material;
+        Renderer m_Renderer;
+        Material m_Material;
 
         public AnimationCurve GlowCurve;
 

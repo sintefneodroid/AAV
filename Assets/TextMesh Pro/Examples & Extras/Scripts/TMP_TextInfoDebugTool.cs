@@ -17,9 +17,9 @@ namespace TextMesh_Pro.Scripts
         [TextArea(2, 2)]
         public string ObjectStats;
 
-        private TMP_Text m_TextComponent;
+        TMP_Text m_TextComponent;
 
-        private Transform m_Transform;
+        Transform m_Transform;
 
 // Since this script is used for visual debugging, we exclude most of it in builds.
 #if UNITY_EDITOR

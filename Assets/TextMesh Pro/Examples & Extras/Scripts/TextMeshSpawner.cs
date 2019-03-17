@@ -12,7 +12,7 @@ namespace TextMesh_Pro.Scripts
 
         public Font TheFont;
 
-        private TextMeshProFloatingText floatingText_Script;
+        TextMeshProFloatingText floatingText_Script;
 
         void Awake()
         {

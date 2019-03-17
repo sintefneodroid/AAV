@@ -11,12 +11,12 @@ namespace TextMesh_Pro.Scripts
 
         public FpsCounterAnchorPositions AnchorPosition = FpsCounterAnchorPositions.BottomLeft;
 
-        private const string instructions = "Camera Control - <#ffff00>Shift + RMB\n</color>Zoom - <#ffff00>Mouse wheel.";
+        const string instructions = "Camera Control - <#ffff00>Shift + RMB\n</color>Zoom - <#ffff00>Mouse wheel.";
 
-        private TextMeshPro m_TextMeshPro;
-        private TextContainer m_textContainer;
-        private Transform m_frameCounter_transform;
-        private Camera m_camera;
+        TextMeshPro m_TextMeshPro;
+        TextContainer m_textContainer;
+        Transform m_frameCounter_transform;
+        Camera m_camera;
 
         //private FpsCounterAnchorPositions last_AnchorPosition;
 

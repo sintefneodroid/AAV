@@ -7,20 +7,20 @@ namespace TextMesh_Pro.Scripts
     public class TMP_UiFrameRateCounter : MonoBehaviour
     {
         public float UpdateInterval = 5.0f;
-        private float m_LastInterval = 0;
-        private int m_Frames = 0;
+        float m_LastInterval = 0;
+        int m_Frames = 0;
 
         public enum FpsCounterAnchorPositions { TopLeft, BottomLeft, TopRight, BottomRight };
 
         public FpsCounterAnchorPositions AnchorPosition = FpsCounterAnchorPositions.TopRight;
 
-        private string htmlColorTag;
-        private const string fpsLabel = "{0:2}</color> <#8080ff>FPS \n<#FF8000>{1:2} <#8080ff>MS";
+        string htmlColorTag;
+        const string fpsLabel = "{0:2}</color> <#8080ff>FPS \n<#FF8000>{1:2} <#8080ff>MS";
 
-        private TextMeshProUGUI m_TextMeshPro;
-        private RectTransform m_frameCounter_transform;
+        TextMeshProUGUI m_TextMeshPro;
+        RectTransform m_frameCounter_transform;
 
-        private FpsCounterAnchorPositions last_AnchorPosition;
+        FpsCounterAnchorPositions last_AnchorPosition;
 
         void Awake()
         {

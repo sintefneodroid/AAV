@@ -13,18 +13,18 @@ namespace TextMesh_Pro.Scripts
         public TMP_FontAsset TMProFont;
         public Font TextMeshFont;
 
-        private TextMeshPro m_textMeshPro;
-        private TextContainer m_textContainer;
-        private TextMesh m_textMesh;
+        TextMeshPro m_textMeshPro;
+        TextContainer m_textContainer;
+        TextMesh m_textMesh;
 
-        private const string label01 = "The <#0050FF>count is: </color>{0}";
-        private const string label02 = "The <color=#0050FF>count is: </color>";
+        const string label01 = "The <#0050FF>count is: </color>{0}";
+        const string label02 = "The <color=#0050FF>count is: </color>";
 
         //private string m_string;
         //private int m_frame;
 
-        private Material m_material01;
-        private Material m_material02;
+        Material m_material01;
+        Material m_material02;
 
 
 

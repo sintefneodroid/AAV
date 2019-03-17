@@ -8,8 +8,8 @@ namespace TextMesh_Pro.Scripts
 
         //private Vector3 TranslationSpeeds;
         public Vector3 RotationSpeeds;
-        private TMP_Text m_textMeshPro;
-        private Material m_material;
+        TMP_Text m_textMeshPro;
+        Material m_material;
 
 
         void Awake()

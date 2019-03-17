@@ -7,8 +7,8 @@ namespace TextMesh_Pro.Scripts
     {
         public enum CameraModes { Follow, Isometric, Free }
 
-        private Transform cameraTransform;
-        private Transform dummyTarget;
+        Transform cameraTransform;
+        Transform dummyTarget;
 
         public Transform CameraTarget;
 
@@ -26,26 +26,25 @@ namespace TextMesh_Pro.Scripts
 
         public bool MovementSmoothing = true;
         public bool RotationSmoothing = false;
-        private bool previousSmoothing;
+        bool previousSmoothing;
 
         public float MovementSmoothingValue = 25f;
         public float RotationSmoothingValue = 5.0f;
 
         public float MoveSensitivity = 2.0f;
 
-        private Vector3 currentVelocity = Vector3.zero;
-        private Vector3 desiredPosition;
-        private float mouseX;
-        private float mouseY;
-        private Vector3 moveVector;
-        private float mouseWheel;
+        Vector3 currentVelocity = Vector3.zero;
+        Vector3 desiredPosition;
+        float mouseX;
+        float mouseY;
+        Vector3 moveVector;
+        float mouseWheel;
 
         // Controls for Touches on Mobile devices
         //private float prev_ZoomDelta;
 
-
-        private const string event_SmoothingValue = "Slider - Smoothing Value";
-        private const string event_FollowDistance = "Slider - Camera Zoom";
+        const string event_SmoothingValue = "Slider - Smoothing Value";
+        const string event_FollowDistance = "Slider - Camera Zoom";
 
 
         void Awake()

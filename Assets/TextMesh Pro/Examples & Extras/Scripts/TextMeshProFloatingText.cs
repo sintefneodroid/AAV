@@ -9,13 +9,13 @@ namespace TextMesh_Pro.Scripts
     {
         public Font TheFont;
 
-        private GameObject m_floatingText;
-        private TextMeshPro m_textMeshPro;
-        private TextMesh m_textMesh;
+        GameObject m_floatingText;
+        TextMeshPro m_textMeshPro;
+        TextMesh m_textMesh;
 
-        private Transform m_transform;
-        private Transform m_floatingText_Transform;
-        private Transform m_cameraTransform;
+        Transform m_transform;
+        Transform m_floatingText_Transform;
+        Transform m_cameraTransform;
 
         Vector3 lastPOS = Vector3.zero;
         Quaternion lastRotation = Quaternion.identity;

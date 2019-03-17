@@ -62,6 +62,64 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\AAV\CarChase\Scripts\AI\FollowAI.cs" />
+    <Compile Include="Assets\AAV\CarChase\Scripts\AI\VehicleWaypoint.cs" />
+    <Compile Include="Assets\AAV\CarChase\Scripts\Camera\BasicCameraInput.cs" />
+    <Compile Include="Assets\AAV\CarChase\Scripts\Camera\CameraControl.cs" />
+    <Compile Include="Assets\AAV\CarChase\Scripts\Damage\DetachablePart.cs" />
+    <Compile Include="Assets\AAV\CarChase\Scripts\Damage\ShatterPart.cs" />
+    <Compile Include="Assets\AAV\CarChase\Scripts\Damage\VehicleDamage.cs" />
+    <Compile Include="Assets\AAV\CarChase\Scripts\Demo\PerformanceStats.cs" />
+    <Compile Include="Assets\AAV\CarChase\Scripts\Demo\VehicleMenu.cs" />
+    <Compile Include="Assets\AAV\CarChase\Scripts\Drivetrain\ContinuousTransmission.cs" />
+    <Compile Include="Assets\AAV\CarChase\Scripts\Drivetrain\DriveForce.cs" />
+    <Compile Include="Assets\AAV\CarChase\Scripts\Drivetrain\GasMotor.cs" />
+    <Compile Include="Assets\AAV\CarChase\Scripts\Drivetrain\GearboxTransmission.cs" />
+    <Compile Include="Assets\AAV\CarChase\Scripts\Drivetrain\Motor.cs" />
+    <Compile Include="Assets\AAV\CarChase\Scripts\Drivetrain\Transmission.cs" />
+    <Compile Include="Assets\AAV\CarChase\Scripts\Drivetrain\Wheel.cs" />
+    <Compile Include="Assets\AAV\CarChase\Scripts\Editors\DetachablePartEditor.cs" />
+    <Compile Include="Assets\AAV\CarChase\Scripts\Editors\GasMotorEditor.cs" />
+    <Compile Include="Assets\AAV\CarChase\Scripts\Editors\GearboxTransmissionEditor.cs" />
+    <Compile Include="Assets\AAV\CarChase\Scripts\Editors\GroundSurfaceInstanceEditor.cs" />
+    <Compile Include="Assets\AAV\CarChase\Scripts\Editors\HoverMotorEditor.cs" />
+    <Compile Include="Assets\AAV\CarChase\Scripts\Editors\HoverWheelEditor.cs" />
+    <Compile Include="Assets\AAV\CarChase\Scripts\Editors\PropertyToggleSetterEditor.cs" />
+    <Compile Include="Assets\AAV\CarChase\Scripts\Editors\SuspensionEditor.cs" />
+    <Compile Include="Assets\AAV\CarChase\Scripts\Editors\SuspensionPartEditor.cs" />
+    <Compile Include="Assets\AAV\CarChase\Scripts\Editors\TerrainSurfaceEditor.cs" />
+    <Compile Include="Assets\AAV\CarChase\Scripts\Editors\VehicleParentEditor.cs" />
+    <Compile Include="Assets\AAV\CarChase\Scripts\Editors\WheelEditor.cs" />
+    <Compile Include="Assets\AAV\CarChase\Scripts\Effects\LightController.cs" />
+    <Compile Include="Assets\AAV\CarChase\Scripts\Effects\TireMarkCreate.cs" />
+    <Compile Include="Assets\AAV\CarChase\Scripts\Effects\TireScreech.cs" />
+    <Compile Include="Assets\AAV\CarChase\Scripts\Effects\VehicleLight.cs" />
+    <Compile Include="Assets\AAV\CarChase\Scripts\Ground\GroundSurfaceInstance.cs" />
+    <Compile Include="Assets\AAV\CarChase\Scripts\Ground\GroundSurfaceMaster.cs" />
+    <Compile Include="Assets\AAV\CarChase\Scripts\Ground\TerrainSurface.cs" />
+    <Compile Include="Assets\AAV\CarChase\Scripts\Hover\HoverMotor.cs" />
+    <Compile Include="Assets\AAV\CarChase\Scripts\Hover\HoverSteer.cs" />
+    <Compile Include="Assets\AAV\CarChase\Scripts\Hover\HoverWheel.cs" />
+    <Compile Include="Assets\AAV\CarChase\Scripts\Input\BasicInput.cs" />
+    <Compile Include="Assets\AAV\CarChase\Scripts\Input\MobileInput.cs" />
+    <Compile Include="Assets\AAV\CarChase\Scripts\Input\MobileInputGet.cs" />
+    <Compile Include="Assets\AAV\CarChase\Scripts\Scene\GlobalControl.cs" />
+    <Compile Include="Assets\AAV\CarChase\Scripts\Scene\TimeMaster.cs" />
+    <Compile Include="Assets\AAV\CarChase\Scripts\Static\F.cs" />
+    <Compile Include="Assets\AAV\CarChase\Scripts\Static\GizmosExtra.cs" />
+    <Compile Include="Assets\AAV\CarChase\Scripts\Static\MeshUtil.cs" />
+    <Compile Include="Assets\AAV\CarChase\Scripts\Stunt\FlipControl.cs" />
+    <Compile Include="Assets\AAV\CarChase\Scripts\Stunt\StuntDetect.cs" />
+    <Compile Include="Assets\AAV\CarChase\Scripts\Stunt\StuntManager.cs" />
+    <Compile Include="Assets\AAV\CarChase\Scripts\Suspension\PropertyToggleSetter.cs" />
+    <Compile Include="Assets\AAV\CarChase\Scripts\Suspension\Suspension.cs" />
+    <Compile Include="Assets\AAV\CarChase\Scripts\Suspension\SuspensionPart.cs" />
+    <Compile Include="Assets\AAV\CarChase\Scripts\Suspension\SuspensionPropertyToggle.cs" />
+    <Compile Include="Assets\AAV\CarChase\Scripts\Vehicle Control\SteeringControl.cs" />
+    <Compile Include="Assets\AAV\CarChase\Scripts\Vehicle Control\VehicleAssist.cs" />
+    <Compile Include="Assets\AAV\CarChase\Scripts\Vehicle Control\VehicleBalance.cs" />
+    <Compile Include="Assets\AAV\CarChase\Scripts\Vehicle Control\VehicleDebug.cs" />
+    <Compile Include="Assets\AAV\CarChase\Scripts\Vehicle Control\VehicleParent.cs" />
     <Compile Include="Assets\AAV\Drone\DroneEvaluation.cs" />
     <Compile Include="Assets\AAV\Drone\Script\DroneController.cs" />
     <Compile Include="Assets\AAV\Drone\Script\Lidar.cs" />
@@ -71,99 +129,13 @@
     <Compile Include="Assets\AAV\Drone\Script\PID\PIDController.cs" />
     <Compile Include="Assets\AAV\Drone\Script\PID\PositionControllerNode.cs" />
     <Compile Include="Assets\AAV\Drone\Script\PID\Twiddle.cs" />
+    <Compile Include="Assets\AAV\Drone2\Scripts\CarController.cs" />
+    <Compile Include="Assets\AAV\Drone2\Scripts\SmoothFollow.cs" />
+    <Compile Include="Assets\droid\Samples\MultiArmedBandit\MultiArmedBanditActuator.cs" />
     <Compile Include="Assets\droid\Samples\MultiArmedBandit\MultiArmedBanditEvaluation.cs" />
-    <Compile Include="Assets\droid\Samples\MultiArmedBandit\MultiArmedBanditMotor.cs" />
-    <Compile Include="Assets\droid\Samples\MultiArmedBandit\RestlessMultiArmedBanditMotor.cs" />
+    <Compile Include="Assets\droid\Samples\MultiArmedBandit\RestlessMultiArmedBanditActuator.cs" />
     <Compile Include="Assets\droid\Samples\MultiArmedBandit\TextBarPlotDisplayer.cs" />
     <Compile Include="Assets\droid\Tests\Runtime\SimulatorTests.cs" />
-    <Compile Include="Assets\Exclude\CarChase\FollowAiTargetResetter.cs" />
-    <Compile Include="Assets\Exclude\CarChase\Scripts\AI\FollowAI.cs" />
-    <Compile Include="Assets\Exclude\CarChase\Scripts\AI\VehicleWaypoint.cs" />
-    <Compile Include="Assets\Exclude\CarChase\Scripts\Camera\BasicCameraInput.cs" />
-    <Compile Include="Assets\Exclude\CarChase\Scripts\Camera\CameraControl.cs" />
-    <Compile Include="Assets\Exclude\CarChase\Scripts\Damage\DetachablePart.cs" />
-    <Compile Include="Assets\Exclude\CarChase\Scripts\Damage\ShatterPart.cs" />
-    <Compile Include="Assets\Exclude\CarChase\Scripts\Damage\VehicleDamage.cs" />
-    <Compile Include="Assets\Exclude\CarChase\Scripts\Demo\PerformanceStats.cs" />
-    <Compile Include="Assets\Exclude\CarChase\Scripts\Demo\VehicleMenu.cs" />
-    <Compile Include="Assets\Exclude\CarChase\Scripts\Drivetrain\ContinuousTransmission.cs" />
-    <Compile Include="Assets\Exclude\CarChase\Scripts\Drivetrain\DriveForce.cs" />
-    <Compile Include="Assets\Exclude\CarChase\Scripts\Drivetrain\GasMotor.cs" />
-    <Compile Include="Assets\Exclude\CarChase\Scripts\Drivetrain\GearboxTransmission.cs" />
-    <Compile Include="Assets\Exclude\CarChase\Scripts\Drivetrain\Motor.cs" />
-    <Compile Include="Assets\Exclude\CarChase\Scripts\Drivetrain\Transmission.cs" />
-    <Compile Include="Assets\Exclude\CarChase\Scripts\Drivetrain\Wheel.cs" />
-    <Compile Include="Assets\Exclude\CarChase\Scripts\Editors\DetachablePartEditor.cs" />
-    <Compile Include="Assets\Exclude\CarChase\Scripts\Editors\GasMotorEditor.cs" />
-    <Compile Include="Assets\Exclude\CarChase\Scripts\Editors\GearboxTransmissionEditor.cs" />
-    <Compile Include="Assets\Exclude\CarChase\Scripts\Editors\GroundSurfaceInstanceEditor.cs" />
-    <Compile Include="Assets\Exclude\CarChase\Scripts\Editors\HoverMotorEditor.cs" />
-    <Compile Include="Assets\Exclude\CarChase\Scripts\Editors\HoverWheelEditor.cs" />
-    <Compile Include="Assets\Exclude\CarChase\Scripts\Editors\PropertyToggleSetterEditor.cs" />
-    <Compile Include="Assets\Exclude\CarChase\Scripts\Editors\SuspensionEditor.cs" />
-    <Compile Include="Assets\Exclude\CarChase\Scripts\Editors\SuspensionPartEditor.cs" />
-    <Compile Include="Assets\Exclude\CarChase\Scripts\Editors\TerrainSurfaceEditor.cs" />
-    <Compile Include="Assets\Exclude\CarChase\Scripts\Editors\VehicleParentEditor.cs" />
-    <Compile Include="Assets\Exclude\CarChase\Scripts\Editors\WheelEditor.cs" />
-    <Compile Include="Assets\Exclude\CarChase\Scripts\Effects\LightController.cs" />
-    <Compile Include="Assets\Exclude\CarChase\Scripts\Effects\TireMarkCreate.cs" />
-    <Compile Include="Assets\Exclude\CarChase\Scripts\Effects\TireScreech.cs" />
-    <Compile Include="Assets\Exclude\CarChase\Scripts\Effects\VehicleLight.cs" />
-    <Compile Include="Assets\Exclude\CarChase\Scripts\Ground\GroundSurfaceInstance.cs" />
-    <Compile Include="Assets\Exclude\CarChase\Scripts\Ground\GroundSurfaceMaster.cs" />
-    <Compile Include="Assets\Exclude\CarChase\Scripts\Ground\TerrainSurface.cs" />
-    <Compile Include="Assets\Exclude\CarChase\Scripts\Hover\HoverMotor.cs" />
-    <Compile Include="Assets\Exclude\CarChase\Scripts\Hover\HoverSteer.cs" />
-    <Compile Include="Assets\Exclude\CarChase\Scripts\Hover\HoverWheel.cs" />
-    <Compile Include="Assets\Exclude\CarChase\Scripts\Input\BasicInput.cs" />
-    <Compile Include="Assets\Exclude\CarChase\Scripts\Input\MobileInput.cs" />
-    <Compile Include="Assets\Exclude\CarChase\Scripts\Input\MobileInputGet.cs" />
-    <Compile Include="Assets\Exclude\CarChase\Scripts\Scene\GlobalControl.cs" />
-    <Compile Include="Assets\Exclude\CarChase\Scripts\Scene\TimeMaster.cs" />
-    <Compile Include="Assets\Exclude\CarChase\Scripts\Static\F.cs" />
-    <Compile Include="Assets\Exclude\CarChase\Scripts\Static\GizmosExtra.cs" />
-    <Compile Include="Assets\Exclude\CarChase\Scripts\Static\MeshUtil.cs" />
-    <Compile Include="Assets\Exclude\CarChase\Scripts\Stunt\FlipControl.cs" />
-    <Compile Include="Assets\Exclude\CarChase\Scripts\Stunt\StuntDetect.cs" />
-    <Compile Include="Assets\Exclude\CarChase\Scripts\Stunt\StuntManager.cs" />
-    <Compile Include="Assets\Exclude\CarChase\Scripts\Suspension\PropertyToggleSetter.cs" />
-    <Compile Include="Assets\Exclude\CarChase\Scripts\Suspension\Suspension.cs" />
-    <Compile Include="Assets\Exclude\CarChase\Scripts\Suspension\SuspensionPart.cs" />
-    <Compile Include="Assets\Exclude\CarChase\Scripts\Suspension\SuspensionPropertyToggle.cs" />
-    <Compile Include="Assets\Exclude\CarChase\Scripts\Vehicle Control\SteeringControl.cs" />
-    <Compile Include="Assets\Exclude\CarChase\Scripts\Vehicle Control\VehicleAssist.cs" />
-    <Compile Include="Assets\Exclude\CarChase\Scripts\Vehicle Control\VehicleBalance.cs" />
-    <Compile Include="Assets\Exclude\CarChase\Scripts\Vehicle Control\VehicleDebug.cs" />
-    <Compile Include="Assets\Exclude\CarChase\Scripts\Vehicle Control\VehicleParent.cs" />
-    <Compile Include="Assets\Exclude\NatureManufacture Assets - Trials Not Full Resolution\NatureManufacture Wind\NM_Wind.cs" />
-    <Compile Include="Assets\Exclude\Path\Core\Scripts\Objects\BezierPath.cs" />
-    <Compile Include="Assets\Exclude\Path\Core\Scripts\Objects\EndOfPathInstruction.cs" />
-    <Compile Include="Assets\Exclude\Path\Core\Scripts\Objects\GlobalDisplaySettings.cs" />
-    <Compile Include="Assets\Exclude\Path\Core\Scripts\Objects\MinMax3D.cs" />
-    <Compile Include="Assets\Exclude\Path\Core\Scripts\Objects\PathCreator.cs" />
-    <Compile Include="Assets\Exclude\Path\Core\Scripts\Objects\PathCreatorData.cs" />
-    <Compile Include="Assets\Exclude\Path\Core\Scripts\Objects\PathSpace.cs" />
-    <Compile Include="Assets\Exclude\Path\Core\Scripts\Objects\VertexPath.cs" />
-    <Compile Include="Assets\Exclude\Path\Core\Scripts\Utility\CubicBezierUtility.cs" />
-    <Compile Include="Assets\Exclude\Path\Core\Scripts\Utility\MathUtility.cs" />
-    <Compile Include="Assets\Exclude\Path\Core\Scripts\Utility\VertexPathUtility.cs" />
-    <Compile Include="Assets\Exclude\Path\Examples\Scripts\PathFollower.cs" />
-    <Compile Include="Assets\Exclude\Path\Examples\Scripts\PathFromObjects.cs" />
-    <Compile Include="Assets\Exclude\Path\Examples\Scripts\PathSceneTool.cs" />
-    <Compile Include="Assets\Exclude\Path\Examples\Scripts\RoadMeshCreator.cs" />
-    <Compile Include="Assets\Exclude\unity-chan!\Unity-chan! Model\Scripts\AutoBlink.cs" />
-    <Compile Include="Assets\Exclude\unity-chan!\Unity-chan! Model\Scripts\CameraController.cs" />
-    <Compile Include="Assets\Exclude\unity-chan!\Unity-chan! Model\Scripts\FaceUpdate.cs" />
-    <Compile Include="Assets\Exclude\unity-chan!\Unity-chan! Model\Scripts\IdleChanger.cs" />
-    <Compile Include="Assets\Exclude\unity-chan!\Unity-chan! Model\Scripts\IKCtrlRightHand.cs" />
-    <Compile Include="Assets\Exclude\unity-chan!\Unity-chan! Model\Scripts\RandomWind.cs" />
-    <Compile Include="Assets\Exclude\unity-chan!\Unity-chan! Model\Scripts\SpringBone.cs" />
-    <Compile Include="Assets\Exclude\unity-chan!\Unity-chan! Model\Scripts\SpringCollider.cs" />
-    <Compile Include="Assets\Exclude\unity-chan!\Unity-chan! Model\Scripts\SpringManager.cs" />
-    <Compile Include="Assets\Exclude\unity-chan!\Unity-chan! Model\Scripts\ThirdPersonCamera.cs" />
-    <Compile Include="Assets\Exclude\unity-chan!\Unity-chan! Model\Scripts\UnityChanControlScriptWithRgidBody.cs" />
-    <Compile Include="Assets\Exclude\Windridge City Assets\Scripts\ExtendedFlycam.cs" />
-    <Compile Include="Assets\Exclude\Windridge City Assets\Scripts\UIQuallityManager\UIQualityManager.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
@@ -197,66 +169,37 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
-    <None Include="Assets\Exclude\unity-chan!\Unity-chan! Model\Art\UnityChanShader\Shader\Unitychan_chara_eye.shader" />
-    <None Include="Assets\Exclude\unity-chan!\Unity-chan! Model\Art\UnityChanShader\Shader\Unitychan_chara_fuku.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\AAV\Trash\Shaders\Lines.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
-    <None Include="Assets\Exclude\Windridge City Assets\CTS Trial\Shaders\CTS Terrain Shader Advanced Trial.shader" />
-    <None Include="Assets\Exclude\Windridge City Assets\READ ME - About project and assets.txt" />
     <None Include="Assets\droid\Libraries\NetMQ.4.0.0.175-pre\lib\net40\NetMQ.xml" />
     <None Include="Assets\AAV\Trash\Shaders\Grid.shader" />
-    <None Include="Assets\Exclude\NatureManufacture Assets - Trials Not Full Resolution\Foliage Shaders\Cross_Model_Shader.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
-    <None Include="Assets\Exclude\unity-chan!\Unity-chan! Model\Audio\Voice\unity-chan_voice_list.txt" />
     <None Include="Assets\droid\Libraries\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.xml" />
-    <None Include="Assets\Exclude\NatureManufacture Assets - Trials Not Full Resolution\EasyRoads-HD_Add_ON\Shaders\Decal_Metalic_Road_Shader Parallax ArrayTrial.shader" />
-    <None Include="Assets\Exclude\NatureManufacture Assets - Trials Not Full Resolution\Foliage Shaders\NMWindNoShiver.cginc" />
-    <None Include="Assets\Exclude\unity-chan!\Unity-chan! Model\Art\UnityChanShader\Shader\Unitychan_chara_fuku_ds.shader" />
-    <None Include="Assets\Exclude\unity-chan!\Unity-chan! Model\Art\UnityChanShader\Shader\Unitychan_chara_eye_blend.shader" />
-    <None Include="Assets\Exclude\CarChase\Shaders\Tires-Bump.shader" />
-    <None Include="Assets\Exclude\unity-chan!\Unity-chan! Model\Art\UnityChanShader\Shader\Unitychan_chara_hair_ds.shader" />
-    <None Include="Assets\Exclude\unity-chan!\Unity-chan! Model\Art\UnityChanShader\Shader\Unitychan_chara_akarami_blend.shader" />
-    <None Include="Assets\Exclude\Windridge City Assets\CTS Trial\Shaders\CTS Terrain Shader Advanced LOD Trial.shader" />
-    <None Include="Assets\Exclude\NatureManufacture Assets - Trials Not Full Resolution\EasyRoads-HD_Add_ON\Shaders\Decal_Metalic_Road_Shader Parallax Trial.shader" />
+    <None Include="Assets\AAV\CarChase\Shaders\Tires-Bump.shader" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Oswald-Bold - OFL.txt" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Anton OFL.txt" />
-    <None Include="Assets\Exclude\unity-chan!\Unity-chan! Model\Art\UnityChanShader\Shader\Unitychan_chara_hair.shader" />
-    <None Include="Assets\Exclude\NatureManufacture Assets - Trials Not Full Resolution\Foliage Shaders\NM_indirect.cginc" />
-    <None Include="Assets\Exclude\unity-chan!\Unity-chan! Model\Art\Stage\Shader\AlphaMask.shader" />
-    <None Include="Assets\Exclude\unity-chan!\Unity-chan! Model\Art\UnityChanShader\Shader\Unitychan_chara_eyelash_blend.shader" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Bangers - OFL.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\AAV\Trash\Shaders\Transparent-Depth.shader" />
     <None Include="Assets\droid\Gizmos\Icons\readme.txt" />
     <None Include="Assets\droid\Libraries\OptimizedPriorityQueue.4.1.1\lib\net45\Priority Queue.xml" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
-    <None Include="Assets\Exclude\NatureManufacture Assets - Trials Not Full Resolution\EasyRoads-HD_Add_ON\Shaders\Standard_Metalic_Cross_Road_Shader Parallax ArrayTrial.shader" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\LiberationSans - OFL.txt" />
-    <None Include="Assets\Exclude\READ ME - About Scene.txt" />
-    <None Include="Assets\Exclude\unity-chan!\Unity-chan! Model\Art\UnityChanShader\Shader\Unitychan_chara_hada.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
-    <None Include="Assets\Exclude\unity-chan!\Unity-chan! Model\Art\UnityChanShader\Shader\Unitychan_chara_hada_blend.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
-    <None Include="Assets\Exclude\NatureManufacture Assets - Trials Not Full Resolution\Foliage Shaders\Tree_Bark_Metalic.shader" />
-    <None Include="Assets\Exclude\NatureManufacture Assets - Trials Not Full Resolution\Park Photo Scanned Assets\Shaders\Standard_Metalic_UV_Free_Walls_and_Floors.shader" />
-    <None Include="Assets\Exclude\NatureManufacture Assets - Trials Not Full Resolution\EasyRoads-HD_Add_ON\Shaders\Standard_Metalic_Road_Shader Parallax ArrayTrial.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
-    <None Include="Assets\Exclude\Windridge City Assets\Third-Party Notices.txt" />
     <None Include="Assets\AAV\Trash\Shaders\Depth.shader" />
-    <None Include="Assets\Exclude\NatureManufacture Assets - Trials Not Full Resolution\Foliage Shaders\Tree_Leaves_Specular.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
-    <None Include="Assets\Exclude\NatureManufacture Assets - Trials Not Full Resolution\Foliage Shaders\NMWind.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
-    <None Include="Assets\Exclude\Windridge City Assets\UnityCompanionLicense_ForAssetComnponentsStatedInThird-PartyNotices.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
-    <None Include="Assets\Exclude\CarChase\Shaders\Tires.shader" />
+    <None Include="Assets\AAV\CarChase\Shaders\Tires.shader" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>/home/heider/Projects/Neodroid/AAV/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
@@ -265,12 +208,6 @@
     </Reference>
     <Reference Include="Unity.ProGrids.Editor">
       <HintPath>/home/heider/Projects/Neodroid/AAV/Library/ScriptAssemblies/Unity.ProGrids.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityTestPackage.Editor">
-      <HintPath>/home/heider/Projects/Neodroid/AAV/Library/ScriptAssemblies/UnityTestPackage.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityTestPackage.Runtime">
-      <HintPath>/home/heider/Projects/Neodroid/AAV/Library/ScriptAssemblies/UnityTestPackage.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>/home/heider/Projects/Neodroid/AAV/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
@@ -281,12 +218,6 @@
     <Reference Include="Unity.Timeline">
       <HintPath>/home/heider/Projects/Neodroid/AAV/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Postprocessing.Editor">
-      <HintPath>/home/heider/Projects/Neodroid/AAV/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Postprocessing.Runtime">
-      <HintPath>/home/heider/Projects/Neodroid/AAV/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor.SpatialTracking">
       <HintPath>/home/heider/Projects/Neodroid/AAV/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
     </Reference>
@@ -296,17 +227,29 @@
     <Reference Include="Unity.TextMeshPro">
       <HintPath>/home/heider/Projects/Neodroid/AAV/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.XR.LegacyInputHelpers">
-      <HintPath>/home/heider/Projects/Neodroid/AAV/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.XR.LegacyInputHelpers">
-      <HintPath>/home/heider/Projects/Neodroid/AAV/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
       <HintPath>/home/heider/Projects/Neodroid/AAV/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
     </Reference>
+    <Reference Include="UnityTestPackage.Editor">
+      <HintPath>/home/heider/Projects/Neodroid/AAV/Library/ScriptAssemblies/UnityTestPackage.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityTestPackage.Runtime">
+      <HintPath>/home/heider/Projects/Neodroid/AAV/Library/ScriptAssemblies/UnityTestPackage.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Postprocessing.Editor">
+      <HintPath>/home/heider/Projects/Neodroid/AAV/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.XR.LegacyInputHelpers">
+      <HintPath>/home/heider/Projects/Neodroid/AAV/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Postprocessing.Runtime">
+      <HintPath>/home/heider/Projects/Neodroid/AAV/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.ProBuilder.AddOns.Editor">
       <HintPath>/home/heider/Projects/Neodroid/AAV/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.XR.LegacyInputHelpers">
+      <HintPath>/home/heider/Projects/Neodroid/AAV/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>/home/heider/Unity/Hub/Editor/2019.1.0b1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -491,14 +434,14 @@
     <Reference Include="nunit.framework">
       <HintPath>/home/heider/Unity/Hub/Editor/2019.1.0b1/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>/home/heider/Projects/Neodroid/AAV/Assets/droid/Libraries/Newtonsoft.Json.11.0.2/lib/net45/Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="Priority Queue">
       <HintPath>/home/heider/Projects/Neodroid/AAV/Assets/droid/Libraries/OptimizedPriorityQueue.4.1.1/lib/net45/Priority Queue.dll</HintPath>
     </Reference>
     <Reference Include="Neodroid-FlatBuffers">
       <HintPath>/home/heider/Projects/Neodroid/AAV/Assets/droid/Libraries/Neodroid-FlatBuffers.1.0.0/lib/net45/Neodroid-FlatBuffers.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>/home/heider/Projects/Neodroid/AAV/Assets/droid/Libraries/Newtonsoft.Json.11.0.2/lib/net45/Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="NetMQ">
       <HintPath>/home/heider/Projects/Neodroid/AAV/Assets/droid/Libraries/NetMQ.4.0.0.175-pre/lib/net40/NetMQ.dll</HintPath>

@@ -10,7 +10,7 @@ namespace TextMesh_Pro.Scripts
         public int SpawnType = 0;
         public int NumberOfNPC = 12;
 
-        private TextMeshProFloatingText floatingText_Script;
+        TextMeshProFloatingText floatingText_Script;
 
 
         void Start()

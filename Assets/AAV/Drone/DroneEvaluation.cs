@@ -1,6 +1,6 @@
 ﻿using droid.Runtime.Prototyping.Actors;
 using droid.Runtime.Prototyping.Evaluation;
-using droid.Runtime.Utilities.Sensors;
+using droid.Runtime.Utilities.GameObjects.Sensors;
 using UnityEngine;
 
 namespace AAV.Drone

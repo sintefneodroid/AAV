@@ -62,12 +62,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\droid\Editor\GameObjects\ActuatorSpawner.cs" />
     <Compile Include="Assets\droid\Editor\GameObjects\EditorGameObjectMenuPath.cs" />
     <Compile Include="Assets\droid\Editor\GameObjects\GeneralSpawner.cs" />
-    <Compile Include="Assets\droid\Editor\GameObjects\MotorSpawner.cs" />
-    <Compile Include="Assets\droid\Editor\GameObjects\ObserverSpawner.cs" />
     <Compile Include="Assets\droid\Editor\GameObjects\PrebuiltSpawner.cs" />
     <Compile Include="Assets\droid\Editor\GameObjects\PrefabSpawnerPopup.cs" />
+    <Compile Include="Assets\droid\Editor\GameObjects\SensorSpawner.cs" />
     <Compile Include="Assets\droid\Editor\NeodroidEditorInfo.cs" />
     <Compile Include="Assets\droid\Editor\ScriptableObjects\Curriculum.cs" />
     <Compile Include="Assets\droid\Editor\ScriptableObjects\EditorScriptableObjectMenuPath.cs" />
@@ -80,12 +80,15 @@
     <Compile Include="Assets\droid\Editor\Utilities\Git\GithubExtensionUserInterface.cs" />
     <Compile Include="Assets\droid\Editor\Utilities\MeshSaver.cs" />
     <Compile Include="Assets\droid\Editor\Utilities\MissingReferencesFinder.cs" />
+    <Compile Include="Assets\droid\Editor\Utilities\NeodroidEditorConstants.cs" />
     <Compile Include="Assets\droid\Editor\Utilities\NeodroidEditorUtilities.cs" />
     <Compile Include="Assets\droid\Editor\Utilities\NeodroidPackageImporterWindow.cs" />
+    <Compile Include="Assets\droid\Editor\Utilities\NeodroidSettings.cs" />
     <Compile Include="Assets\droid\Editor\Utilities\NoteUtilities\NoteEditor.cs" />
     <Compile Include="Assets\droid\Editor\Utilities\NoteUtilities\NoteType.cs" />
     <Compile Include="Assets\droid\Editor\Utilities\ObjectDropdownAttribute.cs" />
     <Compile Include="Assets\droid\Editor\Utilities\ObjectSelectorDropdown.cs" />
+    <Compile Include="Assets\droid\Editor\Utilities\SceneDescription.cs" />
     <Compile Include="Assets\droid\Editor\Utilities\ScenePreview.cs" />
     <Compile Include="Assets\droid\Editor\Utilities\SceneReference.cs" />
     <Compile Include="Assets\droid\Editor\Utilities\SceneReferenceEditor.cs" />
@@ -313,14 +316,14 @@
     <Reference Include="JetBrains.Rider.Unity.Editor.Plugin.Repacked">
       <HintPath>/home/heider/Projects/Neodroid/AAV/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>/home/heider/Projects/Neodroid/AAV/Assets/droid/Libraries/Newtonsoft.Json.11.0.2/lib/net45/Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="Priority Queue">
       <HintPath>/home/heider/Projects/Neodroid/AAV/Assets/droid/Libraries/OptimizedPriorityQueue.4.1.1/lib/net45/Priority Queue.dll</HintPath>
     </Reference>
     <Reference Include="Neodroid-FlatBuffers">
       <HintPath>/home/heider/Projects/Neodroid/AAV/Assets/droid/Libraries/Neodroid-FlatBuffers.1.0.0/lib/net45/Neodroid-FlatBuffers.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>/home/heider/Projects/Neodroid/AAV/Assets/droid/Libraries/Newtonsoft.Json.11.0.2/lib/net45/Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="NetMQ">
       <HintPath>/home/heider/Projects/Neodroid/AAV/Assets/droid/Libraries/NetMQ.4.0.0.175-pre/lib/net40/NetMQ.dll</HintPath>

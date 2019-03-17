@@ -7,8 +7,7 @@ namespace TextMesh_Pro.Scripts
 
     public class WarpTextExample : MonoBehaviour
     {
-
-        private TMP_Text m_TextComponent;
+        TMP_Text m_TextComponent;
 
         public AnimationCurve VertexCurve = new AnimationCurve(new Keyframe(0, 0), new Keyframe(0.25f, 2.0f), new Keyframe(0.5f, 0), new Keyframe(0.75f, 2.0f), new Keyframe(1, 0f));
         public float AngleMultiplier = 1.0f;
@@ -26,8 +25,7 @@ namespace TextMesh_Pro.Scripts
             this.StartCoroutine(this.WarpText());
         }
 
-
-        private AnimationCurve CopyAnimationCurve(AnimationCurve curve)
+        AnimationCurve CopyAnimationCurve(AnimationCurve curve)
         {
             var newCurve = new AnimationCurve();
 

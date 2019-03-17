@@ -5,9 +5,9 @@
     <CscToolPath>/home/heider/Unity/Hub/Editor/2019.1.0b1/Editor/Data/Tools/RoslynScripts</CscToolPath>
     <CscToolExe>unity_csc.sh</CscToolExe>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <DisableHandlePackageFileConflicts>true</DisableHandlePackageFileConflicts>
     <_TargetFrameworkDirectories>non_empty_path_generated_by_rider_editor_plugin</_TargetFrameworkDirectories>
     <_FullFrameworkReferenceAssemblyPaths>non_empty_path_generated_by_rider_editor_plugin</_FullFrameworkReferenceAssemblyPaths>
-    <DisableHandlePackageFileConflicts>true</DisableHandlePackageFileConflicts>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -62,12 +62,32 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Exclude\Path\Core\Editor\Helper\MouseUtility.cs" />
-    <Compile Include="Assets\Exclude\Path\Core\Editor\Helper\PathHandle.cs" />
-    <Compile Include="Assets\Exclude\Path\Core\Editor\Helper\ScreenSpacePolyLine.cs" />
-    <Compile Include="Assets\Exclude\Path\Core\Editor\PathEditor.cs" />
-    <Compile Include="Assets\Exclude\Path\Examples\Scripts\Editor\PathSceneToolEditor.cs" />
-    <Compile Include="Assets\Exclude\unity-chan!\Unity-chan! Model\Editor\CreateLocatorHere.cs" />
+    <Compile Include="Assets\droid\Neodroid\Editor\GameObjects\EditorGameObjectMenuPath.cs" />
+    <Compile Include="Assets\droid\Neodroid\Editor\GameObjects\GeneralSpawner.cs" />
+    <Compile Include="Assets\droid\Neodroid\Editor\GameObjects\MotorSpawner.cs" />
+    <Compile Include="Assets\droid\Neodroid\Editor\GameObjects\ObserverSpawner.cs" />
+    <Compile Include="Assets\droid\Neodroid\Editor\GameObjects\PrebuiltSpawner.cs" />
+    <Compile Include="Assets\droid\Neodroid\Editor\ScriptableObjects\Curriculum.cs" />
+    <Compile Include="Assets\droid\Neodroid\Editor\ScriptableObjects\EditorScriptableObjectMenuPath.cs" />
+    <Compile Include="Assets\droid\Neodroid\Editor\ScriptableObjects\NeodroidTask.cs" />
+    <Compile Include="Assets\droid\Neodroid\Editor\ScriptableObjects\PlayerMotions.cs" />
+    <Compile Include="Assets\droid\Neodroid\Editor\ScriptableObjects\Segmentations.cs" />
+    <Compile Include="Assets\droid\Neodroid\Editor\Utilities\NeodroidEditorUtilities.cs" />
+    <Compile Include="Assets\droid\Neodroid\Editor\Windows\CameraSynchronisationWindow.cs" />
+    <Compile Include="Assets\droid\Neodroid\Editor\Windows\DebugWindow.cs" />
+    <Compile Include="Assets\droid\Neodroid\Editor\Windows\DemonstrationWindow.cs" />
+    <Compile Include="Assets\droid\Neodroid\Editor\Windows\EditorWindowMenuPath.cs" />
+    <Compile Include="Assets\droid\Neodroid\Editor\Windows\PreferenceWindow.cs" />
+    <Compile Include="Assets\droid\Neodroid\Editor\Windows\RenderTextureConfiguratorWindow.cs" />
+    <Compile Include="Assets\droid\Neodroid\Editor\Windows\SegmentationWindow.cs" />
+    <Compile Include="Assets\droid\Neodroid\Editor\Windows\SimulationWindow.cs" />
+    <Compile Include="Assets\droid\Neodroid\Editor\Windows\TaskWindow.cs" />
+    <Compile Include="Assets\droid\Neodroid\Editor\Windows\UnityDebug\FindMissingScripts.cs" />
+    <Compile Include="Assets\droid\Neodroid\Editor\Windows\WindowManager.cs" />
+    <Compile Include="Assets\droid\Neodroid\Utilities\Unsorted\SceneReference\Editor\SceneReference.cs" />
+    <Compile Include="Assets\droid\Neodroid\Utilities\Unsorted\SceneReference\Editor\SceneReferenceEditor.cs" />
+    <Compile Include="Assets\droid\Neodroid\Utilities\Unsorted\SearchableEnum\Editor\SearchableEnumDrawer.cs" />
+    <Compile Include="Assets\droid\Neodroid\Utilities\Unsorted\SearchableEnum\Editor\SearchablePopup.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>/home/heider/Projects/Neodroid/AAV/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
@@ -76,12 +96,6 @@
     </Reference>
     <Reference Include="Unity.ProGrids.Editor">
       <HintPath>/home/heider/Projects/Neodroid/AAV/Library/ScriptAssemblies/Unity.ProGrids.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityTestPackage.Editor">
-      <HintPath>/home/heider/Projects/Neodroid/AAV/Library/ScriptAssemblies/UnityTestPackage.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityTestPackage.Runtime">
-      <HintPath>/home/heider/Projects/Neodroid/AAV/Library/ScriptAssemblies/UnityTestPackage.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>/home/heider/Projects/Neodroid/AAV/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
@@ -92,12 +106,6 @@
     <Reference Include="Unity.Timeline">
       <HintPath>/home/heider/Projects/Neodroid/AAV/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Postprocessing.Editor">
-      <HintPath>/home/heider/Projects/Neodroid/AAV/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Postprocessing.Runtime">
-      <HintPath>/home/heider/Projects/Neodroid/AAV/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor.SpatialTracking">
       <HintPath>/home/heider/Projects/Neodroid/AAV/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
     </Reference>
@@ -107,17 +115,29 @@
     <Reference Include="Unity.TextMeshPro">
       <HintPath>/home/heider/Projects/Neodroid/AAV/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.XR.LegacyInputHelpers">
-      <HintPath>/home/heider/Projects/Neodroid/AAV/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.XR.LegacyInputHelpers">
-      <HintPath>/home/heider/Projects/Neodroid/AAV/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
       <HintPath>/home/heider/Projects/Neodroid/AAV/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
     </Reference>
+    <Reference Include="UnityTestPackage.Editor">
+      <HintPath>/home/heider/Projects/Neodroid/AAV/Library/ScriptAssemblies/UnityTestPackage.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityTestPackage.Runtime">
+      <HintPath>/home/heider/Projects/Neodroid/AAV/Library/ScriptAssemblies/UnityTestPackage.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Postprocessing.Editor">
+      <HintPath>/home/heider/Projects/Neodroid/AAV/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.XR.LegacyInputHelpers">
+      <HintPath>/home/heider/Projects/Neodroid/AAV/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Postprocessing.Runtime">
+      <HintPath>/home/heider/Projects/Neodroid/AAV/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.ProBuilder.AddOns.Editor">
       <HintPath>/home/heider/Projects/Neodroid/AAV/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.XR.LegacyInputHelpers">
+      <HintPath>/home/heider/Projects/Neodroid/AAV/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>/home/heider/Unity/Hub/Editor/2019.1.0b1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -319,21 +339,6 @@
     </Reference>
     <Reference Include="JetBrains.Rider.Unity.Editor.Plugin.Repacked">
       <HintPath>/home/heider/Projects/Neodroid/AAV/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll</HintPath>
-    </Reference>
-    <Reference Include="Priority Queue">
-      <HintPath>/home/heider/Projects/Neodroid/AAV/Assets/droid/Libraries/OptimizedPriorityQueue.4.1.1/lib/net45/Priority Queue.dll</HintPath>
-    </Reference>
-    <Reference Include="Neodroid-FlatBuffers">
-      <HintPath>/home/heider/Projects/Neodroid/AAV/Assets/droid/Libraries/Neodroid-FlatBuffers.1.0.0/lib/net45/Neodroid-FlatBuffers.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>/home/heider/Projects/Neodroid/AAV/Assets/droid/Libraries/Newtonsoft.Json.11.0.2/lib/net45/Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="NetMQ">
-      <HintPath>/home/heider/Projects/Neodroid/AAV/Assets/droid/Libraries/NetMQ.4.0.0.175-pre/lib/net40/NetMQ.dll</HintPath>
-    </Reference>
-    <Reference Include="AsyncIO">
-      <HintPath>/home/heider/Projects/Neodroid/AAV/Assets/droid/Libraries/AsyncIO.0.1.61/lib/net40/AsyncIO.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>/home/heider/Unity/Hub/Editor/2019.1.0b1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -694,14 +699,6 @@
     <ProjectReference Include="Assembly-CSharp.csproj">
       <Project>{258B7383-B6F1-C952-97B1-CDC4EA1FC865}</Project>
       <Name>Assembly-CSharp</Name>
-    </ProjectReference>
-    <ProjectReference Include="Neodroid.Editor.csproj">
-      <Project>{287336BF-D71A-A11C-9417-B518566D3B4D}</Project>
-      <Name>Neodroid.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Neodroid.Runtime.csproj">
-      <Project>{C9AF1D98-9147-2CAA-2E34-899F917C4921}</Project>
-      <Name>Neodroid.Runtime</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

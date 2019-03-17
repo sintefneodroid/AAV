@@ -13,8 +13,8 @@ namespace TextMesh_Pro.Scripts
         public float ScaleMultiplier = 1.0f;
         public float RotationMultiplier = 1.0f;
 
-        private TMP_Text m_TextComponent;
-        private bool hasTextChanged;
+        TMP_Text m_TextComponent;
+        bool hasTextChanged;
 
 
         void Awake()

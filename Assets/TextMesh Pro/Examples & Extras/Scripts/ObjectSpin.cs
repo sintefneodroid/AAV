@@ -10,14 +10,14 @@ namespace TextMesh_Pro.Scripts
 
         public float SpinSpeed = 5;
         public int RotationRange = 15;
-        private Transform m_transform;
+        Transform m_transform;
 
-        private float m_time;
-        private Vector3 m_prevPOS;
-        private Vector3 m_initial_Rotation;
-        private Vector3 m_initial_Position;
-        private Color32 m_lightColor;
-        private int frames = 0;
+        float m_time;
+        Vector3 m_prevPOS;
+        Vector3 m_initial_Rotation;
+        Vector3 m_initial_Position;
+        Color32 m_lightColor;
+        int frames = 0;
 
         public enum MotionType { Rotation, BackAndForth, Translation };
         public MotionType Motion;

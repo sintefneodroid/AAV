@@ -7,8 +7,7 @@ namespace TextMesh_Pro.Scripts
 
     public class VertexColorCycler : MonoBehaviour
     {
-
-        private TMP_Text m_TextComponent;
+        TMP_Text m_TextComponent;
 
         void Awake()
         {

@@ -11,13 +11,12 @@ namespace TextMesh_Pro.Scripts
         public objectType ObjectType;
         public bool isStatic;
 
-        private TMP_Text m_text;
+        TMP_Text m_text;
 
         //private TMP_InputField m_inputfield;
 
-
-        private const string k_label = "The count is <#0080ff>{0}</color>";
-        private int count;
+        const string k_label = "The count is <#0080ff>{0}</color>";
+        int count;
 
         void Awake()
         {

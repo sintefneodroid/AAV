@@ -11,25 +11,24 @@ namespace TextMesh_Pro.Scripts
     {
         public RectTransform TextPopup_Prefab_01;
 
-        private RectTransform m_TextPopup_RectTransform;
-        private TextMeshProUGUI m_TextPopup_TMPComponent;
-        private const string k_LinkText = "You have selected link <#ffff00>";
-        private const string k_WordText = "Word Index: <#ffff00>";
+        RectTransform m_TextPopup_RectTransform;
+        TextMeshProUGUI m_TextPopup_TMPComponent;
+        const string k_LinkText = "You have selected link <#ffff00>";
+        const string k_WordText = "Word Index: <#ffff00>";
 
-
-        private TextMeshProUGUI m_TextMeshPro;
-        private Canvas m_Canvas;
-        private Camera m_Camera;
+        TextMeshProUGUI m_TextMeshPro;
+        Canvas m_Canvas;
+        Camera m_Camera;
 
         // Flags
-        private bool isHoveringObject;
-        private int m_selectedWord = -1;
-        private int m_selectedLink = -1;
-        private int m_lastIndex = -1;
+        bool isHoveringObject;
+        int m_selectedWord = -1;
+        int m_selectedLink = -1;
+        int m_lastIndex = -1;
 
-        private Matrix4x4 m_matrix;
+        Matrix4x4 m_matrix;
 
-        private TMP_MeshInfo[] m_cachedMeshInfoVertexData;
+        TMP_MeshInfo[] m_cachedMeshInfoVertexData;
 
         void Awake()
         {
