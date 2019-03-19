@@ -79,15 +79,14 @@
     <Compile Include="Assets\droid\Editor\Utilities\Git\GithubExtension.cs" />
     <Compile Include="Assets\droid\Editor\Utilities\Git\GithubExtensionUserInterface.cs" />
     <Compile Include="Assets\droid\Editor\Utilities\MeshSaver.cs" />
-    <Compile Include="Assets\droid\Editor\Utilities\MissingReferencesFinder.cs" />
     <Compile Include="Assets\droid\Editor\Utilities\NeodroidEditorConstants.cs" />
     <Compile Include="Assets\droid\Editor\Utilities\NeodroidEditorUtilities.cs" />
     <Compile Include="Assets\droid\Editor\Utilities\NeodroidPackageImporterWindow.cs" />
     <Compile Include="Assets\droid\Editor\Utilities\NeodroidSettings.cs" />
     <Compile Include="Assets\droid\Editor\Utilities\NoteUtilities\NoteEditor.cs" />
     <Compile Include="Assets\droid\Editor\Utilities\NoteUtilities\NoteType.cs" />
-    <Compile Include="Assets\droid\Editor\Utilities\ObjectDropdownAttribute.cs" />
-    <Compile Include="Assets\droid\Editor\Utilities\ObjectSelectorDropdown.cs" />
+    <Compile Include="Assets\droid\Editor\Utilities\ObjectDropdown\ObjectDropdownAttribute.cs" />
+    <Compile Include="Assets\droid\Editor\Utilities\ObjectDropdown\ObjectSelectorDropdown.cs" />
     <Compile Include="Assets\droid\Editor\Utilities\SceneDescription.cs" />
     <Compile Include="Assets\droid\Editor\Utilities\ScenePreview.cs" />
     <Compile Include="Assets\droid\Editor\Utilities\SceneReference.cs" />
@@ -98,6 +97,7 @@
     <Compile Include="Assets\droid\Editor\Utilities\SearchableEnum\SearchableEnumDrawer.cs" />
     <Compile Include="Assets\droid\Editor\Utilities\SearchableEnum\SearchablePopup.cs" />
     <Compile Include="Assets\droid\Editor\Utilities\UnityDebug\FindMissingScripts.cs" />
+    <Compile Include="Assets\droid\Editor\Utilities\UnityDebug\MissingReferencesFinder.cs" />
     <Compile Include="Assets\droid\Editor\Windows\CameraSynchronisationWindow.cs" />
     <Compile Include="Assets\droid\Editor\Windows\DebugWindow.cs" />
     <Compile Include="Assets\droid\Editor\Windows\DemonstrationWindow.cs" />
@@ -313,23 +313,23 @@
     <Reference Include="UnityEditor.LinuxStandalone.Extensions">
       <HintPath>/home/heider/Unity/Hub/Editor/2019.1.0b1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll</HintPath>
     </Reference>
-    <Reference Include="JetBrains.Rider.Unity.Editor.Plugin.Repacked">
-      <HintPath>/home/heider/Projects/Neodroid/AAV/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>/home/heider/Projects/Neodroid/AAV/Assets/droid/Libraries/Newtonsoft.Json.11.0.2/lib/net45/Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="Priority Queue">
-      <HintPath>/home/heider/Projects/Neodroid/AAV/Assets/droid/Libraries/OptimizedPriorityQueue.4.1.1/lib/net45/Priority Queue.dll</HintPath>
-    </Reference>
     <Reference Include="Neodroid-FlatBuffers">
       <HintPath>/home/heider/Projects/Neodroid/AAV/Assets/droid/Libraries/Neodroid-FlatBuffers.1.0.0/lib/net45/Neodroid-FlatBuffers.dll</HintPath>
     </Reference>
     <Reference Include="NetMQ">
       <HintPath>/home/heider/Projects/Neodroid/AAV/Assets/droid/Libraries/NetMQ.4.0.0.175-pre/lib/net40/NetMQ.dll</HintPath>
     </Reference>
+    <Reference Include="Priority Queue">
+      <HintPath>/home/heider/Projects/Neodroid/AAV/Assets/droid/Libraries/OptimizedPriorityQueue.4.1.1/lib/net45/Priority Queue.dll</HintPath>
+    </Reference>
     <Reference Include="AsyncIO">
       <HintPath>/home/heider/Projects/Neodroid/AAV/Assets/droid/Libraries/AsyncIO.0.1.61/lib/net40/AsyncIO.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>/home/heider/Projects/Neodroid/AAV/Assets/droid/Libraries/Newtonsoft.Json.11.0.2/lib/net45/Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="JetBrains.Rider.Unity.Editor.Plugin.Repacked">
+      <HintPath>/home/heider/Projects/Neodroid/AAV/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>/home/heider/Unity/Hub/Editor/2019.1.0b1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
