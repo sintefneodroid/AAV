@@ -313,23 +313,23 @@
     <Reference Include="UnityEditor.LinuxStandalone.Extensions">
       <HintPath>/home/heider/Unity/Hub/Editor/2019.1.0b1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll</HintPath>
     </Reference>
-    <Reference Include="Neodroid-FlatBuffers">
-      <HintPath>/home/heider/Projects/Neodroid/AAV/Assets/droid/Libraries/Neodroid-FlatBuffers.1.0.0/lib/net45/Neodroid-FlatBuffers.dll</HintPath>
-    </Reference>
-    <Reference Include="NetMQ">
-      <HintPath>/home/heider/Projects/Neodroid/AAV/Assets/droid/Libraries/NetMQ.4.0.0.175-pre/lib/net40/NetMQ.dll</HintPath>
+    <Reference Include="JetBrains.Rider.Unity.Editor.Plugin.Repacked">
+      <HintPath>/home/heider/Projects/Neodroid/AAV/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll</HintPath>
     </Reference>
     <Reference Include="Priority Queue">
       <HintPath>/home/heider/Projects/Neodroid/AAV/Assets/droid/Libraries/OptimizedPriorityQueue.4.1.1/lib/net45/Priority Queue.dll</HintPath>
     </Reference>
-    <Reference Include="AsyncIO">
-      <HintPath>/home/heider/Projects/Neodroid/AAV/Assets/droid/Libraries/AsyncIO.0.1.61/lib/net40/AsyncIO.dll</HintPath>
+    <Reference Include="Neodroid-FlatBuffers">
+      <HintPath>/home/heider/Projects/Neodroid/AAV/Assets/droid/Libraries/Neodroid-FlatBuffers.1.0.0/lib/net45/Neodroid-FlatBuffers.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>/home/heider/Projects/Neodroid/AAV/Assets/droid/Libraries/Newtonsoft.Json.11.0.2/lib/net45/Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="JetBrains.Rider.Unity.Editor.Plugin.Repacked">
-      <HintPath>/home/heider/Projects/Neodroid/AAV/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll</HintPath>
+    <Reference Include="NetMQ">
+      <HintPath>/home/heider/Projects/Neodroid/AAV/Assets/droid/Libraries/NetMQ.4.0.0.175-pre/lib/net40/NetMQ.dll</HintPath>
+    </Reference>
+    <Reference Include="AsyncIO">
+      <HintPath>/home/heider/Projects/Neodroid/AAV/Assets/droid/Libraries/AsyncIO.0.1.61/lib/net40/AsyncIO.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>/home/heider/Unity/Hub/Editor/2019.1.0b1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
