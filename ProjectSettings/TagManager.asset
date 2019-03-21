@@ -23,13 +23,13 @@ TagManager:
   - Detachable Part
   - Ignore Wheel Cast
   - Vehicles
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Terrain
+  - Building
+  - Road
+  - Signs
+  - Tree
+  - Props
+  - SideWalk
   - 
   - 
   - 
