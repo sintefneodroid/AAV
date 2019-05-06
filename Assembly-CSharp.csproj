@@ -14,7 +14,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <ProjectGuid>{258B7383-B6F1-C952-97B1-CDC4EA1FC865}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -123,6 +124,8 @@
     <Compile Include="Assets\AAV\Drone\DroneEvaluation.cs" />
     <Compile Include="Assets\AAV\Drone\Script\DroneController.cs" />
     <Compile Include="Assets\AAV\Drone\Script\Lidar.cs" />
+    <Compile Include="Assets\AAV\Drone\Script\NewController\PIDController.cs" />
+    <Compile Include="Assets\AAV\Drone\Script\NewController\QuadcopterController.cs" />
     <Compile Include="Assets\AAV\Drone\Script\PID\AttitudeControllerNode.cs" />
     <Compile Include="Assets\AAV\Drone\Script\PID\HoverControllerNode.cs" />
     <Compile Include="Assets\AAV\Drone\Script\PID\HoverTwiddleTunerNode.cs" />
