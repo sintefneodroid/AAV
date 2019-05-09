@@ -1,76 +1,191 @@
 fileFormatVersion: 2
-guid: 4b727369d879a7e4498feb88136deb66
+guid: 33a0531a1e0793d2a8315246f99324eb
 ModelImporter:
-  serializedVersion: 18
-  fileIDToRecycleName:
-    100000: //RootNode
-    100002: colliderfront
-    100004: collidermid
-    100006: colliderrear
-    100008: colliderunder
-    100010: rimfront
-    100012: rimrear
-    100014: tirefront
-    100016: tirerear
-    100018: trailer
-    100020: truck
-    400000: //RootNode
-    400002: colliderfront
-    400004: collidermid
-    400006: colliderrear
-    400008: colliderunder
-    400010: rimfront
-    400012: rimrear
-    400014: tirefront
-    400016: tirerear
-    400018: trailer
-    400020: truck
-    2300000: colliderfront
-    2300002: collidermid
-    2300004: colliderrear
-    2300006: colliderunder
-    2300008: rimfront
-    2300010: rimrear
-    2300012: tirefront
-    2300014: tirerear
-    2300016: trailer
-    2300018: truck
-    3300000: colliderfront
-    3300002: collidermid
-    3300004: colliderrear
-    3300006: colliderunder
-    3300008: rimfront
-    3300010: rimrear
-    3300012: tirefront
-    3300014: tirerear
-    3300016: trailer
-    3300018: truck
-    4300000: collidermid
-    4300002: colliderfront
-    4300004: colliderunder
-    4300006: colliderrear
-    4300008: trailer
-    4300010: truck
-    4300012: rimfront
-    4300014: rimrear
-    4300016: tirefront
-    4300018: tirerear
+  serializedVersion: 25
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: //RootNode
+  - first:
+      1: 100002
+    second: colliderfront
+  - first:
+      1: 100004
+    second: collidermid
+  - first:
+      1: 100006
+    second: colliderrear
+  - first:
+      1: 100008
+    second: colliderunder
+  - first:
+      1: 100010
+    second: rimfront
+  - first:
+      1: 100012
+    second: rimrear
+  - first:
+      1: 100014
+    second: tirefront
+  - first:
+      1: 100016
+    second: tirerear
+  - first:
+      1: 100018
+    second: trailer
+  - first:
+      1: 100020
+    second: truck
+  - first:
+      4: 400000
+    second: //RootNode
+  - first:
+      4: 400002
+    second: colliderfront
+  - first:
+      4: 400004
+    second: collidermid
+  - first:
+      4: 400006
+    second: colliderrear
+  - first:
+      4: 400008
+    second: colliderunder
+  - first:
+      4: 400010
+    second: rimfront
+  - first:
+      4: 400012
+    second: rimrear
+  - first:
+      4: 400014
+    second: tirefront
+  - first:
+      4: 400016
+    second: tirerear
+  - first:
+      4: 400018
+    second: trailer
+  - first:
+      4: 400020
+    second: truck
+  - first:
+      23: 2300000
+    second: colliderfront
+  - first:
+      23: 2300002
+    second: collidermid
+  - first:
+      23: 2300004
+    second: colliderrear
+  - first:
+      23: 2300006
+    second: colliderunder
+  - first:
+      23: 2300008
+    second: rimfront
+  - first:
+      23: 2300010
+    second: rimrear
+  - first:
+      23: 2300012
+    second: tirefront
+  - first:
+      23: 2300014
+    second: tirerear
+  - first:
+      23: 2300016
+    second: trailer
+  - first:
+      23: 2300018
+    second: truck
+  - first:
+      33: 3300000
+    second: colliderfront
+  - first:
+      33: 3300002
+    second: collidermid
+  - first:
+      33: 3300004
+    second: colliderrear
+  - first:
+      33: 3300006
+    second: colliderunder
+  - first:
+      33: 3300008
+    second: rimfront
+  - first:
+      33: 3300010
+    second: rimrear
+  - first:
+      33: 3300012
+    second: tirefront
+  - first:
+      33: 3300014
+    second: tirerear
+  - first:
+      33: 3300016
+    second: trailer
+  - first:
+      33: 3300018
+    second: truck
+  - first:
+      43: 4300000
+    second: collidermid
+  - first:
+      43: 4300002
+    second: colliderfront
+  - first:
+      43: 4300004
+    second: colliderunder
+  - first:
+      43: 4300006
+    second: colliderrear
+  - first:
+      43: 4300008
+    second: trailer
+  - first:
+      43: 4300010
+    second: truck
+  - first:
+      43: 4300012
+    second: rimfront
+  - first:
+      43: 4300014
+    second: rimrear
+  - first:
+      43: 4300016
+    second: tirefront
+  - first:
+      43: 4300018
+    second: tirerear
+  externalObjects: {}
   materials:
     importMaterials: 0
     materialName: 0
     materialSearch: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
+    resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
-    pivotNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 1
-    animationRotationError: .5
-    animationPositionError: .5
-    animationScaleError: .5
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
+    extraUserProperties: []
     clipAnimations: []
     isReadable: 1
   meshes:
@@ -78,13 +193,22 @@ ModelImporter:
     globalScale: 50
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 0
     importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
@@ -92,24 +216,35 @@ ModelImporter:
     useFileScale: 1
   tangentSpace:
     normalSmoothAngle: 60
-    splitTangentsAcrossUV: 1
     normalImportMode: 0
-    tangentImportMode: 1
+    tangentImportMode: 4
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
+    serializedVersion: 3
     human: []
     skeleton: []
-    armTwist: .5
-    foreArmTwist: .5
-    upperLegTwist: .5
-    legTwist: .5
-    armStretch: .0500000007
-    legStretch: .0500000007
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
     feetSpacing: 0
+    globalScale: 50
     rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 0
+  humanoidOversampling: 1
   additionalBone: 0
   userData: 
   assetBundleName: 
+  assetBundleVariant: 

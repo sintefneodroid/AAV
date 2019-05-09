@@ -3,6 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="c9851936-d408-4d51-aaf1-4a3d5c358fe8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AAV/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AAV/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/droid" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/droid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/droid/.github/images/3Dgridworld.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/droid/.github/images/3Dgridworld.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/droid/Runtime/EcsPrototyping/Components/Actuators.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/droid/Runtime/Shaders/Skybox Shaders.meta" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,73 +20,87 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/AAV/Drone/DroneEvaluation.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="756">
-              <caret line="51" column="92" selection-start-line="51" selection-start-column="92" selection-end-line="51" selection-end-column="92" />
+            <state relative-caret-position="306">
+              <caret line="30" column="43" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
               <folding>
-                <marker date="1552843266215" expanded="true" signature="6:153" ph="..." />
-                <marker date="1552843266215" expanded="true" signature="174:2138" ph="{...}" />
-                <marker date="1552843266215" expanded="true" signature="229:2136" ph="{...}" />
-                <marker date="1552843266215" expanded="false" signature="474:692" ph="{...}" />
-                <marker date="1552843266215" expanded="true" signature="502:620" ph="{...}" />
-                <marker date="1552843266215" expanded="false" signature="738:780" ph="{...}" />
-                <marker date="1552843266215" expanded="true" signature="825:1885" ph="{...}" />
-                <marker date="1552843266215" expanded="true" signature="903:975" ph="{...}" />
-                <marker date="1552843266215" expanded="true" signature="1005:1875" ph="{...}" />
-                <marker date="1552843266215" expanded="true" signature="1058:1177" ph="{...}" />
-                <marker date="1552843266215" expanded="true" signature="1228:1345" ph="{...}" />
-                <marker date="1552843266215" expanded="true" signature="1396:1861" ph="{...}" />
-                <marker date="1552843266215" expanded="true" signature="1566:1717" ph="{...}" />
-                <marker date="1552843266215" expanded="false" signature="1972:2130" ph="{...}" />
+                <marker date="1553009378376" expanded="false" signature="6:153" ph="..." />
+                <marker date="1553009378376" expanded="true" signature="174:2138" ph="{...}" />
+                <marker date="1553009378376" expanded="true" signature="229:2136" ph="{...}" />
+                <marker date="1553009378376" expanded="false" signature="474:692" ph="{...}" />
+                <marker date="1553009378376" expanded="true" signature="502:620" ph="{...}" />
+                <marker date="1553009378376" expanded="false" signature="738:780" ph="{...}" />
+                <marker date="1553009378376" expanded="true" signature="825:1885" ph="{...}" />
+                <marker date="1553009378376" expanded="true" signature="903:975" ph="{...}" />
+                <marker date="1553009378376" expanded="true" signature="1005:1875" ph="{...}" />
+                <marker date="1553009378376" expanded="true" signature="1058:1177" ph="{...}" />
+                <marker date="1553009378376" expanded="true" signature="1228:1345" ph="{...}" />
+                <marker date="1553009378376" expanded="true" signature="1396:1861" ph="{...}" />
+                <marker date="1553009378376" expanded="true" signature="1566:1717" ph="{...}" />
+                <marker date="1553009378376" expanded="false" signature="1972:2130" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/AAV/Drone/Script/NewController/PIDController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="5" column="26" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="26" />
+              <folding>
+                <marker date="1557154859538" expanded="true" signature="40:2169" ph="{...}" />
+                <marker date="1557154859538" expanded="false" signature="49:87" ph="..." />
+                <marker date="1557154859538" expanded="true" signature="115:2167" ph="{...}" />
+                <marker date="1557154859538" expanded="false" signature="626:712" ph="{...}" />
+                <marker date="1557154859538" expanded="false" signature="866:1043" ph="{...}" />
+                <marker date="1557154859538" expanded="false" signature="1208:1388" ph="{...}" />
+                <marker date="1557154859538" expanded="false" signature="1431:2165" ph="{...}" />
+                <marker date="1557154859538" expanded="true" signature="1719:1868" ph="/* Sometimes better to just sum the last errors ... */" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/AAV/Drone2/Scripts/CarController.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/AAV/Drone/Script/NewController/QuadcopterController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+            <state relative-caret-position="612">
+              <caret line="36" column="3" lean-forward="true" selection-start-line="36" selection-start-column="3" selection-end-line="36" selection-end-column="3" />
               <folding>
-                <marker date="1552844057630" expanded="true" signature="49:12068" ph="{...}" />
-                <marker date="1552844057630" expanded="true" signature="73:161" ph="{...}" />
-                <marker date="1552844057630" expanded="true" signature="182:216" ph="{...}" />
-                <marker date="1552844057630" expanded="true" signature="265:12066" ph="{...}" />
-                <marker date="1552844057630" expanded="false" signature="2252:2838" ph="{...}" />
-                <marker date="1552844057630" expanded="true" signature="2362:2480" ph="{...}" />
-                <marker date="1552844057630" expanded="false" signature="2928:4482" ph="{...}" />
-                <marker date="1552844057630" expanded="true" signature="2970:3265" ph="{...}" />
-                <marker date="1552844057630" expanded="true" signature="3562:3663" ph="/* Set the steer on the front wheels. ... */" />
-                <marker date="1552844057630" expanded="true" signature="3999:4083" ph="/* Set the handbrake. ... */" />
-                <marker date="1552844057630" expanded="true" signature="4116:4334" ph="{...}" />
-                <marker date="1552844057630" expanded="false" signature="4520:4727" ph="{...}" />
-                <marker date="1552844057630" expanded="false" signature="4757:5247" ph="{...}" />
-                <marker date="1552844057630" expanded="true" signature="5055:5106" ph="{...}" />
-                <marker date="1552844057630" expanded="true" signature="5186:5237" ph="{...}" />
-                <marker date="1552844057630" expanded="false" signature="5383:5446" ph="{...}" />
-                <marker date="1552844057630" expanded="false" signature="5591:5657" ph="{...}" />
-                <marker date="1552844057630" expanded="false" signature="5694:6262" ph="{...}" />
-                <marker date="1552844057630" expanded="true" signature="5759:5992" ph="/* gear factor is a normalized representation of the current speed within the current gear's range of speeds. ... */" />
-                <marker date="1552844057630" expanded="false" signature="6293:6840" ph="{...}" />
-                <marker date="1552844057630" expanded="true" signature="6307:6445" ph="/* calculate engine revs (for display / sound) ... */" />
-                <marker date="1552844057630" expanded="false" signature="6866:7547" ph="{...}" />
-                <marker date="1552844057630" expanded="true" signature="6972:7537" ph="{...}" />
-                <marker date="1552844057630" expanded="false" signature="7603:9035" ph="{...}" />
-                <marker date="1552844057630" expanded="true" signature="7679:8538" ph="{...}" />
-                <marker date="1552844057630" expanded="true" signature="7857:7958" ph="{...}" />
-                <marker date="1552844057630" expanded="true" signature="8580:9025" ph="{...}" />
-                <marker date="1552844057630" expanded="true" signature="8700:8810" ph="{...}" />
-                <marker date="1552844057630" expanded="true" signature="8835:9011" ph="{...}" />
-                <marker date="1552844057630" expanded="false" signature="9064:9949" ph="{...}" />
-                <marker date="1552844057630" expanded="true" signature="9106:9375" ph="{...}" />
-                <marker date="1552844057630" expanded="true" signature="9574:9874" ph="{...}" />
-                <marker date="1552844057630" expanded="false" signature="10041:10277" ph="{...}" />
-                <marker date="1552844057630" expanded="false" signature="10414:11567" ph="{...}" />
-                <marker date="1552844057630" expanded="true" signature="10489:11557" ph="{...}" />
-                <marker date="1552844057630" expanded="true" signature="10639:10807" ph="{...}" />
-                <marker date="1552844057630" expanded="false" signature="11615:12060" ph="{...}" />
-                <marker date="1552844057630" expanded="true" signature="11698:11784" ph="{...}" />
-                <marker date="1552844057630" expanded="true" signature="11940:12036" ph="{...}" />
+                <marker date="1557154859674" expanded="true" signature="40:7618" ph="{...}" />
+                <marker date="1557154859674" expanded="true" signature="51:91" ph="..." />
+                <marker date="1557154859674" expanded="true" signature="144:7616" ph="{...}" />
+                <marker date="1557154859674" expanded="true" signature="1021:1228" ph="{...}" />
+                <marker date="1557154859674" expanded="true" signature="1252:1337" ph="{...}" />
+                <marker date="1557154859674" expanded="true" signature="1361:2360" ph="{...}" />
+                <marker date="1557154859674" expanded="true" signature="1451:1491" ph="{...}" />
+                <marker date="1557154859674" expanded="true" signature="1535:1575" ph="{...}" />
+                <marker date="1557154859674" expanded="true" signature="1635:1677" ph="/* Steering ... */" />
+                <marker date="1557154859674" expanded="true" signature="1747:1799" ph="{...}" />
+                <marker date="1557154859674" expanded="true" signature="1835:1888" ph="{...}" />
+                <marker date="1557154859674" expanded="true" signature="1984:2035" ph="{...}" />
+                <marker date="1557154859674" expanded="true" signature="2071:2121" ph="{...}" />
+                <marker date="1557154859674" expanded="true" signature="2222:2266" ph="{...}" />
+                <marker date="1557154859674" expanded="true" signature="2311:2354" ph="{...}" />
+                <marker date="1557154859674" expanded="true" signature="2386:5179" ph="{...}" />
+                <marker date="1557154859674" expanded="true" signature="2399:2565" ph="/* Calculate the errors so we can use a PID controller to stabilize ... */" />
+                <marker date="1557154859674" expanded="true" signature="2615:2662" ph="/* Roll ... */" />
+                <marker date="1557154859674" expanded="true" signature="3121:3164" ph="/* Calculate the propeller forces ... */" />
+                <marker date="1557154859674" expanded="true" signature="4691:4754" ph="/* Yaw ... */" />
+                <marker date="1557154859674" expanded="true" signature="5256:5557" ph="{...}" />
+                <marker date="1557154859674" expanded="true" signature="5478:5551" ph="/* Debug ... */" />
+                <marker date="1557154859674" expanded="true" signature="5563:5639" ph="/* Pitch is rotation around x-axis ... */" />
+                <marker date="1557154859674" expanded="true" signature="5665:6144" ph="{...}" />
+                <marker date="1557154859674" expanded="true" signature="5809:5943" ph="/* This angle going from 0 -&gt; 360 when pitching forward ... */" />
+                <marker date="1557154859674" expanded="true" signature="5985:6116" ph="{...}" />
+                <marker date="1557154859674" expanded="true" signature="6150:6221" ph="/* Roll is rotation around z-axis ... */" />
+                <marker date="1557154859674" expanded="true" signature="6246:6717" ph="{...}" />
+                <marker date="1557154859674" expanded="true" signature="6390:6519" ph="/* This angle going from 0-&gt; 360 when rolling left ... */" />
+                <marker date="1557154859674" expanded="true" signature="6561:6689" ph="{...}" />
+                <marker date="1557154859674" expanded="true" signature="6793:7047" ph="{...}" />
+                <marker date="1557154859674" expanded="true" signature="6806:6991" ph="/* The inner % 360 restricts everything to +/- 360 ... */" />
+                <marker date="1557154859674" expanded="true" signature="7135:7612" ph="{...}" />
+                <marker date="1557154859674" expanded="true" signature="7380:7539" ph="/* Debug ... */" />
               </folding>
             </state>
           </provider>
@@ -123,74 +142,71 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/Prototyping/Configurables/SizeConfigurable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/droid/Editor/Utilities/UnityDebug/FindMissingScripts.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/Utilities/BoundingBoxes/BoundingBox.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/Prototyping/Actors/Actor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/Environments/PrototypingEnvironment.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/Environments/RandomisedEnvironment.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/Utilities/NeodroidCamera/FlowCameraBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/Utilities/Misc/NeodroidUtilities.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/Prototyping/Displayers/Canvas/DistributionDisplayer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/droid/Editor/ScriptableObjects/PlayerMotions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/Prototyping/Displayers/GridWorld/GridWorldVectorFieldDisplayer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/droid/Editor/ScriptableObjects/EditorScriptableObjectMenuPath.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/Prototyping/Configurables/ObjectSpawnerConfigurable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/Utilities/EventRecipients/DataPoller.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/droid/Editor/ScriptableObjects/NeodroidSettings.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/droid/Tests/Editor/GithubExtensionTests.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/Utilities/ScriptableObjects/PlayerMotions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Shaders/TMPro.cginc" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/Utilities/Misc/Grid/GridCell.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Examples/Assets/droid/Runtime/Utilities/ScriptableObjects/PlayerMotions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AAV/Drone/DroneEvaluation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/Prototyping/Displayers/ScatterPlots/IndexedScatterPlotDisplayer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/Prototyping/Displayers/ScatterPlots/GameObjectScatterPlotDisplayer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/InternalReactions/ScriptedReactions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/InternalReactions/PlayerReactions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/Prototyping/Displayers/ScatterPlots/ScatterPlotDisplayer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/Managers/NeodroidManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/Prototyping/Evaluation/VelocityEvaluation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/Managers/PausableManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/Prototyping/Evaluation/SeekAndAvoidEvaluation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/Prototyping/Evaluation/PunishmentFunction.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/Prototyping/Internals/TransformResetable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/Prototyping/Evaluation/AvoidCollisionEvaluation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/Utilities/Misc/Procedural/GameObjectCloner.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/Prototyping/Evaluation/EuclideanDistance.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/Prototyping/Evaluation/RestInArea.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AAV/Drone/Script/NewController/QuadcopterController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/Prototyping/Evaluation/PoseDeviance.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/droid/Editor/Windows/DebugWindow.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/Prototyping/Evaluation/ReachGoal.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/droid/Editor/Windows/EnvironmentsWindow.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/Messaging/MessageServer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/droid/Editor/Windows/DemonstrationWindow.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/Prototyping/Evaluation/AngularVelocityEvaluation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/Prototyping/Evaluation/ObjectiveFunction.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/droid/Editor/Windows/PreferenceWindow.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/Interfaces/ISimulatorConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/Prototyping/Evaluation/ReachArea.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AAV/Drone/Script/NewController/PIDController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/Prototyping/Evaluation/Terms/CollidersPunishmentTerm.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/Utilities/Noise/SelfDestruct.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/droid/Editor/Utilities/NeodroidPackageImporterWindow.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/droid/Editor/Utilities/NeodroidEditorUtilities.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/droid/Samples/MultiArmedBandit/TextBarPlotDisplayer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/Prototyping/Configurables/SizeConfigurable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/Utilities/Plotting/ValueRangePlotter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/Prototyping/Configurables/ObjectSpawnerConfigurable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/Utilities/GameObjects/PrototypingGameObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/droid/Editor/Utilities/Git/GithubExtensionUserInterface.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/Prototyping/Configurables/Experimental/ScreenSpaceOcclusionConfigurable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/Prototyping/Configurables/Experimental/LightConfigurable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/Prototyping/Configurables/Experimental/StandardShaderMaterialConfigurable.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/Utilities/NeodroidCamera/FlowCameraBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/Environments/PrototypingEnvironment.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/Utilities/Misc/Grid/GridCell.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/droid/Editor/Windows/DemonstrationWindow.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/Environments/RandomisedEnvironment.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/droid/Editor/Windows/DebugWindow.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/Prototyping/Evaluation/AngularVelocityEvaluation.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/Prototyping/Actors/Actor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/Prototyping/Evaluation/PunishmentFunction.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/Prototyping/Evaluation/ObjectiveFunction.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/InternalReactions/PlayerReactions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/Prototyping/Evaluation/AvoidCollisionEvaluation.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/Prototyping/Evaluation/PoseDeviance.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/Prototyping/Evaluation/RestInArea.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/Prototyping/Displayers/Canvas/DistributionDisplayer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/Prototyping/Evaluation/EuclideanDistance.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/Prototyping/Evaluation/ReachArea.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/Prototyping/Evaluation/ReachGoal.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/Prototyping/Displayers/GridWorld/GridWorldVectorFieldDisplayer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/Utilities/Misc/Procedural/GameObjectCloner.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/Utilities/EventRecipients/DataPoller.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../Examples/Assets/droid/Runtime/Utilities/ScriptableObjects/PlayerMotions.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/Prototyping/Internals/TransformResetable.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/Utilities/ScriptableObjects/PlayerMotions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/Utilities/ScriptableObjects/SimulatorConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/Utilities/BoundingBoxes/BoundingBox.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/Utilities/Misc/NeodroidUtilities.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/Utilities/GameObjects/PrototypingGameObject.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/Prototyping/Displayers/ScatterPlots/IndexedScatterPlotDisplayer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/Interfaces/ISimulatorConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/Managers/PausableManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/Prototyping/Displayers/ScatterPlots/ScatterPlotDisplayer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/Managers/NeodroidManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/Prototyping/Displayers/ScatterPlots/GameObjectScatterPlotDisplayer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/InternalReactions/ScriptedReactions.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/Prototyping/Evaluation/SeekAndAvoidEvaluation.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/droid/Editor/Utilities/NeodroidEditorUtilities.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/Messaging/MessageServer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/Prototyping/Evaluation/VelocityEvaluation.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/droid/Editor/Utilities/NeodroidPackageImporterWindow.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/droid/Editor/Windows/PreferenceWindow.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/droid/Editor/Windows/EnvironmentsWindow.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/droid/Editor/Utilities/Git/GithubExtensionUserInterface.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/droid/Samples/MultiArmedBandit/TextBarPlotDisplayer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/Utilities/Noise/SelfDestruct.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/droid/Editor/Utilities/UnityDebug/FindMissingScripts.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/droid/Editor/Utilities/Git/GithubExtension.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/Prototyping/Evaluation/Terms/CollidersPunishmentTerm.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/AAV/Drone/DroneEvaluation.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/droid/Runtime/Utilities/Plotting/ValueRangePlotter.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/AAV/Drone2/Scripts/CarController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/AAV/DroneController.cs" />
-        <option value="$PROJECT_DIR$/Assets/droid/Editor/Utilities/Git/GithubExtension.cs" />
-        <option value="$PROJECT_DIR$/Assets/droid/Tests/Editor/GithubExtensionTests.cs" />
         <option value="$PROJECT_DIR$/Assets/droid/Editor/ScriptableObjects/NeodroidSettings.cs" />
         <option value="$PROJECT_DIR$/Assets/droid/Runtime/Utilities/NeodroidCamera/FlowCameraBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/droid/Runtime/Utilities/Misc/Procedural/GameObjectCloner.cs" />
@@ -239,6 +255,9 @@
         <option value="$PROJECT_DIR$/Assets/AAV/Drone2/Scripts/AirSimCarController.cs" />
         <option value="$PROJECT_DIR$/Assets/AAV/Drone2/Scripts/Drone.cs" />
         <option value="$PROJECT_DIR$/Assets/AAV/Drone2/Scripts/CarController.cs" />
+        <option value="$PROJECT_DIR$/Assets/AAV/Drone/Script/NewController/PID.cs" />
+        <option value="$PROJECT_DIR$/Assets/AAV/Drone/Script/NewController/Quad.cs" />
+        <option value="$PROJECT_DIR$/Assets/AAV/Drone/Script/NewController/QuadcopterController.cs" />
       </list>
     </option>
   </component>
@@ -267,13 +286,35 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator currentView="UnityExplorer" proportions="" version="1">
       <autoscrollToSource SolutionExplorer="true" />
+      <autoscrollFromSource UnityExplorer="true" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AssemblyExplorer" />
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="AAV" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="AAV" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Assembly-CSharp" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-all-files" value="false" />
+      </pane>
+      <pane id="FileSystemExplorer" />
       <pane id="UnityExplorer">
         <subPane>
           <expand>
@@ -296,14 +337,31 @@
               <item name="Project" type="e068e287:UnityExplorerRootNode" />
               <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
               <item name="AAV" type="1045f7f1:UnityExplorerNode" />
-              <item name="Drone2" type="1045f7f1:UnityExplorerNode" />
+              <item name="Drone" type="1045f7f1:UnityExplorerNode" />
+              <item name="Quad" type="1045f7f1:UnityExplorerNode" />
             </path>
             <path>
               <item name="Project" type="e068e287:UnityExplorerRootNode" />
               <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
               <item name="AAV" type="1045f7f1:UnityExplorerNode" />
-              <item name="Drone2" type="1045f7f1:UnityExplorerNode" />
-              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="Drone" type="1045f7f1:UnityExplorerNode" />
+              <item name="Script" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="AAV" type="1045f7f1:UnityExplorerNode" />
+              <item name="Drone" type="1045f7f1:UnityExplorerNode" />
+              <item name="Script" type="1045f7f1:UnityExplorerNode" />
+              <item name="NewController" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="AAV" type="1045f7f1:UnityExplorerNode" />
+              <item name="Drone" type="1045f7f1:UnityExplorerNode" />
+              <item name="Script" type="1045f7f1:UnityExplorerNode" />
+              <item name="PID" type="1045f7f1:UnityExplorerNode" />
             </path>
           </expand>
           <select />
@@ -311,25 +369,6 @@
         <option name="show-hidden-items" value="false" />
         <option name="show-project-names" value="true" />
       </pane>
-      <pane id="SolutionExplorer">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="AAV" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="AAV" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Assembly-CSharp" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-        <option name="show-all-files" value="false" />
-      </pane>
-      <pane id="AssemblyExplorer" />
-      <pane id="FileSystemExplorer" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -398,11 +437,13 @@
       <workItem from="1551702849598" duration="192000" />
       <workItem from="1551705098505" duration="11398000" />
       <workItem from="1552843085506" duration="1357000" />
+      <workItem from="1553029385544" duration="848000" />
+      <workItem from="1557154393818" duration="1049000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37093000" />
+    <option name="totallyTimeSpent" value="38990000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -414,10 +455,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="25" y="0" width="1870" height="1059" extended-state="6" />
+    <frame x="23" y="-1" width="2514" height="1421" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49896908" visible="true" weight="0.20810515" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49896908" visible="true" weight="0.2080292" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="DB Browser" order="2" />
       <window_info id="Find" order="3" side_tool="true" weight="0.32881" />
@@ -474,8 +515,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assets/droid/Editor/Utilities/Git/GithubExtensionUserInterface.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/droid/Runtime/NeodroidInfo.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/droid/Runtime/Prototyping/Evaluation/ObjectiveFunction.cs" />
     <entry file="file://$PROJECT_DIR$/../Examples/Assets/droid/Runtime/Utilities/ScriptableObjects/PlayerMotions.cs">
       <provider selected="true" editor-type-id="text-editor">
@@ -496,13 +535,7 @@
     <entry file="file://$PROJECT_DIR$/Assets/droid/Runtime/Prototyping/Evaluation/RestInArea.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/droid/Runtime/Prototyping/Evaluation/ReachGoal.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/droid/Runtime/Utilities/Misc/Extensions/OnCollision.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/AAV/Script/DroneController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="52" column="51" lean-forward="true" selection-start-line="52" selection-start-column="51" selection-end-line="52" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/AAV/Script/DroneController.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/droid/Runtime/Utilities/StatusDisplayer/AutoSetupStatusDisplayer.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/AAV/Drone.prefab" />
     <entry file="file://$PROJECT_DIR$/Assets/droid/Runtime/Utilities/Misc/Extensions/ChildCollisionPublisher.cs" />
@@ -528,122 +561,93 @@
     <entry file="file://$PROJECT_DIR$/Assets/droid/Runtime/Prototyping/Internals/FollowAiTargetResetter.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Exclude/CarChase/Scripts/Scene/TimeMaster.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Exclude/CarChase/FollowAiTargetResetter.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/AAV/Drone2/Shaders/CameraEffects.shader">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-702">
-          <caret selection-end-line="1" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/AAV/Drone2/Scripts/Vehicles/IAirSimInterface.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/AAV/Drone2/Scripts/Vehicles/IVehicleInterface.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/AAV/Drone2/Scripts/Vehicles/Vehicle.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3600">
-          <caret line="200" column="25" selection-start-line="200" selection-start-column="20" selection-end-line="200" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/AAV/Drone2/Scripts/Vehicles/VehicleCompanion.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="151" column="24" selection-start-line="151" selection-start-column="24" selection-end-line="151" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/AAV/Drone2/Scripts/Vehicles/Car/Car.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-893">
-          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/AAV/Drone2/Scripts/Drone.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="889">
-          <caret line="58" column="38" selection-start-line="58" selection-start-column="38" selection-end-line="58" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/AAV/Drone2/Shaders/CameraEffects.shader" />
+    <entry file="file://$PROJECT_DIR$/Assets/AAV/Drone2/Scripts/Vehicles/IAirSimInterface.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/AAV/Drone2/Scripts/Vehicles/IVehicleInterface.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/AAV/Drone2/Scripts/Vehicles/Vehicle.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/AAV/Drone2/Scripts/Vehicles/VehicleCompanion.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/AAV/Drone2/Scripts/Vehicles/Car/Car.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/AAV/Drone2/Scripts/Drone.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/AAV/Drone2/Scripts/CarController.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/AAV/Drone/DroneEvaluation.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="51" column="92" selection-start-line="51" selection-start-column="92" selection-end-line="51" selection-end-column="92" />
+        <state relative-caret-position="306">
+          <caret line="30" column="43" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
           <folding>
-            <marker date="1552843266215" expanded="true" signature="6:153" ph="..." />
-            <marker date="1552843266215" expanded="true" signature="174:2138" ph="{...}" />
-            <marker date="1552843266215" expanded="true" signature="229:2136" ph="{...}" />
-            <marker date="1552843266215" expanded="false" signature="474:692" ph="{...}" />
-            <marker date="1552843266215" expanded="true" signature="502:620" ph="{...}" />
-            <marker date="1552843266215" expanded="false" signature="738:780" ph="{...}" />
-            <marker date="1552843266215" expanded="true" signature="825:1885" ph="{...}" />
-            <marker date="1552843266215" expanded="true" signature="903:975" ph="{...}" />
-            <marker date="1552843266215" expanded="true" signature="1005:1875" ph="{...}" />
-            <marker date="1552843266215" expanded="true" signature="1058:1177" ph="{...}" />
-            <marker date="1552843266215" expanded="true" signature="1228:1345" ph="{...}" />
-            <marker date="1552843266215" expanded="true" signature="1396:1861" ph="{...}" />
-            <marker date="1552843266215" expanded="true" signature="1566:1717" ph="{...}" />
-            <marker date="1552843266215" expanded="false" signature="1972:2130" ph="{...}" />
+            <marker date="1553009378376" expanded="false" signature="6:153" ph="..." />
+            <marker date="1553009378376" expanded="true" signature="174:2138" ph="{...}" />
+            <marker date="1553009378376" expanded="true" signature="229:2136" ph="{...}" />
+            <marker date="1553009378376" expanded="false" signature="474:692" ph="{...}" />
+            <marker date="1553009378376" expanded="true" signature="502:620" ph="{...}" />
+            <marker date="1553009378376" expanded="false" signature="738:780" ph="{...}" />
+            <marker date="1553009378376" expanded="true" signature="825:1885" ph="{...}" />
+            <marker date="1553009378376" expanded="true" signature="903:975" ph="{...}" />
+            <marker date="1553009378376" expanded="true" signature="1005:1875" ph="{...}" />
+            <marker date="1553009378376" expanded="true" signature="1058:1177" ph="{...}" />
+            <marker date="1553009378376" expanded="true" signature="1228:1345" ph="{...}" />
+            <marker date="1553009378376" expanded="true" signature="1396:1861" ph="{...}" />
+            <marker date="1553009378376" expanded="true" signature="1566:1717" ph="{...}" />
+            <marker date="1553009378376" expanded="false" signature="1972:2130" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/AAV/Drone2/Scripts/CarController.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/AAV/Drone/Script/NewController/PIDController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+        <state relative-caret-position="68">
+          <caret line="5" column="26" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="26" />
           <folding>
-            <marker date="1552844057630" expanded="true" signature="49:12068" ph="{...}" />
-            <marker date="1552844057630" expanded="true" signature="73:161" ph="{...}" />
-            <marker date="1552844057630" expanded="true" signature="182:216" ph="{...}" />
-            <marker date="1552844057630" expanded="true" signature="265:12066" ph="{...}" />
-            <marker date="1552844057630" expanded="false" signature="2252:2838" ph="{...}" />
-            <marker date="1552844057630" expanded="true" signature="2362:2480" ph="{...}" />
-            <marker date="1552844057630" expanded="false" signature="2928:4482" ph="{...}" />
-            <marker date="1552844057630" expanded="true" signature="2970:3265" ph="{...}" />
-            <marker date="1552844057630" expanded="true" signature="3562:3663" ph="/* Set the steer on the front wheels. ... */" />
-            <marker date="1552844057630" expanded="true" signature="3999:4083" ph="/* Set the handbrake. ... */" />
-            <marker date="1552844057630" expanded="true" signature="4116:4334" ph="{...}" />
-            <marker date="1552844057630" expanded="false" signature="4520:4727" ph="{...}" />
-            <marker date="1552844057630" expanded="false" signature="4757:5247" ph="{...}" />
-            <marker date="1552844057630" expanded="true" signature="5055:5106" ph="{...}" />
-            <marker date="1552844057630" expanded="true" signature="5186:5237" ph="{...}" />
-            <marker date="1552844057630" expanded="false" signature="5383:5446" ph="{...}" />
-            <marker date="1552844057630" expanded="false" signature="5591:5657" ph="{...}" />
-            <marker date="1552844057630" expanded="false" signature="5694:6262" ph="{...}" />
-            <marker date="1552844057630" expanded="true" signature="5759:5992" ph="/* gear factor is a normalized representation of the current speed within the current gear's range of speeds. ... */" />
-            <marker date="1552844057630" expanded="false" signature="6293:6840" ph="{...}" />
-            <marker date="1552844057630" expanded="true" signature="6307:6445" ph="/* calculate engine revs (for display / sound) ... */" />
-            <marker date="1552844057630" expanded="false" signature="6866:7547" ph="{...}" />
-            <marker date="1552844057630" expanded="true" signature="6972:7537" ph="{...}" />
-            <marker date="1552844057630" expanded="false" signature="7603:9035" ph="{...}" />
-            <marker date="1552844057630" expanded="true" signature="7679:8538" ph="{...}" />
-            <marker date="1552844057630" expanded="true" signature="7857:7958" ph="{...}" />
-            <marker date="1552844057630" expanded="true" signature="8580:9025" ph="{...}" />
-            <marker date="1552844057630" expanded="true" signature="8700:8810" ph="{...}" />
-            <marker date="1552844057630" expanded="true" signature="8835:9011" ph="{...}" />
-            <marker date="1552844057630" expanded="false" signature="9064:9949" ph="{...}" />
-            <marker date="1552844057630" expanded="true" signature="9106:9375" ph="{...}" />
-            <marker date="1552844057630" expanded="true" signature="9574:9874" ph="{...}" />
-            <marker date="1552844057630" expanded="false" signature="10041:10277" ph="{...}" />
-            <marker date="1552844057630" expanded="false" signature="10414:11567" ph="{...}" />
-            <marker date="1552844057630" expanded="true" signature="10489:11557" ph="{...}" />
-            <marker date="1552844057630" expanded="true" signature="10639:10807" ph="{...}" />
-            <marker date="1552844057630" expanded="false" signature="11615:12060" ph="{...}" />
-            <marker date="1552844057630" expanded="true" signature="11698:11784" ph="{...}" />
-            <marker date="1552844057630" expanded="true" signature="11940:12036" ph="{...}" />
+            <marker date="1557154859538" expanded="true" signature="40:2169" ph="{...}" />
+            <marker date="1557154859538" expanded="false" signature="49:87" ph="..." />
+            <marker date="1557154859538" expanded="true" signature="115:2167" ph="{...}" />
+            <marker date="1557154859538" expanded="false" signature="626:712" ph="{...}" />
+            <marker date="1557154859538" expanded="false" signature="866:1043" ph="{...}" />
+            <marker date="1557154859538" expanded="false" signature="1208:1388" ph="{...}" />
+            <marker date="1557154859538" expanded="false" signature="1431:2165" ph="{...}" />
+            <marker date="1557154859538" expanded="true" signature="1719:1868" ph="/* Sometimes better to just sum the last errors ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/AAV/Drone/Script/NewController/QuadcopterController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="3" lean-forward="true" selection-start-line="36" selection-start-column="3" selection-end-line="36" selection-end-column="3" />
+          <folding>
+            <marker date="1557154859674" expanded="true" signature="40:7618" ph="{...}" />
+            <marker date="1557154859674" expanded="true" signature="51:91" ph="..." />
+            <marker date="1557154859674" expanded="true" signature="144:7616" ph="{...}" />
+            <marker date="1557154859674" expanded="true" signature="1021:1228" ph="{...}" />
+            <marker date="1557154859674" expanded="true" signature="1252:1337" ph="{...}" />
+            <marker date="1557154859674" expanded="true" signature="1361:2360" ph="{...}" />
+            <marker date="1557154859674" expanded="true" signature="1451:1491" ph="{...}" />
+            <marker date="1557154859674" expanded="true" signature="1535:1575" ph="{...}" />
+            <marker date="1557154859674" expanded="true" signature="1635:1677" ph="/* Steering ... */" />
+            <marker date="1557154859674" expanded="true" signature="1747:1799" ph="{...}" />
+            <marker date="1557154859674" expanded="true" signature="1835:1888" ph="{...}" />
+            <marker date="1557154859674" expanded="true" signature="1984:2035" ph="{...}" />
+            <marker date="1557154859674" expanded="true" signature="2071:2121" ph="{...}" />
+            <marker date="1557154859674" expanded="true" signature="2222:2266" ph="{...}" />
+            <marker date="1557154859674" expanded="true" signature="2311:2354" ph="{...}" />
+            <marker date="1557154859674" expanded="true" signature="2386:5179" ph="{...}" />
+            <marker date="1557154859674" expanded="true" signature="2399:2565" ph="/* Calculate the errors so we can use a PID controller to stabilize ... */" />
+            <marker date="1557154859674" expanded="true" signature="2615:2662" ph="/* Roll ... */" />
+            <marker date="1557154859674" expanded="true" signature="3121:3164" ph="/* Calculate the propeller forces ... */" />
+            <marker date="1557154859674" expanded="true" signature="4691:4754" ph="/* Yaw ... */" />
+            <marker date="1557154859674" expanded="true" signature="5256:5557" ph="{...}" />
+            <marker date="1557154859674" expanded="true" signature="5478:5551" ph="/* Debug ... */" />
+            <marker date="1557154859674" expanded="true" signature="5563:5639" ph="/* Pitch is rotation around x-axis ... */" />
+            <marker date="1557154859674" expanded="true" signature="5665:6144" ph="{...}" />
+            <marker date="1557154859674" expanded="true" signature="5809:5943" ph="/* This angle going from 0 -&gt; 360 when pitching forward ... */" />
+            <marker date="1557154859674" expanded="true" signature="5985:6116" ph="{...}" />
+            <marker date="1557154859674" expanded="true" signature="6150:6221" ph="/* Roll is rotation around z-axis ... */" />
+            <marker date="1557154859674" expanded="true" signature="6246:6717" ph="{...}" />
+            <marker date="1557154859674" expanded="true" signature="6390:6519" ph="/* This angle going from 0-&gt; 360 when rolling left ... */" />
+            <marker date="1557154859674" expanded="true" signature="6561:6689" ph="{...}" />
+            <marker date="1557154859674" expanded="true" signature="6793:7047" ph="{...}" />
+            <marker date="1557154859674" expanded="true" signature="6806:6991" ph="/* The inner % 360 restricts everything to +/- 360 ... */" />
+            <marker date="1557154859674" expanded="true" signature="7135:7612" ph="{...}" />
+            <marker date="1557154859674" expanded="true" signature="7380:7539" ph="/* Debug ... */" />
           </folding>
         </state>
       </provider>

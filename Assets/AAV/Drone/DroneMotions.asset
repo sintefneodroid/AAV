@@ -16,41 +16,41 @@ MonoBehaviour:
   _Motions:
   - _Key: 119
     _Actor: DroneActor
-    _Motor: DroneRigidbodyRotX_
+    _Actuator: DroneRigidbodyRotX_
     _Strength: -1
   - _Key: 115
     _Actor: DroneActor
-    _Motor: DroneRigidbodyRotX_
+    _Actuator: DroneRigidbodyRotX_
     _Strength: 1
   - _Key: 97
     _Actor: DroneActor
-    _Motor: DroneRigidbodyRotZ_
+    _Actuator: DroneRigidbodyRotZ_
     _Strength: 1
   - _Key: 100
     _Actor: DroneActor
-    _Motor: DroneRigidbodyRotZ_
+    _Actuator: DroneRigidbodyRotZ_
     _Strength: -1
   - _Key: 113
     _Actor: DroneActor
-    _Motor: DroneRigidbodyRotY_
+    _Actuator: DroneRigidbodyRotY_
     _Strength: -1
   - _Key: 101
     _Actor: DroneActor
-    _Motor: DroneRigidbodyRotY_
+    _Actuator: DroneRigidbodyRotY_
     _Strength: 1
   - _Key: 8
     _Actor: Environment
-    _Motor: Reset
+    _Actuator: Reset
     _Strength: 1
   - _Key: 32
     _Actor: Environment
-    _Motor: Step
+    _Actuator: Step
     _Strength: 1
   - _Key: 304
     _Actor: DroneActor
-    _Motor: DroneRigidbodyY_
+    _Actuator: DroneRigidbodyY_
     _Strength: 10
   - _Key: 306
     _Actor: DroneActor
-    _Motor: DroneRigidbodyY_
+    _Actuator: DroneRigidbodyY_
     _Strength: -10
